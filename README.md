@@ -1,2 +1,2 @@
 # Sampler
-Repository for the development of banks for the MaxScore sampler
+Repository for the development of MaxScore sample banks

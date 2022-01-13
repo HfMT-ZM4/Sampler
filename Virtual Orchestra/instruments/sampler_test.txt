@@ -1,1 +1,0 @@
-1, string_violin_pizzicato_con-sordino_ordinario_String-I.instr;

@@ -55,10 +55,11 @@
 					"id" : "obj-4",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 612.975203999999962, 844.446259000000055, 161.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"filename" : "Instrument-Generator-json.js",
+						"filename" : "Instrument-Generator-json",
 						"parameter_enable" : 0
 					}
 ,
@@ -172,10 +173,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 98.702469000000065, 189.384261999999978, 436.0, 33.0 ],
+					"patching_rect" : [ 98.702469000000065, 189.384261999999978, 439.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 214.0, 15.541321, 436.0, 33.0 ],
+					"presentation_rect" : [ 214.0, 15.541321, 439.0, 33.0 ],
 					"text" : "Macintosh HD:/Users/james/Documents/0 Work/HfMT-ZM4/MaxScore/20211220 Sampler instruments/GitHub/Sampler/Virtual Orchestra/instruments/",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -330,7 +331,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-25",
-					"items" : [ "tba-bb-C4.wav", ",", "test-C4-pp.wav", ",", "trba-A#1-ff.wav", ",", "trba-A#1-mf.wav", ",", "trba-A#1-pp.wav" ],
+					"items" : "<empty>",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -452,8 +453,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 484.25, 576.801635999999917, 131.0, 22.0 ],
-					"text" : "sprintf symout %s.instr"
+					"patching_rect" : [ 484.25, 576.801635999999917, 154.0, 22.0 ],
+					"text" : "sprintf symout %s.instr.json"
 				}
 
 			}

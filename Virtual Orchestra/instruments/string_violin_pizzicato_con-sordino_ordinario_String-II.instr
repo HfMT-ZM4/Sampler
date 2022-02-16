@@ -1,0 +1,182 @@
+{
+  "1": {
+    "sample": "vl-pz-cs-II-A4-ff.AIF",
+    "root_key": 69,
+    "key_zone_floor": 69,
+    "vel_zone_floor": 84,
+    "envelope": [2,0,1,20,1,5000,0,50],
+    "noloop": [0,0,0],
+    "direction": "fw",
+    "timestretch": 0
+  },
+  "2": {
+    "sample": "vl-pz-cs-II-A4-mf.AIF",
+    "root_key": 69,
+    "key_zone_floor": 69,
+    "vel_zone_floor": 42,
+    "envelope": [2,0,1,20,1,5000,0,50],
+    "noloop": [0,0,0],
+    "direction": "fw",
+    "timestretch": 0
+  },
+  "3": {
+    "sample": "vl-pz-cs-II-A4-pp.AIF",
+    "root_key": 69,
+    "key_zone_floor": 69,
+    "vel_zone_floor": 0,
+    "envelope": [2,0,1,20,1,5000,0,50],
+    "noloop": [0,0,0],
+    "direction": "fw",
+    "timestretch": 0
+  },
+  "4": {
+    "sample": "vl-pz-cs-II-A5-ff.AIF",
+    "root_key": 81,
+    "key_zone_floor": 81,
+    "vel_zone_floor": 84,
+    "envelope": [2,0,1,20,1,5000,0,50],
+    "noloop": [0,0,0],
+    "direction": "fw",
+    "timestretch": 0
+  },
+  "5": {
+    "sample": "vl-pz-cs-II-A5-mf.AIF",
+    "root_key": 81,
+    "key_zone_floor": 81,
+    "vel_zone_floor": 42,
+    "envelope": [2,0,1,20,1,5000,0,50],
+    "noloop": [0,0,0],
+    "direction": "fw",
+    "timestretch": 0
+  },
+  "6": {
+    "sample": "vl-pz-cs-II-A5-pp.AIF",
+    "root_key": 81,
+    "key_zone_floor": 81,
+    "vel_zone_floor": 0,
+    "envelope": [2,0,1,20,1,5000,0,50],
+    "noloop": [0,0,0],
+    "direction": "fw",
+    "timestretch": 0
+  },
+  "7": {
+    "sample": "vl-pz-cs-II-C5-ff.AIF",
+    "root_key": 72,
+    "key_zone_floor": 72,
+    "vel_zone_floor": 84,
+    "envelope": [2,0,1,20,1,5000,0,50],
+    "noloop": [0,0,0],
+    "direction": "fw",
+    "timestretch": 0
+  },
+  "8": {
+    "sample": "vl-pz-cs-II-C5-mf.AIF",
+    "root_key": 72,
+    "key_zone_floor": 72,
+    "vel_zone_floor": 42,
+    "envelope": [2,0,1,20,1,5000,0,50],
+    "noloop": [0,0,0],
+    "direction": "fw",
+    "timestretch": 0
+  },
+  "9": {
+    "sample": "vl-pz-cs-II-C5-pp.AIF",
+    "root_key": 72,
+    "key_zone_floor": 72,
+    "vel_zone_floor": 0,
+    "envelope": [2,0,1,20,1,5000,0,50],
+    "noloop": [0,0,0],
+    "direction": "fw",
+    "timestretch": 0
+  },
+  "10": {
+    "sample": "vl-pz-cs-II-C6-ff.AIF",
+    "root_key": 84,
+    "key_zone_floor": 84,
+    "vel_zone_floor": 84,
+    "envelope": [2,0,1,20,1,5000,0,50],
+    "noloop": [0,0,0],
+    "direction": "fw",
+    "timestretch": 0
+  },
+  "11": {
+    "sample": "vl-pz-cs-II-C6-mf.AIF",
+    "root_key": 84,
+    "key_zone_floor": 84,
+    "vel_zone_floor": 42,
+    "envelope": [2,0,1,20,1,5000,0,50],
+    "noloop": [0,0,0],
+    "direction": "fw",
+    "timestretch": 0
+  },
+  "12": {
+    "sample": "vl-pz-cs-II-C6-pp.AIF",
+    "root_key": 84,
+    "key_zone_floor": 84,
+    "vel_zone_floor": 0,
+    "envelope": [2,0,1,20,1,5000,0,50],
+    "noloop": [0,0,0],
+    "direction": "fw",
+    "timestretch": 0
+  },
+  "13": {
+    "sample": "vl-pz-cs-II-D#5-ff.AIF",
+    "root_key": 75,
+    "key_zone_floor": 75,
+    "vel_zone_floor": 84,
+    "envelope": [2,0,1,20,1,5000,0,50],
+    "noloop": [0,0,0],
+    "direction": "fw",
+    "timestretch": 0
+  },
+  "14": {
+    "sample": "vl-pz-cs-II-D#5-mf.AIF",
+    "root_key": 75,
+    "key_zone_floor": 75,
+    "vel_zone_floor": 42,
+    "envelope": [2,0,1,20,1,5000,0,50],
+    "noloop": [0,0,0],
+    "direction": "fw",
+    "timestretch": 0
+  },
+  "15": {
+    "sample": "vl-pz-cs-II-D#5-pp.AIF",
+    "root_key": 75,
+    "key_zone_floor": 75,
+    "vel_zone_floor": 0,
+    "envelope": [2,0,1,20,1,5000,0,50],
+    "noloop": [0,0,0],
+    "direction": "fw",
+    "timestretch": 0
+  },
+  "16": {
+    "sample": "vl-pz-cs-II-F#5-ff.AIF",
+    "root_key": 78,
+    "key_zone_floor": 78,
+    "vel_zone_floor": 84,
+    "envelope": [2,0,1,20,1,5000,0,50],
+    "noloop": [0,0,0],
+    "direction": "fw",
+    "timestretch": 0
+  },
+  "17": {
+    "sample": "vl-pz-cs-II-F#5-mf.AIF",
+    "root_key": 78,
+    "key_zone_floor": 78,
+    "vel_zone_floor": 42,
+    "envelope": [2,0,1,20,1,5000,0,50],
+    "noloop": [0,0,0],
+    "direction": "fw",
+    "timestretch": 0
+  },
+  "18": {
+    "sample": "vl-pz-cs-II-F#5-pp.AIF",
+    "root_key": 78,
+    "key_zone_floor": 78,
+    "vel_zone_floor": 0,
+    "envelope": [2,0,1,20,1,5000,0,50],
+    "noloop": [0,0,0],
+    "direction": "fw",
+    "timestretch": 0
+  }
+}

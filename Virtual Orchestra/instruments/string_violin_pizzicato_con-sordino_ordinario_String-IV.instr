@@ -1,0 +1,182 @@
+{
+  "1": {
+    "sample": "vl-pz-cs-IV-A#3-ff.AIF",
+    "root_key": 58,
+    "key_zone_floor": 58,
+    "vel_zone_floor": 84,
+    "envelope": [2,0,1,20,1,5000,0,50],
+    "noloop": [0,0,0],
+    "direction": "fw",
+    "timestretch": 0
+  },
+  "2": {
+    "sample": "vl-pz-cs-IV-A#3-mf.AIF",
+    "root_key": 58,
+    "key_zone_floor": 58,
+    "vel_zone_floor": 42,
+    "envelope": [2,0,1,20,1,5000,0,50],
+    "noloop": [0,0,0],
+    "direction": "fw",
+    "timestretch": 0
+  },
+  "3": {
+    "sample": "vl-pz-cs-IV-A#3-pp.AIF",
+    "root_key": 58,
+    "key_zone_floor": 58,
+    "vel_zone_floor": 0,
+    "envelope": [2,0,1,20,1,5000,0,50],
+    "noloop": [0,0,0],
+    "direction": "fw",
+    "timestretch": 0
+  },
+  "4": {
+    "sample": "vl-pz-cs-IV-A#4-ff.AIF",
+    "root_key": 70,
+    "key_zone_floor": 70,
+    "vel_zone_floor": 84,
+    "envelope": [2,0,1,20,1,5000,0,50],
+    "noloop": [0,0,0],
+    "direction": "fw",
+    "timestretch": 0
+  },
+  "5": {
+    "sample": "vl-pz-cs-IV-A#4-mf.AIF",
+    "root_key": 70,
+    "key_zone_floor": 70,
+    "vel_zone_floor": 42,
+    "envelope": [2,0,1,20,1,5000,0,50],
+    "noloop": [0,0,0],
+    "direction": "fw",
+    "timestretch": 0
+  },
+  "6": {
+    "sample": "vl-pz-cs-IV-A#4-pp.AIF",
+    "root_key": 70,
+    "key_zone_floor": 70,
+    "vel_zone_floor": 0,
+    "envelope": [2,0,1,20,1,5000,0,50],
+    "noloop": [0,0,0],
+    "direction": "fw",
+    "timestretch": 0
+  },
+  "7": {
+    "sample": "vl-pz-cs-IV-C#4-ff.AIF",
+    "root_key": 61,
+    "key_zone_floor": 61,
+    "vel_zone_floor": 84,
+    "envelope": [2,0,1,20,1,5000,0,50],
+    "noloop": [0,0,0],
+    "direction": "fw",
+    "timestretch": 0
+  },
+  "8": {
+    "sample": "vl-pz-cs-IV-C#4-mf.AIF",
+    "root_key": 61,
+    "key_zone_floor": 61,
+    "vel_zone_floor": 42,
+    "envelope": [2,0,1,20,1,5000,0,50],
+    "noloop": [0,0,0],
+    "direction": "fw",
+    "timestretch": 0
+  },
+  "9": {
+    "sample": "vl-pz-cs-IV-C#4-pp.AIF",
+    "root_key": 61,
+    "key_zone_floor": 61,
+    "vel_zone_floor": 0,
+    "envelope": [2,0,1,20,1,5000,0,50],
+    "noloop": [0,0,0],
+    "direction": "fw",
+    "timestretch": 0
+  },
+  "10": {
+    "sample": "vl-pz-cs-IV-E4-ff.AIF",
+    "root_key": 64,
+    "key_zone_floor": 64,
+    "vel_zone_floor": 84,
+    "envelope": [2,0,1,20,1,5000,0,50],
+    "noloop": [0,0,0],
+    "direction": "fw",
+    "timestretch": 0
+  },
+  "11": {
+    "sample": "vl-pz-cs-IV-E4-mf.AIF",
+    "root_key": 64,
+    "key_zone_floor": 64,
+    "vel_zone_floor": 42,
+    "envelope": [2,0,1,20,1,5000,0,50],
+    "noloop": [0,0,0],
+    "direction": "fw",
+    "timestretch": 0
+  },
+  "12": {
+    "sample": "vl-pz-cs-IV-E4-pp.AIF",
+    "root_key": 64,
+    "key_zone_floor": 64,
+    "vel_zone_floor": 0,
+    "envelope": [2,0,1,20,1,5000,0,50],
+    "noloop": [0,0,0],
+    "direction": "fw",
+    "timestretch": 0
+  },
+  "13": {
+    "sample": "vl-pz-cs-IV-G3-ff.AIF",
+    "root_key": 55,
+    "key_zone_floor": 55,
+    "vel_zone_floor": 84,
+    "envelope": [2,0,1,20,1,5000,0,50],
+    "noloop": [0,0,0],
+    "direction": "fw",
+    "timestretch": 0
+  },
+  "14": {
+    "sample": "vl-pz-cs-IV-G3-mf.AIF",
+    "root_key": 55,
+    "key_zone_floor": 55,
+    "vel_zone_floor": 42,
+    "envelope": [2,0,1,20,1,5000,0,50],
+    "noloop": [0,0,0],
+    "direction": "fw",
+    "timestretch": 0
+  },
+  "15": {
+    "sample": "vl-pz-cs-IV-G3-pp.AIF",
+    "root_key": 55,
+    "key_zone_floor": 55,
+    "vel_zone_floor": 0,
+    "envelope": [2,0,1,20,1,5000,0,50],
+    "noloop": [0,0,0],
+    "direction": "fw",
+    "timestretch": 0
+  },
+  "16": {
+    "sample": "vl-pz-cs-IV-G4-ff.AIF",
+    "root_key": 67,
+    "key_zone_floor": 67,
+    "vel_zone_floor": 84,
+    "envelope": [2,0,1,20,1,5000,0,50],
+    "noloop": [0,0,0],
+    "direction": "fw",
+    "timestretch": 0
+  },
+  "17": {
+    "sample": "vl-pz-cs-IV-G4-mf.AIF",
+    "root_key": 67,
+    "key_zone_floor": 67,
+    "vel_zone_floor": 42,
+    "envelope": [2,0,1,20,1,5000,0,50],
+    "noloop": [0,0,0],
+    "direction": "fw",
+    "timestretch": 0
+  },
+  "18": {
+    "sample": "vl-pz-cs-IV-G4-pp.AIF",
+    "root_key": 67,
+    "key_zone_floor": 67,
+    "vel_zone_floor": 0,
+    "envelope": [2,0,1,20,1,5000,0,50],
+    "noloop": [0,0,0],
+    "direction": "fw",
+    "timestretch": 0
+  }
+}

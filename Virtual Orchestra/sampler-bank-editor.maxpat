@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 231.0, 133.0, 1083.0, 845.0 ],
+		"rect" : [ 148.0, 126.0, 1374.0, 703.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,18 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 5,
+					"outlettype" : [ "", "", "", "", "" ],
+					"patching_rect" : [ 31.0, 326.0, 216.0, 22.0 ],
+					"text" : "regexp \\\\.instr\\\\.json @substitute \\\\.instr"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-64",
 					"maxclass" : "newobj",
@@ -491,7 +503,7 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-2",
-					"items" : "brass_euphonium_ordinario.instr",
+					"items" : [ "brass_euphonium_ordinario.instr", ",", "brass_euphonium_ordinario.instr.json" ],
 					"maxclass" : "chooser",
 					"multiselect" : 1,
 					"numinlets" : 1,
@@ -645,7 +657,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-18", 0 ],
+					"destination" : [ "obj-3", 0 ],
 					"source" : [ "obj-19", 0 ]
 				}
 
@@ -744,6 +756,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-28", 0 ],
 					"source" : [ "obj-29", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-18", 0 ],
+					"source" : [ "obj-3", 0 ]
 				}
 
 			}

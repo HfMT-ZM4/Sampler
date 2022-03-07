@@ -1,8 +1,7 @@
 //var numFiles = 0;
 outlets = 0;
 
-var output = {};
-var currentCount = 0;
+var output = [];
 var dynamicsToVel = {
     pp : 0,
     mf : 42,
@@ -24,12 +23,10 @@ var pitchToMidi = {
 }
 
 function reset() {
-    output = {};
-    currentCount = 0;
+    output = [];
 }
 
 function append(fileName) {
-    currentCount++;
     var sampleObj = {
         sample : fileName,
         root_key : 0,
@@ -55,15 +52,35 @@ function append(fileName) {
     sampleObj.root_key = midi;
     sampleObj.key_zone_floor = midi;
 
-    // add to output
-    output[currentCount] = sampleObj;
+    // add to output array ready for sorting
+    output.push(sampleObj);
 }
 
+// sort output array by key_zone_floor then vel_zone_floor, and then translate into object
+function sortConvert(arr) {
+  var sorted = arr.sort(function(a,b) {
+    var x = a.vel_zone_floor;
+    var y = b.vel_zone_floor;
+    return ((x < y) ? -1 : ((x > y) ? 1 : 0));
+  }).sort(function(a,b) {
+    var x = a.key_zone_floor;
+    var y = b.key_zone_floor;
+    return ((x < y) ? -1 : ((x > y) ? 1 : 0));
+  });
+  var sortedObj = {};
+  for (var i = 0; i < sorted.length; i++) {
+    sortedObj[i+1] = sorted[i];
+  }
+  return sortedObj;
+}
+
+// write bank json file
 function write(path) {
+  var sortedObj = sortConvert(output);
 	var f = new File(path,"write","TEXT"); 
 	if (f.isopen) {
 		post("Writing file:\n" + path + "\n");
-		f.writestring(prettyStringify(output));
+		f.writestring(prettyStringify(sortedObj));
         //f.writestring(JSON.stringify(output, null, 2));
 		f.close();
         post("Success!\n");

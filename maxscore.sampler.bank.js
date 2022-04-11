@@ -32,13 +32,16 @@ function dictionary(d)
 		}
 		this.patcher.parentpatcher.parentpatcher.parentpatcher.getnamed("maxscore.sampler.menus").subpatcher().getnamed(i+"-instrument").subpatcher().getnamed("instrument").message(0);			
 	}
+	//this.patcher.parentpatcher.getnamed("instrument-list-1").message("select", -1, -1);
+	outlet(0, "coll", "clear");	
+	outlet(0, "notify_cellblock", 0, 0);
 }
 
 function symbol(instr)
 {
 	bank.replace(instr, "*");
 	outlet(0, bank.getkeys().length, instr);
-	outlet(0, "notify", bank.getkeys().length - 1);
+	outlet(0, "notify_cellblock", 0, bank.getkeys().length - 1);
 }
 
 function import(instr)
@@ -56,6 +59,7 @@ function import(instr)
 	for (var i = 0; i < 32; i++) {	
 		this.patcher.parentpatcher.parentpatcher.parentpatcher.getnamed("maxscore.sampler.menus").subpatcher().getnamed(i+"-instrument").subpatcher().getnamed("instrument").message("append", instr);			
 	}
+	outlet(0, bank.getkeys().length, instr);
 }
 
 function rename(oldname, newname)
@@ -81,6 +85,26 @@ function append(source, target)
 	clientbuffersoundindex.clear();
 	var dump = pb.dump();
 	for (var i = 0; i < dump.length / 6; i++) clientbuffersoundindex.set(dump[i * 6 + 2], dump[i * 6 + 1]);
+}
+
+function notify_admin()
+{
+	var currentInstrumentName = this.patcher.parentpatcher.getnamed("instrument").subpatcher().getnamed("current-instrument").getvalueof();
+	var currentInstrument = new Dict;
+	currentInstrument.pull_from_coll(jsarguments[1] + "-current-instrument");
+	//sample : root_key : key_zone_floor : vel_zone_floor : envelope : loop : start : direction : timestretch :
+	for (var i = 0; i < currentInstrument.getkeys().length;  i++)
+	{
+		bank.replace(currentInstrumentName + "::" + currentInstrument.getkeys()[i] + "::sample", currentInstrument[0]);
+		bank.replace(currentInstrumentName + "::" + currentInstrument.getkeys()[i] + "::root_key", currentInstrument[1]);
+		bank.replace(currentInstrumentName + "::" + currentInstrument.getkeys()[i] + "::key_zone_floor", currentInstrument[2]);
+		bank.replace(currentInstrumentName + "::" + currentInstrument.getkeys()[i] + "::vel_zone_floor", currentInstrument[3]);
+		bank.replace(currentInstrumentName + "::" + currentInstrument.getkeys()[i] + "::envelope", currentInstrument[4]);
+		bank.replace(currentInstrumentName + "::" + currentInstrument.getkeys()[i] + "::loop", [currentInstrument[5].split(" ")[0], currentInstrument[5].split(" ")[2], currentInstrument[5].split(" ")[3]]);
+		bank.replace(currentInstrumentName + "::" + currentInstrument.getkeys()[i] + "::start", currentInstrument[5].split(" ")[1]);
+		bank.replace(currentInstrumentName + "::" + currentInstrument.getkeys()[i] + "::direction", currentInstrument[6]);
+		bank.replace(currentInstrumentName + "::" + currentInstrument.getkeys()[i] + "::timestretch", currentInstrument[7]);
+	}
 }
 
 function remove(instr)

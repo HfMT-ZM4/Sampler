@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 250.0, 87.0, 1066.0, 893.0 ],
+		"rect" : [ 299.0, 87.0, 1066.0, 893.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -273,7 +273,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 479.5, 12.0, 220.0, 62.0 ],
-									"restore" : [ "3552-clientbuffer.1" ],
+									"restore" : [ "1066-clientbuffer.1" ],
 									"saved_object_attributes" : 									{
 										"parameter_enable" : 0,
 										"parameter_mappable" : 0
@@ -2083,13 +2083,13 @@
 								"name" : "AudioStatus_Menu",
 								"default" : 								{
 									"bgfillcolor" : 									{
-										"type" : "color",
+										"angle" : 270,
+										"autogradient" : 0,
 										"color" : [ 0.294118, 0.313726, 0.337255, 1 ],
 										"color1" : [ 0.454902, 0.462745, 0.482353, 0 ],
 										"color2" : [ 0.290196, 0.309804, 0.301961, 1 ],
-										"angle" : 270,
 										"proportion" : 0.39,
-										"autogradient" : 0
+										"type" : "color"
 									}
 
 								}
@@ -2164,6 +2164,18 @@
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-4",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 188.75, 234.0, 71.0, 22.0 ],
+									"text" : "fromsymbol"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-19",
 									"maxclass" : "newobj",
@@ -2563,7 +2575,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-41", 1 ],
+									"destination" : [ "obj-4", 0 ],
 									"midpoints" : [ 254.5, 223.5, 198.25, 223.5 ],
 									"source" : [ "obj-14", 4 ]
 								}
@@ -2646,6 +2658,13 @@
 									"destination" : [ "obj-44", 0 ],
 									"midpoints" : [ 220.5, 427.0, 220.5, 427.0 ],
 									"source" : [ "obj-39", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-41", 1 ],
+									"source" : [ "obj-4", 0 ]
 								}
 
 							}
@@ -3251,7 +3270,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 363.0, 9.0, 257.0, 62.0 ],
-									"restore" : [ "noloop", 0.0, 0.0, 0.0, 1 ],
+									"restore" : [ 1, 2091.601732283465026, 2091.601732283465026, 10216.670000000000073, 1, "Small Child Giggle.aif" ],
 									"saved_object_attributes" : 									{
 										"parameter_enable" : 0,
 										"parameter_mappable" : 0
@@ -3657,7 +3676,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 254.5, 298.5, 187.0, 22.0 ],
-									"restore" : [ 18433.7421875, 0.0, 1.0, 0.0, 0.0, 72, 0.0, 0.0, 0, 1.0, 0.0, 15022, 1.0, 2.0, 18433, "linear" ],
+									"restore" : [ 29936.330078125, 0.0, 1.0, 0.0, 0.0, 0, 5.0, 1.0, 0, 29931.330000000001746, 1.0, 2, 29936.330000000001746, 0.0, 0, "linear" ],
 									"saved_object_attributes" : 									{
 										"parameter_enable" : 0,
 										"parameter_mappable" : 0
@@ -4523,7 +4542,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 6.0, 42.0, 233.0, 62.0 ],
-									"restore" : [ "AngryStab.wav", 2, 0.0, 1.0, 72.716897475594777, 1.0, 14950.261680993826303, 0.0, 3410.762481593592383 ],
+									"restore" : [ 10179.216377560027468, 3, 0.0, 0.0, 0.0, 1.0, 1.0, 0.0, 0.0, 2.0, 0.0, 0.60958904109589 ],
 									"saved_object_attributes" : 									{
 										"parameter_enable" : 0,
 										"parameter_mappable" : 0
@@ -4536,8 +4555,8 @@
 							}
 , 							{
 								"box" : 								{
-									"addpoints" : [ 0.0, 0.0, 72, 0.0, 0.0, 0, 1.0, 0.0, 15022, 1.0, 2.0, 18433 ],
-									"domain" : 18433.7421875,
+									"addpoints" : [ 0.0, 0.0, 0, 5.0, 1.0, 0, 29931.330000000001746, 1.0, 2, 29936.330000000001746, 0.0, 0 ],
+									"domain" : 29936.330078125,
 									"id" : "obj-52",
 									"maxclass" : "function",
 									"numinlets" : 1,

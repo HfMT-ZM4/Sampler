@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 268.0, 128.0, 640.0, 480.0 ],
+		"rect" : [ 286.0, 87.0, 816.0, 582.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -81,14 +81,23 @@
 			"obj-3::obj-43::obj-2::obj-17::obj-78" : [ "live.tab[9]", "live.tab[1]", 0 ],
 			"obj-3::obj-43::obj-2::obj-29" : [ "live.toggle[1]", "live.toggle", 0 ],
 			"obj-3::obj-43::obj-2::obj-66" : [ "live.text[7]", "live.text", 0 ],
-			"obj-3::obj-43::obj-2::obj-89::obj-17::obj-10::obj-156" : [ "live.text[22]", "live.text[20]", 0 ],
-			"obj-3::obj-43::obj-2::obj-89::obj-17::obj-10::obj-157" : [ "live.text[4]", "live.text[20]", 0 ],
-			"obj-3::obj-43::obj-2::obj-89::obj-17::obj-10::obj-93" : [ "live.tab[6]", "live.tab[6]", 0 ],
-			"obj-3::obj-43::obj-2::obj-89::obj-17::obj-162::obj-156" : [ "live.text[3]", "live.text[20]", 0 ],
-			"obj-3::obj-43::obj-2::obj-89::obj-17::obj-162::obj-157" : [ "live.text[21]", "live.text[20]", 0 ],
-			"obj-3::obj-43::obj-2::obj-89::obj-17::obj-162::obj-80" : [ "live.tab[11]", "live.tab[6]", 0 ],
 			"obj-3::obj-74" : [ "Edit Button[1]", "Edit Button", 0 ],
 			"parameterbanks" : 			{
+
+			}
+,
+			"parameter_overrides" : 			{
+				"obj-3::obj-43::obj-2::obj-17::obj-3::obj-24" : 				{
+					"parameter_range" : [ 0.0, 10216.670000000000073 ]
+				}
+,
+				"obj-3::obj-43::obj-2::obj-17::obj-3::obj-27" : 				{
+					"parameter_range" : [ 0.0, 10216.670000000000073 ]
+				}
+,
+				"obj-3::obj-43::obj-2::obj-17::obj-3::obj-6" : 				{
+					"parameter_range" : [ 0.0, 10216.670000000000073 ]
+				}
 
 			}
 ,
@@ -96,20 +105,6 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "LtoC.maxpat",
-				"bootpath" : "/Users/Shared/Max 8/Packages/MaxScore/patchers/extensions",
-				"patcherrelativepath" : "../../Packages/MaxScore/patchers/extensions",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Marimba.instr",
-				"bootpath" : "/Users/Shared/Max 8/Packages/Quintet.net/patchers/Projects/Tutorial/Instruments",
-				"patcherrelativepath" : "../../Packages/Quintet.net/patchers/Projects/Tutorial/Instruments",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "Sampler.Preferences-exp.maxpat",
 				"bootpath" : "/Users/Shared/Max 8/Library/Sample-Bank-Dev",
 				"patcherrelativepath" : ".",
@@ -127,13 +122,6 @@
 				"name" : "bank-waveform-exp.maxpat",
 				"bootpath" : "/Users/Shared/Max 8/Library/Sample-Bank-Dev",
 				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "first-v2.maxpat",
-				"bootpath" : "/Users/Shared/Max 8/Packages/MaxScore/patchers/extensions",
-				"patcherrelativepath" : "../../Packages/MaxScore/patchers/extensions",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -159,6 +147,13 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "maxscore.sampler.bank.js",
+				"bootpath" : "/Users/Shared/Max 8/Library/Sample-Bank-Dev",
+				"patcherrelativepath" : ".",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "maxscore.sampler.instrument.maxpat",
 				"bootpath" : "/Users/Shared/Max 8/Packages/MaxScore/patchers/modules/MaxScore-Sampler",
 				"patcherrelativepath" : "../../Packages/MaxScore/patchers/modules/MaxScore-Sampler",
@@ -173,23 +168,23 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "multibuffer-stereo.maxpat",
-				"bootpath" : "/Users/Shared/Max 8/Packages/MaxScore/patchers/modules/MaxScore-Sampler",
-				"patcherrelativepath" : "../../Packages/MaxScore/patchers/modules/MaxScore-Sampler",
+				"name" : "my-LtoColl.maxpat",
+				"bootpath" : "/Users/Shared/Max 8/Packages/MaxScore/patchers/extensions",
+				"patcherrelativepath" : "../../Packages/MaxScore/patchers/extensions",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "panel_envelope2.maxpat",
-				"bootpath" : "/Users/Shared/Max 8/Packages/MaxScore/patchers/modules/MaxScore-Sampler",
-				"patcherrelativepath" : "../../Packages/MaxScore/patchers/modules/MaxScore-Sampler",
+				"name" : "panel_envelope2-exp.maxpat",
+				"bootpath" : "/Users/Shared/Max 8/Library/Sample-Bank-Dev",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "panel_loop.maxpat",
-				"bootpath" : "/Users/Shared/Max 8/Packages/MaxScore/patchers/modules/MaxScore-Sampler",
-				"patcherrelativepath" : "../../Packages/MaxScore/patchers/modules/MaxScore-Sampler",
+				"name" : "panel_loop-exp.maxpat",
+				"bootpath" : "/Users/Shared/Max 8/Library/Sample-Bank-Dev",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -198,13 +193,6 @@
 				"bootpath" : "/Users/Shared/Max 8/Packages/MaxScore/patchers/modules/MaxScore-Sampler",
 				"patcherrelativepath" : "../../Packages/MaxScore/patchers/modules/MaxScore-Sampler",
 				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "qn.envelopes.txt",
-				"bootpath" : "/Users/Shared/Max 8/Packages/MaxScore/patchers/modules/MaxScore-Sampler",
-				"patcherrelativepath" : "../../Packages/MaxScore/patchers/modules/MaxScore-Sampler",
-				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{

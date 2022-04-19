@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 127.0, 137.0, 1196.0, 821.0 ],
+		"rect" : [ 127.0, 109.0, 1196.0, 849.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -279,8 +279,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 5,
 					"outlettype" : [ "", "", "", "", "" ],
-					"patching_rect" : [ 182.5, 134.0, 93.0, 22.0 ],
-					"text" : "regexp .txt|.json"
+					"patching_rect" : [ 182.5, 134.0, 106.0, 22.0 ],
+					"text" : "regexp \\\\.txt|\\\\.json"
 				}
 
 			}

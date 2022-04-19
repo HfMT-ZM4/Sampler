@@ -1,18 +1,52 @@
 inlets = 1;
 outlets = 1;
 
+
+
 var currentInstr = "";
-var currentNumber = 0; // inside instr
-var instrObj = {};
-var bankObj = {};
+//var currentNumber = 0; // inside instr
+//var instrObj = {};
+//var bankObj = {};
+var outputDict = new Dict();
+var instrDict = new Dict();
 
 function instr(ins) {
-  currentInstr = ins;
+  currentInstr = ins.replace('.instr', '');
 }
 
-function refreshBank() {
-  bankObj = {};
+function readInstr() {
+  instrDict.clear();
+  instrDict.pull_from_coll('old_instr');
+
+  for (var i = 1; i <= instrDict.getsize(i.toString()); i++) {
+    outputDict.replace(currentInstr+"::"+i+"::sample", instrDict.get(i.toString())[0]);
+    outputDict.replace(currentInstr+"::"+i+"::root_key", instrDict.get(i.toString())[1]);
+    outputDict.replace(currentInstr+"::"+i+"::key_zone_floor", instrDict.get(i.toString())[2]);
+    outputDict.replace(currentInstr+"::"+i+"::vel_zone_floor", instrDict.get(i.toString())[3]);
+    outputDict.replace(currentInstr+"::"+i+"::envelope", parseEnvelope(instrDict.get(i.toString())[4]));
+    outputDict.replace(currentInstr+"::"+i+"::loop", parseLoop(instrDict.get(i.toString())[5]));
+    outputDict.replace(currentInstr+"::"+i+"::start", instrDict.get(i.toString())[6]);
+    outputDict.replace(currentInstr+"::"+i+"::direction", instrDict.get(i.toString())[7]);
+    outputDict.replace(currentInstr+"::"+i+"::timestretch", 0);
+  }
 }
+
+function endBankDump() {
+  //var json = JSON.stringify(bankObj);
+  //outputDict.parse(json);
+  outlet(0, "dictionary", outputDict.name);
+  post(outputDict.stringify());
+}
+
+
+function refreshBank() {
+  //bankObj = {};
+  outputDict.clear();
+}
+
+// LEGACY
+
+/*
 
 function refreshInstr() {
   instrObj = {};
@@ -20,11 +54,6 @@ function refreshInstr() {
 
 function num(k) {
   currentNumber = k; 
-}
-
-function endBankDump() {
-  post(JSON.stringify(bankObj));
-  outlet(0, JSON.stringify(bankObj));
 }
 
 function endInstrDump() {
@@ -45,6 +74,10 @@ function append(sample, root_key, key_zone_floor, vel_zone_floor, envelope, loop
   };
 }
 
+
+*/
+
+// changes envelope string into array in new format
 function parseEnvelope(envelopeString) {
   var envelopeArray = envelopeString.split(' ');
   envelopeArray.shift(); // remove "envelope" as 1st element
@@ -66,6 +99,7 @@ function parseEnvelope(envelopeString) {
   return functionArray;
 }
 
+// changes loop string into array in new format
 function parseLoop(loopString) {
   var loopArray = loopString.split(' ');
   if (loopArray[0] == 'noloop') {

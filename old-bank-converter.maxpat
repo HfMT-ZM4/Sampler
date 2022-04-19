@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 127.0, 109.0, 1196.0, 849.0 ],
+		"rect" : [ 127.0, 137.0, 1511.0, 821.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -171,7 +171,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 795.0, 346.0, 192.0, 20.0 ],
-					"presentation_linecount" : 2,
 					"text" : "detect old or new bank json format"
 				}
 
@@ -488,7 +487,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 8.0, 854.0, 121.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"filename" : "old-bank-converter.js",
+						"filename" : "old-bank-converter",
 						"parameter_enable" : 0
 					}
 ,
@@ -835,20 +834,6 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "Seonghee_hss.bank.txt",
-				"bootpath" : "~/Documents/Max 8/Packages/HSS/Seonghee",
-				"patcherrelativepath" : "../../../../../../Max 8/Packages/HSS/Seonghee",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Seonghee_hssBellIn4.instr",
-				"bootpath" : "~/Documents/Max 8/Packages/HSS/Seonghee",
-				"patcherrelativepath" : "../../../../../../Max 8/Packages/HSS/Seonghee",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "old-bank-converter.js",
 				"bootpath" : "~/Documents/0 Work/HfMT-ZM4/MaxScore/20211220 Sampler instruments/GitHub/Sampler",
 				"patcherrelativepath" : ".",

@@ -4,11 +4,13 @@ outlets = 1;
 var outputDict = new Dict;
 
 // changes envelope string into array in new format
-function parseEnvelope(envelopeString) {
-  //if (Array.isArray(envelopeString)) return envelopeString; // when already in correct format, parsing not needed
-
-  var envelopeArray = envelopeString.split(' ');
-  envelopeArray.shift(); // remove "envelope" as 1st element
+function parseEnvelope(envelope) {
+  var envelopeArray;
+  if (typeof(envelope) == 'string') {
+    envelopeArray = envelope.split(' ');
+    envelopeArray.shift(); // remove "envelope" as 1st element
+  }
+  else if (Array.isArray(envelope)) envelopeArray = envelope;
   for (var i = 0; i < envelopeArray.length; i++) {
     // format: [index_of_sustain_point, start_level, pairs of level & ramp time]
     envelopeArray[i] = parseFloat(envelopeArray[i]);
@@ -53,7 +55,8 @@ function readJsonInstr(filePath) {
 
   // check if envelope and loop are in new format
   var instrNames = outputDict.getkeys();
-  if (!Array.isArray(outputDict.get(instrNames[0]+"::1::envelope"))) {
+  var envelopeArray = outputDict.get(instrNames[0]+"::1::envelope");
+  if (envelopeArray[envelopeArray.length] != 'linear') {
     post('old format json detected\n');
     for (var i = 0; i < instrNames.length; i++) {
       var numKeys = outputDict.get(instrNames[i]).getkeys();
@@ -66,7 +69,9 @@ function readJsonInstr(filePath) {
         if (outputDict.contains(location+"::loop")) loopOrNoloop = 1;
         else if (outputDict.contains(location+"::noloop")) loopOrNoloop = 0;
         var loopArray = outputDict.get(location+(loopOrNoloop?"::loop":"::noloop"));
-        outputDict.setparse(location+"::loop", '['+loopOrNoloop+','+loopArray[0]+','+loopArray[1]+']');
+        outputDict.replace(location+"::loop", loopOrNoloop);
+        outputDict.append(location+"::loop", loopArray[0]);
+        outputDict.append(location+"::loop", loopArray[1]);
         outputDict.replace(location+"::start", loopArray[2]);
         if (!loopOrNoloop) outputDict.remove(location+"::noloop");
       }

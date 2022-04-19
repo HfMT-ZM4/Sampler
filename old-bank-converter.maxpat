@@ -287,13 +287,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-20",
-					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "bang", "bang" ],
-					"patching_rect" : [ 697.5, 953.5, 240.0, 35.0 ],
-					"text" : "dialog \"Legacy bank format detected. Save as new format after loading?\" @mode 3"
+					"patching_rect" : [ 697.5, 953.5, 451.0, 22.0 ],
+					"text" : "dialog \"Legacy bank format detected. Save as new format after loading?\" @mode 2"
 				}
 
 			}

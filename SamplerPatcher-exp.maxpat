@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 286.0, 87.0, 816.0, 582.0 ],
+		"rect" : [ 127.0, 368.0, 1187.0, 582.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -45,6 +45,63 @@
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
+					"id" : "obj-2",
+					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "maxscore.sampler.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "multichannelsignal" ],
+					"patching_rect" : [ 528.0, 94.0, 318.0, 228.0 ],
+					"varname" : "maxscore.sampler[1]",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-5",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 280.0, 46.0, 82.0, 22.0 ],
+					"text" : "note 6000 0 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 172.0, 46.0, 95.0, 22.0 ],
+					"text" : "note 6000 100 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 172.0, 340.0, 54.0, 22.0 ],
+					"text" : "mc.dac~"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
 					"id" : "obj-3",
 					"lockeddragscroll" : 0,
 					"lockedsize" : 0,
@@ -54,15 +111,61 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "multichannelsignal" ],
-					"patching_rect" : [ 172.0, 76.0, 318.0, 228.0 ],
+					"patching_rect" : [ 172.0, 94.0, 318.0, 228.0 ],
 					"varname" : "maxscore.sampler",
 					"viewvisibility" : 1
 				}
 
 			}
  ],
-		"lines" : [  ],
+		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+ ],
 		"parameters" : 		{
+			"obj-2::obj-11" : [ "mc.live.gain~[2]", "mc.live.gain~", 0 ],
+			"obj-2::obj-2" : [ "live.text[34]", "live.text", 0 ],
+			"obj-2::obj-40" : [ "live.text[35]", "live.text", 0 ],
+			"obj-2::obj-43::obj-2::obj-17::obj-107" : [ "live.text[13]", "live.text", 0 ],
+			"obj-2::obj-43::obj-2::obj-17::obj-17" : [ "live.tab[2]", "live.tab", 0 ],
+			"obj-2::obj-43::obj-2::obj-17::obj-3::obj-116" : [ "live.text[24]", "live.text", 0 ],
+			"obj-2::obj-43::obj-2::obj-17::obj-3::obj-24" : [ "live.numbox[19]", "live.numbox", 0 ],
+			"obj-2::obj-43::obj-2::obj-17::obj-3::obj-27" : [ "live.numbox[17]", "live.numbox", 0 ],
+			"obj-2::obj-43::obj-2::obj-17::obj-3::obj-5" : [ "live.text[8]", "live.text", 0 ],
+			"obj-2::obj-43::obj-2::obj-17::obj-3::obj-6" : [ "live.numbox[18]", "live.numbox", 0 ],
+			"obj-2::obj-43::obj-2::obj-17::obj-46::obj-110" : [ "live.numbox[20]", "live.numbox", 0 ],
+			"obj-2::obj-43::obj-2::obj-17::obj-46::obj-115" : [ "live.text[12]", "live.text[33]", 0 ],
+			"obj-2::obj-43::obj-2::obj-17::obj-53::obj-21" : [ "live.text[10]", "live.text[19]", 0 ],
+			"obj-2::obj-43::obj-2::obj-17::obj-53::obj-66" : [ "live.text[11]", "live.text[19]", 0 ],
+			"obj-2::obj-43::obj-2::obj-17::obj-53::obj-76" : [ "live.numbox[16]", "live.numbox[4]", 0 ],
+			"obj-2::obj-43::obj-2::obj-17::obj-78" : [ "live.tab[1]", "live.tab[1]", 0 ],
+			"obj-2::obj-43::obj-2::obj-29" : [ "live.toggle[2]", "live.toggle", 0 ],
+			"obj-2::obj-43::obj-2::obj-66" : [ "live.text[25]", "live.text", 0 ],
+			"obj-2::obj-43::obj-2::obj-89::obj-17::obj-10::obj-156" : [ "live.text[22]", "live.text[20]", 0 ],
+			"obj-2::obj-43::obj-2::obj-89::obj-17::obj-10::obj-157" : [ "live.text[4]", "live.text[20]", 0 ],
+			"obj-2::obj-43::obj-2::obj-89::obj-17::obj-10::obj-93" : [ "live.tab[6]", "live.tab[6]", 0 ],
+			"obj-2::obj-43::obj-2::obj-89::obj-17::obj-162::obj-156" : [ "live.text[3]", "live.text[20]", 0 ],
+			"obj-2::obj-43::obj-2::obj-89::obj-17::obj-162::obj-157" : [ "live.text[21]", "live.text[20]", 0 ],
+			"obj-2::obj-43::obj-2::obj-89::obj-17::obj-162::obj-80" : [ "live.tab[11]", "live.tab[6]", 0 ],
+			"obj-2::obj-74" : [ "Edit Button[2]", "Edit Button", 0 ],
 			"obj-3::obj-11" : [ "mc.live.gain~[1]", "mc.live.gain~", 0 ],
 			"obj-3::obj-2" : [ "live.text[9]", "live.text", 0 ],
 			"obj-3::obj-40" : [ "live.text[16]", "live.text", 0 ],
@@ -87,16 +190,95 @@
 			}
 ,
 			"parameter_overrides" : 			{
+				"obj-2::obj-11" : 				{
+					"parameter_longname" : "mc.live.gain~[2]"
+				}
+,
+				"obj-2::obj-2" : 				{
+					"parameter_longname" : "live.text[34]"
+				}
+,
+				"obj-2::obj-40" : 				{
+					"parameter_longname" : "live.text[35]"
+				}
+,
+				"obj-2::obj-43::obj-2::obj-17::obj-107" : 				{
+					"parameter_longname" : "live.text[13]"
+				}
+,
+				"obj-2::obj-43::obj-2::obj-17::obj-17" : 				{
+					"parameter_longname" : "live.tab[2]"
+				}
+,
+				"obj-2::obj-43::obj-2::obj-17::obj-3::obj-116" : 				{
+					"parameter_longname" : "live.text[24]"
+				}
+,
+				"obj-2::obj-43::obj-2::obj-17::obj-3::obj-24" : 				{
+					"parameter_longname" : "live.numbox[19]",
+					"parameter_range" : [ 0.0, 29910.200000000000728 ]
+				}
+,
+				"obj-2::obj-43::obj-2::obj-17::obj-3::obj-27" : 				{
+					"parameter_longname" : "live.numbox[17]",
+					"parameter_range" : [ 0.0, 29910.200000000000728 ]
+				}
+,
+				"obj-2::obj-43::obj-2::obj-17::obj-3::obj-5" : 				{
+					"parameter_longname" : "live.text[8]"
+				}
+,
+				"obj-2::obj-43::obj-2::obj-17::obj-3::obj-6" : 				{
+					"parameter_longname" : "live.numbox[18]",
+					"parameter_range" : [ 0.0, 29910.200000000000728 ]
+				}
+,
+				"obj-2::obj-43::obj-2::obj-17::obj-46::obj-110" : 				{
+					"parameter_longname" : "live.numbox[20]"
+				}
+,
+				"obj-2::obj-43::obj-2::obj-17::obj-46::obj-115" : 				{
+					"parameter_longname" : "live.text[12]"
+				}
+,
+				"obj-2::obj-43::obj-2::obj-17::obj-53::obj-21" : 				{
+					"parameter_longname" : "live.text[10]"
+				}
+,
+				"obj-2::obj-43::obj-2::obj-17::obj-53::obj-66" : 				{
+					"parameter_longname" : "live.text[11]"
+				}
+,
+				"obj-2::obj-43::obj-2::obj-17::obj-53::obj-76" : 				{
+					"parameter_longname" : "live.numbox[16]"
+				}
+,
+				"obj-2::obj-43::obj-2::obj-17::obj-78" : 				{
+					"parameter_longname" : "live.tab[1]"
+				}
+,
+				"obj-2::obj-43::obj-2::obj-29" : 				{
+					"parameter_longname" : "live.toggle[2]"
+				}
+,
+				"obj-2::obj-43::obj-2::obj-66" : 				{
+					"parameter_longname" : "live.text[25]"
+				}
+,
+				"obj-2::obj-74" : 				{
+					"parameter_longname" : "Edit Button[2]"
+				}
+,
 				"obj-3::obj-43::obj-2::obj-17::obj-3::obj-24" : 				{
-					"parameter_range" : [ 0.0, 10216.670000000000073 ]
+					"parameter_range" : [ 0.0, 29910.200000000000728 ]
 				}
 ,
 				"obj-3::obj-43::obj-2::obj-17::obj-3::obj-27" : 				{
-					"parameter_range" : [ 0.0, 10216.670000000000073 ]
+					"parameter_range" : [ 0.0, 29910.200000000000728 ]
 				}
 ,
 				"obj-3::obj-43::obj-2::obj-17::obj-3::obj-6" : 				{
-					"parameter_range" : [ 0.0, 10216.670000000000073 ]
+					"parameter_range" : [ 0.0, 29910.200000000000728 ]
 				}
 
 			}
@@ -105,9 +287,58 @@
 		}
 ,
 		"dependency_cache" : [ 			{
+				"name" : "3angle.instr",
+				"bootpath" : "/Users/Shared/Max 8/Packages/Quintet.net/patchers/Projects/Five/Instruments",
+				"patcherrelativepath" : "../../Packages/Quintet.net/patchers/Projects/Five/Instruments",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Clarinetto.instr",
+				"bootpath" : "/Users/Shared/Max 8/Packages/Quintet.net/patchers/Projects/Five/Instruments",
+				"patcherrelativepath" : "../../Packages/Quintet.net/patchers/Projects/Five/Instruments",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Five.bank.txt",
+				"bootpath" : "/Users/Shared/Max 8/Packages/Quintet.net/patchers/Projects/Five",
+				"patcherrelativepath" : "../../Packages/Quintet.net/patchers/Projects/Five",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Flauto.instr",
+				"bootpath" : "/Users/Shared/Max 8/Packages/Quintet.net/patchers/Projects/Five/Instruments",
+				"patcherrelativepath" : "../../Packages/Quintet.net/patchers/Projects/Five/Instruments",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "LtoC.maxpat",
+				"bootpath" : "/Users/Shared/Max 8/Packages/MaxScore/patchers/modules/MaxScore-Sampler",
+				"patcherrelativepath" : "../../Packages/MaxScore/patchers/modules/MaxScore-Sampler",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Marimba.instr",
+				"bootpath" : "/Users/Shared/Max 8/Packages/Quintet.net/patchers/Projects/Tutorial/Instruments",
+				"patcherrelativepath" : "../../Packages/Quintet.net/patchers/Projects/Tutorial/Instruments",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "Sampler.Preferences-exp.maxpat",
 				"bootpath" : "/Users/Shared/Max 8/Library/Sample-Bank-Dev",
 				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Sampler.Preferences.maxpat",
+				"bootpath" : "/Users/Shared/Max 8/Packages/MaxScore/patchers/modules/MaxScore-Sampler",
+				"patcherrelativepath" : "../../Packages/MaxScore/patchers/modules/MaxScore-Sampler",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -119,9 +350,37 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "Synth2.instr",
+				"bootpath" : "/Users/Shared/Max 8/Packages/Quintet.net/patchers/Projects/Five/Instruments",
+				"patcherrelativepath" : "../../Packages/Quintet.net/patchers/Projects/Five/Instruments",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ThaiGong.instr",
+				"bootpath" : "/Users/Shared/Max 8/Packages/Quintet.net/patchers/Projects/Five/Instruments",
+				"patcherrelativepath" : "../../Packages/Quintet.net/patchers/Projects/Five/Instruments",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "bank-wavefor.maxpat",
+				"bootpath" : "/Users/Shared/Max 8/Packages/MaxScore/patchers/modules/MaxScore-Sampler",
+				"patcherrelativepath" : "../../Packages/MaxScore/patchers/modules/MaxScore-Sampler",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "bank-waveform-exp.maxpat",
 				"bootpath" : "/Users/Shared/Max 8/Library/Sample-Bank-Dev",
 				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "first-v2.maxpat",
+				"bootpath" : "/Users/Shared/Max 8/Packages/MaxScore/patchers/modules/MaxScore-Sampler",
+				"patcherrelativepath" : "../../Packages/MaxScore/patchers/modules/MaxScore-Sampler",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -133,9 +392,23 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "maxscore.multisamples-player.maxpat",
+				"bootpath" : "/Users/Shared/Max 8/Packages/MaxScore/patchers/modules/MaxScore-Sampler",
+				"patcherrelativepath" : "../../Packages/MaxScore/patchers/modules/MaxScore-Sampler",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "maxscore.sample-player-exp.maxpat",
 				"bootpath" : "/Users/Shared/Max 8/Library/Sample-Bank-Dev",
 				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "maxscore.sample-player_v2.maxpat",
+				"bootpath" : "/Users/Shared/Max 8/Packages/MaxScore/patchers/modules/MaxScore-Sampler",
+				"patcherrelativepath" : "../../Packages/MaxScore/patchers/modules/MaxScore-Sampler",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -161,7 +434,21 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "maxscore.sampler.maxpat",
+				"bootpath" : "/Users/Shared/Max 8/Packages/MaxScore/patchers/modules/MaxScore-Sampler",
+				"patcherrelativepath" : "../../Packages/MaxScore/patchers/modules/MaxScore-Sampler",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "maxscore.sampler.menus.maxpat",
+				"bootpath" : "/Users/Shared/Max 8/Packages/MaxScore/patchers/modules/MaxScore-Sampler",
+				"patcherrelativepath" : "../../Packages/MaxScore/patchers/modules/MaxScore-Sampler",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "multibuffer-stereo.maxpat",
 				"bootpath" : "/Users/Shared/Max 8/Packages/MaxScore/patchers/modules/MaxScore-Sampler",
 				"patcherrelativepath" : "../../Packages/MaxScore/patchers/modules/MaxScore-Sampler",
 				"type" : "JSON",
@@ -182,9 +469,23 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "panel_envelope2.maxpat",
+				"bootpath" : "/Users/Shared/Max 8/Packages/MaxScore/patchers/modules/MaxScore-Sampler",
+				"patcherrelativepath" : "../../Packages/MaxScore/patchers/modules/MaxScore-Sampler",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "panel_loop-exp.maxpat",
 				"bootpath" : "/Users/Shared/Max 8/Library/Sample-Bank-Dev",
 				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "panel_loop.maxpat",
+				"bootpath" : "/Users/Shared/Max 8/Packages/MaxScore/patchers/modules/MaxScore-Sampler",
+				"patcherrelativepath" : "../../Packages/MaxScore/patchers/modules/MaxScore-Sampler",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -196,9 +497,23 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "qn.envelopes.txt",
+				"bootpath" : "/Users/Shared/Max 8/Packages/MaxScore/patchers/modules/MaxScore-Sampler",
+				"patcherrelativepath" : "../../Packages/MaxScore/patchers/modules/MaxScore-Sampler",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "samplerGUI2-exp.maxpat",
 				"bootpath" : "/Users/Shared/Max 8/Library/Sample-Bank-Dev",
 				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "samplerGUI2.maxpat",
+				"bootpath" : "/Users/Shared/Max 8/Packages/MaxScore/patchers/modules/MaxScore-Sampler",
+				"patcherrelativepath" : "../../Packages/MaxScore/patchers/modules/MaxScore-Sampler",
 				"type" : "JSON",
 				"implicit" : 1
 			}

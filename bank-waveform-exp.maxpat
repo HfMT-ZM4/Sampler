@@ -966,7 +966,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 186.0, 767.0, 97.0, 22.0 ],
+					"patching_rect" : [ 838.0, 743.5, 97.0, 22.0 ],
 					"text" : "setminmax 0. $1"
 				}
 
@@ -1004,7 +1004,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1084.0, 464.0, 86.0, 33.0 ],
+					"patching_rect" : [ 1125.0, 400.0, 86.0, 33.0 ],
 					"text" : "timestretch is a flag",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -3155,7 +3155,7 @@
 					"orientation" : 0,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 186.0, 807.0, 252.0, 82.0 ],
+					"patching_rect" : [ 838.0, 801.5, 252.0, 82.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 4.0, 13.0, 720.0, 158.0 ],
 					"setminmax" : [ 0.0, 29910.203125 ],
@@ -3176,7 +3176,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
-					"midpoints" : [ 809.0, 751.5, 195.5, 751.5 ],
+					"midpoints" : [ 809.0, 607.5, 847.5, 607.5 ],
 					"source" : [ "obj-100", 0 ]
 				}
 

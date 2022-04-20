@@ -990,7 +990,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 227.0, 161.0, 841.0, 819.0 ],
+						"rect" : [ 241.0, 87.0, 841.0, 819.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -3569,7 +3569,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 168.0, 87.0, 1247.0, 713.0 ],
+						"rect" : [ 195.0, 87.0, 1247.0, 713.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -3597,6 +3597,7 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-15",
@@ -3604,7 +3605,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 104.0, 130.0, 109.0, 22.0 ],
+									"patching_rect" : [ 139.0, 147.0, 109.0, 22.0 ],
 									"text" : "old-bank-converter"
 								}
 
@@ -3667,7 +3668,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 304.0, 197.0, 216.0, 22.0 ],
+									"patching_rect" : [ 304.0, 192.0, 216.0, 22.0 ],
 									"restore" : [ 0 ],
 									"saved_object_attributes" : 									{
 										"parameter_enable" : 0,
@@ -4546,7 +4547,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 217.0, 374.0, 83.0, 23.0 ],
+									"patching_rect" : [ 230.0, 374.0, 83.0, 23.0 ],
 									"text" : "openwindow"
 								}
 
@@ -4600,7 +4601,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
-									"patching_rect" : [ 304.0, 164.0, 67.0, 22.0 ],
+									"patching_rect" : [ 304.0, 160.0, 67.0, 22.0 ],
 									"text" : "opendialog"
 								}
 

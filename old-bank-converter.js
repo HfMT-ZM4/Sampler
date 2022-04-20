@@ -1,53 +1,16 @@
 inlets = 1;
 outlets = 1;
 
-var currentInstr = "";
-var currentNumber = 0; // inside instr
-var instrObj = {};
-var bankObj = {};
+var outputDict = new Dict;
 
-function instr(ins) {
-  currentInstr = ins;
-}
-
-function refreshBank() {
-  bankObj = {};
-}
-
-function refreshInstr() {
-  instrObj = {};
-}
-
-function num(k) {
-  currentNumber = k; 
-}
-
-function endBankDump() {
-  post(JSON.stringify(bankObj));
-  outlet(0, JSON.stringify(bankObj));
-}
-
-function endInstrDump() {
-  bankObj[currentInstr] = instrObj;
-}
-
-function append(sample, root_key, key_zone_floor, vel_zone_floor, envelope, loop, start_point, direction) {
-  instrObj[currentNumber] = {
-    sample: sample,
-    root_key: root_key,
-    key_zone_floor: key_zone_floor,
-    vel_zone_floor: vel_zone_floor,
-    envelope: parseEnvelope(envelope),
-    loop: parseLoop(loop),
-    start: start_point,
-    direction: direction,
-    timestretch: 0
-  };
-}
-
-function parseEnvelope(envelopeString) {
-  var envelopeArray = envelopeString.split(' ');
-  envelopeArray.shift(); // remove "envelope" as 1st element
+// changes envelope string into array in new format
+function parseEnvelope(envelope) {
+  var envelopeArray;
+  if (typeof(envelope) == 'string') {
+    envelopeArray = envelope.split(' ');
+    envelopeArray.shift(); // remove "envelope" as 1st element
+  }
+  else if (Array.isArray(envelope)) envelopeArray = envelope;
   for (var i = 0; i < envelopeArray.length; i++) {
     // format: [index_of_sustain_point, start_level, pairs of level & ramp time]
     envelopeArray[i] = parseFloat(envelopeArray[i]);
@@ -66,7 +29,10 @@ function parseEnvelope(envelopeString) {
   return functionArray;
 }
 
+// changes loop string into array in new format
 function parseLoop(loopString) {
+  //if (Array.isArray(loopString)) return loopString; // when already in correct format, parsing not needed
+
   var loopArray = loopString.split(' ');
   if (loopArray[0] == 'noloop') {
     loopArray[0] = 0;
@@ -79,4 +45,77 @@ function parseLoop(loopString) {
   }
   // format: [loop_or_noloop, loop_start, loop_end]
   return loopArray;
+}
+
+// When json is imported, check if json bank is in correct format:
+
+function readJsonInstr(filePath) {
+  outputDict.clear();
+  outputDict.import_json(filePath);
+
+  // check if envelope and loop are in new format
+  var instrNames = outputDict.getkeys();
+  var envelopeArray = outputDict.get(instrNames[0]+"::1::envelope");
+  if (envelopeArray[envelopeArray.length] != 'linear') {
+    post('old format json detected\n');
+    for (var i = 0; i < instrNames.length; i++) {
+      var numKeys = outputDict.get(instrNames[i]).getkeys();
+      for (var j = 0; j < numKeys.length; j++) {
+        // change envelope into new format
+        var location = instrNames[i]+"::"+numKeys[j];
+        outputDict.replace(location+"::envelope", parseEnvelope(outputDict.get(location+"::envelope")));
+        // change loop into new format
+        var loopOrNoloop;
+        if (outputDict.contains(location+"::loop")) loopOrNoloop = 1;
+        else if (outputDict.contains(location+"::noloop")) loopOrNoloop = 0;
+        var loopArray = outputDict.get(location+(loopOrNoloop?"::loop":"::noloop"));
+        outputDict.replace(location+"::loop", loopOrNoloop);
+        outputDict.append(location+"::loop", loopArray[0]);
+        outputDict.append(location+"::loop", loopArray[1]);
+        outputDict.replace(location+"::start", loopArray[2]);
+        if (!loopOrNoloop) outputDict.remove(location+"::noloop");
+      }
+    }
+    outlet(0, "dictionary", outputDict.name);
+    outlet(0, "save_as");
+  }
+  else {
+    outlet(0, "dictionary", outputDict.name);
+  }
+}
+
+// When txt is imported:
+
+var currentInstr = "";
+var instrDict = new Dict();
+
+function instr(ins) {
+  currentInstr = ins/*.replace('.instr', '')*/; // remove .instr causes problems?
+}
+
+function readInstr() {
+  instrDict.clear();
+  instrDict.pull_from_coll('old_instr');
+
+  for (var i = 1; i <= instrDict.getsize(i.toString()); i++) {
+    outputDict.replace(currentInstr+"::"+i+"::sample", instrDict.get(i.toString())[0]);
+    outputDict.replace(currentInstr+"::"+i+"::root_key", instrDict.get(i.toString())[1]);
+    outputDict.replace(currentInstr+"::"+i+"::key_zone_floor", instrDict.get(i.toString())[2]);
+    outputDict.replace(currentInstr+"::"+i+"::vel_zone_floor", instrDict.get(i.toString())[3]);
+    outputDict.replace(currentInstr+"::"+i+"::envelope", parseEnvelope(instrDict.get(i.toString())[4]));
+    outputDict.replace(currentInstr+"::"+i+"::loop", parseLoop(instrDict.get(i.toString())[5]));
+    outputDict.replace(currentInstr+"::"+i+"::start", instrDict.get(i.toString())[6]);
+    outputDict.replace(currentInstr+"::"+i+"::direction", instrDict.get(i.toString())[7]);
+    outputDict.replace(currentInstr+"::"+i+"::timestretch", 0);
+  }
+}
+
+function endBankDump() {
+  outlet(0, "dictionary", outputDict.name);
+  outlet(0, "save_as");
+}
+
+
+function refreshBank() {
+  outputDict.clear();
 }

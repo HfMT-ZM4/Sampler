@@ -273,7 +273,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 479.5, 12.0, 220.0, 62.0 ],
-									"restore" : [ "1066-clientbuffer.1" ],
+									"restore" : [ "1788-clientbuffer.1" ],
 									"saved_object_attributes" : 									{
 										"parameter_enable" : 0,
 										"parameter_mappable" : 0
@@ -2462,7 +2462,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 259.0, 365.236084000000005, 458.0, 35.0 ],
-									"restore" : [ 1066 ],
+									"restore" : [ 1194 ],
 									"saved_object_attributes" : 									{
 										"parameter_enable" : 0,
 										"parameter_mappable" : 0
@@ -3270,7 +3270,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 363.0, 9.0, 257.0, 62.0 ],
-									"restore" : [ 1, 2091.601732283465026, 2091.601732283465026, 10216.670000000000073, 1, "Small Child Giggle.aif" ],
+									"restore" : [ 1, 0.0, 0.0, 29910.200000000000728, 1, "Triangle_A#3.gr.mp3" ],
 									"saved_object_attributes" : 									{
 										"parameter_enable" : 0,
 										"parameter_mappable" : 0
@@ -4224,17 +4224,6 @@
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-4",
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 6.0, 18.0, 112.0, 20.0 ],
-									"text" : "evaluate if change"
-								}
-
-							}
-, 							{
-								"box" : 								{
 									"id" : "obj-73",
 									"maxclass" : "comment",
 									"numinlets" : 1,
@@ -4532,29 +4521,6 @@
 							}
 , 							{
 								"box" : 								{
-									"color" : [ 0.305882, 0.560784, 0.529412, 1.0 ],
-									"fontname" : "Arial",
-									"fontsize" : 12.0,
-									"id" : "obj-43",
-									"linecount" : 4,
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 3,
-									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 6.0, 42.0, 233.0, 62.0 ],
-									"restore" : [ 10179.216377560027468, 3, 0.0, 0.0, 0.0, 1.0, 1.0, 0.0, 0.0, 2.0, 0.0, 0.60958904109589 ],
-									"saved_object_attributes" : 									{
-										"parameter_enable" : 0,
-										"parameter_mappable" : 0
-									}
-,
-									"text" : "pattr @bindto parent::parent::parent::parent::parent::Preferences::Sampler::bank-waveform-editor::setenvelope @invisible 1 @autorestore 0",
-									"varname" : "u228007290"
-								}
-
-							}
-, 							{
-								"box" : 								{
 									"addpoints" : [ 0.0, 0.0, 0, 5.0, 1.0, 0, 29931.330000000001746, 1.0, 2, 29936.330000000001746, 0.0, 0 ],
 									"domain" : 29936.330078125,
 									"id" : "obj-52",
@@ -4737,14 +4703,6 @@
 								"patchline" : 								{
 									"destination" : [ "obj-2", 0 ],
 									"source" : [ "obj-32", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-10", 0 ],
-									"midpoints" : [ 15.5, 118.0, 297.0, 118.0 ],
-									"source" : [ "obj-43", 0 ]
 								}
 
 							}

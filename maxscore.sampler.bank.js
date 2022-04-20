@@ -97,6 +97,7 @@ function append(source, target)
 
 function updateinstrument(u)
 {
+	post("updateinstrument", u, "\n");
 	var currentInstrumentName = this.patcher.parentpatcher.getnamed("instrument").subpatcher().getnamed("current-instrument").getvalueof();
 	var currentInstrument = new Dict;
 	currentInstrument.pull_from_coll(jsarguments[1] + "-current-instrument");
@@ -137,7 +138,6 @@ function remove(instr)
 	temp.pull_from_coll(jsarguments[1] + "-bank");
 	var tempkeys = [].concat(temp.getkeys());
 	for (var i = 0; i < tempkeys.length; i++) {
-		post(tempkeys[i],  temp.get(tempkeys[i]),  instr, (temp.get(tempkeys[i]) == instr), "\n");
 		if (temp.get(tempkeys[i]) == instr) {
 			outlet(0, "notify_cellblock", 0, i);
 			outlet(0, "bank", "delete", Number(tempkeys[i]));

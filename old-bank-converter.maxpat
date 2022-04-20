@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 2,
-			"revision" : 2,
+			"minor" : 3,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 127.0, 137.0, 1511.0, 821.0 ],
+		"rect" : [ 141.0, 87.0, 1203.0, 809.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,12 +40,36 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-16",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 72.333333333333343, 17.0, 58.0, 22.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-15",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 72.333333333333343, 49.0, 115.0, 22.0 ],
+					"text" : "set TEXT, set JSON"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-82",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 774.0, 432.0, 129.0, 22.0 ],
+					"patching_rect" : [ 774.0, 768.0, 129.0, 22.0 ],
 					"text" : "prepend readJsonInstr"
 				}
 
@@ -58,7 +82,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 668.0, 921.0, 24.0, 24.0 ]
+					"patching_rect" : [ 541.5, 934.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -69,7 +93,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 8.0, 894.0, 164.0, 22.0 ],
+					"patching_rect" : [ 8.0, 887.0, 164.0, 22.0 ],
 					"text" : "routepass save_as dictionary"
 				}
 
@@ -81,7 +105,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 4,
 					"outlettype" : [ "dictionary", "", "", "" ],
-					"patching_rect" : [ 697.5, 1064.0, 50.5, 22.0 ],
+					"patching_rect" : [ 541.5, 1074.0, 50.5, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0,
 						"parameter_enable" : 0,
@@ -99,7 +123,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 697.5, 1003.0, 38.0, 22.0 ],
+					"patching_rect" : [ 541.5, 1013.0, 38.0, 22.0 ],
 					"text" : "zl.reg"
 				}
 
@@ -111,7 +135,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "export", "" ],
-					"patching_rect" : [ 697.5, 1032.0, 55.0, 22.0 ],
+					"patching_rect" : [ 541.5, 1042.0, 55.0, 22.0 ],
 					"text" : "t export l"
 				}
 
@@ -123,7 +147,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 37.0, 719.0, 80.0, 22.0 ],
+					"patching_rect" : [ 37.0, 669.0, 80.0, 22.0 ],
 					"text" : "prepend read"
 				}
 
@@ -147,7 +171,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 447.5, 208.0, 22.0, 22.0 ],
+					"patching_rect" : [ 454.0, 232.0, 22.0, 22.0 ],
 					"text" : "t 2"
 				}
 
@@ -159,7 +183,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 219.5, 204.0, 22.0, 22.0 ],
+					"patching_rect" : [ 226.0, 232.0, 22.0, 22.0 ],
 					"text" : "t 1"
 				}
 
@@ -193,7 +217,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "bang" ],
-					"patching_rect" : [ 675.5, 208.0, 32.0, 22.0 ],
+					"patching_rect" : [ 682.0, 236.0, 32.0, 22.0 ],
 					"text" : "t 0 b"
 				}
 
@@ -214,7 +238,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-55",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -229,7 +253,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "bang", "bang" ],
-					"patching_rect" : [ 688.5, 239.0, 265.0, 22.0 ],
+					"patching_rect" : [ 695.0, 267.0, 265.0, 22.0 ],
 					"text" : "dialog \"Please open a .txt or .json file\" @mode 1"
 				}
 
@@ -241,7 +265,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 3,
 					"outlettype" : [ "bang", "bang", "" ],
-					"patching_rect" : [ 219.5, 172.0, 475.0, 22.0 ],
+					"patching_rect" : [ 226.0, 200.0, 475.0, 22.0 ],
 					"text" : "sel .txt .json"
 				}
 
@@ -253,7 +277,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 38.0, 101.0, 163.5, 22.0 ],
+					"patching_rect" : [ 38.0, 117.0, 163.5, 22.0 ],
 					"text" : "t l l"
 				}
 
@@ -262,7 +286,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-51",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -278,7 +302,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 5,
 					"outlettype" : [ "", "", "", "", "" ],
-					"patching_rect" : [ 182.5, 134.0, 106.0, 22.0 ],
+					"patching_rect" : [ 182.5, 162.0, 106.0, 22.0 ],
 					"text" : "regexp \\\\.txt|\\\\.json"
 				}
 
@@ -290,7 +314,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "bang", "bang" ],
-					"patching_rect" : [ 697.5, 953.5, 451.0, 22.0 ],
+					"patching_rect" : [ 541.5, 963.5, 451.0, 22.0 ],
 					"text" : "dialog \"Legacy bank format detected. Save as new format after loading?\" @mode 2"
 				}
 
@@ -302,7 +326,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 186.0, 421.0, 150.0, 33.0 ],
+					"patching_rect" : [ 186.0, 388.0, 150.0, 33.0 ],
 					"text" : "add folder to search path for instruments"
 				}
 
@@ -338,7 +362,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
-					"patching_rect" : [ 38.0, 69.0, 67.0, 22.0 ],
+					"patching_rect" : [ 38.0, 85.0, 67.0, 22.0 ],
 					"text" : "opendialog"
 				}
 
@@ -350,7 +374,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 5,
 					"outlettype" : [ "", "", "", "", "" ],
-					"patching_rect" : [ 166.5, 456.0, 81.0, 22.0 ],
+					"patching_rect" : [ 157.5, 450.0, 81.0, 22.0 ],
 					"text" : "regexp (.+)/.+"
 				}
 
@@ -362,7 +386,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 202.0, 519.5, 96.0, 22.0 ],
+					"patching_rect" : [ 173.0, 482.5, 96.0, 22.0 ],
 					"text" : "prepend append"
 				}
 
@@ -375,7 +399,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 111.0, 32.0, 24.0, 24.0 ]
+					"patching_rect" : [ 5.0, 20.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -386,7 +410,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 202.0, 551.0, 47.0, 22.0 ],
+					"patching_rect" : [ 173.0, 514.0, 47.0, 22.0 ],
 					"text" : "filepath"
 				}
 
@@ -398,7 +422,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 37.0, 611.75, 77.0, 22.0 ],
+					"patching_rect" : [ 37.0, 592.75, 77.0, 22.0 ],
 					"text" : "route symbol"
 				}
 
@@ -410,7 +434,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 127.5, 688.0, 79.0, 22.0 ],
+					"patching_rect" : [ 127.5, 669.0, 79.0, 22.0 ],
 					"text" : "prepend instr"
 				}
 
@@ -422,7 +446,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 37.0, 649.5, 109.5, 22.0 ],
+					"patching_rect" : [ 37.0, 630.5, 109.5, 22.0 ],
 					"text" : "t l l"
 				}
 
@@ -434,7 +458,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "endBankDump" ],
-					"patching_rect" : [ 399.0, 787.0, 95.0, 22.0 ],
+					"patching_rect" : [ 399.0, 768.0, 95.0, 22.0 ],
 					"text" : "t endBankDump"
 				}
 
@@ -446,7 +470,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 37.0, 574.0, 381.0, 22.0 ],
+					"patching_rect" : [ 37.0, 555.0, 381.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0,
 						"precision" : 6
@@ -463,7 +487,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "readInstr" ],
-					"patching_rect" : [ 257.0, 787.0, 63.0, 22.0 ],
+					"patching_rect" : [ 257.0, 768.0, 63.0, 22.0 ],
 					"text" : "t readInstr"
 				}
 
@@ -474,7 +498,7 @@
 					"maxclass" : "dict.view",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 119.5, 1020.0, 569.0, 448.0 ]
+					"patching_rect" : [ 117.5, 1017.0, 413.0, 310.0 ]
 				}
 
 			}
@@ -502,7 +526,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 37.0, 752.826446999999916, 349.0, 22.0 ],
+					"patching_rect" : [ 37.0, 733.826446999999916, 349.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0,
 						"precision" : 6
@@ -516,7 +540,7 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-28", 0 ],
-					"midpoints" : [ 137.0, 804.5, 17.5, 804.5 ],
+					"midpoints" : [ 137.0, 715.5, 17.5, 715.5 ],
 					"source" : [ "obj-10", 0 ]
 				}
 
@@ -538,7 +562,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-28", 0 ],
-					"midpoints" : [ 117.166666666666671, 559.5, 17.5, 559.5 ],
+					"midpoints" : [ 117.166666666666671, 435.5, 17.5, 435.5 ],
 					"source" : [ "obj-12", 2 ]
 				}
 
@@ -546,6 +570,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
+					"midpoints" : [ 152.5, 432.5, 167.0, 432.5 ],
 					"source" : [ "obj-12", 3 ]
 				}
 
@@ -568,6 +593,20 @@
 				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
 					"source" : [ "obj-14", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-11", 0 ],
+					"source" : [ "obj-15", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-15", 0 ],
+					"source" : [ "obj-16", 0 ]
 				}
 
 			}
@@ -652,7 +691,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-57", 1 ],
-					"midpoints" : [ 47.5, 282.0, 783.5, 282.0 ],
+					"midpoints" : [ 47.5, 150.0, 783.5, 150.0 ],
 					"source" : [ "obj-52", 0 ]
 				}
 
@@ -702,7 +741,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-57", 0 ],
-					"midpoints" : [ 685.0, 275.5, 46.5, 275.5 ],
+					"midpoints" : [ 691.5, 280.5, 46.5, 280.5 ],
 					"source" : [ "obj-58", 0 ]
 				}
 
@@ -717,7 +756,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-57", 0 ],
-					"midpoints" : [ 229.0, 251.5, 46.5, 251.5 ],
+					"midpoints" : [ 235.5, 280.5, 46.5, 280.5 ],
 					"source" : [ "obj-62", 0 ]
 				}
 
@@ -725,7 +764,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-57", 0 ],
-					"midpoints" : [ 457.0, 303.5, 46.5, 303.5 ],
+					"midpoints" : [ 463.5, 280.5, 46.5, 280.5 ],
 					"source" : [ "obj-63", 0 ]
 				}
 
@@ -747,7 +786,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-67", 1 ],
-					"midpoints" : [ 111.0, 995.75, 726.0, 995.75 ],
+					"midpoints" : [ 111.0, 995.75, 570.0, 995.75 ],
 					"source" : [ "obj-64", 2 ]
 				}
 
@@ -798,7 +837,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-81", 0 ],
-					"midpoints" : [ 17.5, 918.0, 677.5, 918.0 ],
+					"midpoints" : [ 17.5, 918.0, 551.0, 918.0 ],
 					"source" : [ "obj-78", 0 ]
 				}
 
@@ -813,7 +852,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-28", 0 ],
-					"midpoints" : [ 783.5, 840.5, 17.5, 840.5 ],
+					"midpoints" : [ 783.5, 831.5, 17.5, 831.5 ],
 					"source" : [ "obj-82", 0 ]
 				}
 
@@ -832,16 +871,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "old-bank-converter.js",
-				"bootpath" : "~/Documents/0 Work/HfMT-ZM4/MaxScore/20211220 Sampler instruments/GitHub/Sampler",
-				"patcherrelativepath" : ".",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }

@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 3,
-			"revision" : 0,
+			"minor" : 2,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 141.0, 87.0, 1203.0, 809.0 ],
+		"rect" : [ 59.0, 109.0, 1323.0, 786.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,29 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-18",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 127.5, 77.0, 185.0, 20.0 ],
+					"text" : "files could be .instr, thus disabled"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 579.0, 913.0, 150.0, 33.0 ],
+					"text" : "not needed because save button is available"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-16",
 					"maxclass" : "newobj",
@@ -171,7 +194,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 454.0, 232.0, 22.0, 22.0 ],
+					"patching_rect" : [ 472.0, 232.0, 22.0, 22.0 ],
 					"text" : "t 2"
 				}
 
@@ -183,7 +206,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 226.0, 232.0, 22.0, 22.0 ],
+					"patching_rect" : [ 244.0, 232.0, 22.0, 22.0 ],
 					"text" : "t 1"
 				}
 
@@ -205,8 +228,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 48.0, 346.0, 181.0, 20.0 ],
-					"text" : "import old coll format in .txt"
+					"patching_rect" : [ 48.0, 346.0, 291.0, 20.0 ],
+					"text" : "import old coll format in .txt or .instr (older file names)"
 				}
 
 			}
@@ -217,7 +240,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "bang" ],
-					"patching_rect" : [ 682.0, 236.0, 32.0, 22.0 ],
+					"patching_rect" : [ 586.0, 232.0, 32.0, 22.0 ],
 					"text" : "t 0 b"
 				}
 
@@ -238,7 +261,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-55",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -253,7 +276,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "bang", "bang" ],
-					"patching_rect" : [ 695.0, 267.0, 265.0, 22.0 ],
+					"patching_rect" : [ 599.0, 276.0, 265.0, 22.0 ],
 					"text" : "dialog \"Please open a .txt or .json file\" @mode 1"
 				}
 
@@ -262,11 +285,11 @@
 				"box" : 				{
 					"id" : "obj-53",
 					"maxclass" : "newobj",
-					"numinlets" : 3,
-					"numoutlets" : 3,
-					"outlettype" : [ "bang", "bang", "" ],
-					"patching_rect" : [ 226.0, 200.0, 475.0, 22.0 ],
-					"text" : "sel .txt .json"
+					"numinlets" : 4,
+					"numoutlets" : 4,
+					"outlettype" : [ "bang", "bang", "bang", "" ],
+					"patching_rect" : [ 244.0, 200.0, 361.0, 22.0 ],
+					"text" : "sel .txt .instr .json"
 				}
 
 			}
@@ -286,7 +309,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-51",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -302,8 +325,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 5,
 					"outlettype" : [ "", "", "", "", "" ],
-					"patching_rect" : [ 182.5, 162.0, 106.0, 22.0 ],
-					"text" : "regexp \\\\.txt|\\\\.json"
+					"patching_rect" : [ 182.5, 162.0, 142.0, 22.0 ],
+					"text" : "regexp \\\\.txt|\\\\.json|\\\\.instr"
 				}
 
 			}
@@ -326,8 +349,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 186.0, 388.0, 150.0, 33.0 ],
-					"text" : "add folder to search path for instruments"
+					"patching_rect" : [ 177.0, 403.0, 230.0, 33.0 ],
+					"text" : "add folder to search path for instruments,\nassuming instr files are in the same folder"
 				}
 
 			}
@@ -511,7 +534,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 8.0, 854.0, 121.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"filename" : "old-bank-converter",
+						"filename" : "old-bank-converter.js",
 						"parameter_enable" : 0
 					}
 ,
@@ -599,6 +622,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
+					"disabled" : 1,
 					"source" : [ "obj-15", 0 ]
 				}
 
@@ -699,7 +723,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-58", 0 ],
-					"source" : [ "obj-53", 2 ]
+					"source" : [ "obj-53", 3 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-62", 0 ],
+					"midpoints" : [ 367.5, 226.5, 253.5, 226.5 ],
+					"source" : [ "obj-53", 1 ]
 				}
 
 			}
@@ -713,7 +745,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-63", 0 ],
-					"source" : [ "obj-53", 1 ]
+					"source" : [ "obj-53", 2 ]
 				}
 
 			}
@@ -741,7 +773,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-57", 0 ],
-					"midpoints" : [ 691.5, 280.5, 46.5, 280.5 ],
+					"midpoints" : [ 595.5, 280.5, 46.5, 280.5 ],
 					"source" : [ "obj-58", 0 ]
 				}
 
@@ -756,7 +788,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-57", 0 ],
-					"midpoints" : [ 235.5, 280.5, 46.5, 280.5 ],
+					"midpoints" : [ 253.5, 280.5, 46.5, 280.5 ],
 					"source" : [ "obj-62", 0 ]
 				}
 
@@ -764,7 +796,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-57", 0 ],
-					"midpoints" : [ 463.5, 280.5, 46.5, 280.5 ],
+					"midpoints" : [ 481.5, 280.5, 46.5, 280.5 ],
 					"source" : [ "obj-63", 0 ]
 				}
 
@@ -786,6 +818,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-67", 1 ],
+					"disabled" : 1,
 					"midpoints" : [ 111.0, 995.75, 570.0, 995.75 ],
 					"source" : [ "obj-64", 2 ]
 				}
@@ -837,6 +870,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-81", 0 ],
+					"disabled" : 1,
 					"midpoints" : [ 17.5, 918.0, 551.0, 918.0 ],
 					"source" : [ "obj-78", 0 ]
 				}
@@ -871,7 +905,16 @@
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [ 			{
+				"name" : "old-bank-converter.js",
+				"bootpath" : "~/Documents/0 Work/HfMT-ZM4/MaxScore/20211220 Sampler instruments/GitHub/Sampler",
+				"patcherrelativepath" : ".",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0
 	}
 
 }

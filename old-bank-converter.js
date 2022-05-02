@@ -32,7 +32,7 @@ function parseEnvelope(envelope) {
 // changes loop string into array in new format
 function parseLoop(loopString) {
   //if (Array.isArray(loopString)) return loopString; // when already in correct format, parsing not needed
-
+  if (typeof(loopString) == 'undefined') return [0, 0, 0];
   var loopArray = loopString.split(' ');
   if (loopArray[0] == 'noloop') {
     loopArray[0] = 0;
@@ -73,11 +73,11 @@ function readJsonInstr(filePath) {
         outputDict.append(location+"::loop", loopArray[0]);
         outputDict.append(location+"::loop", loopArray[1]);
         outputDict.replace(location+"::start", loopArray[2]);
-        if (!loopOrNoloop) outputDict.remove(location+"::noloop");
+        if (!loopOrNoloop) outputDict.remove(location+"::noloop"); 
       }
     }
     outlet(0, "dictionary", outputDict.name);
-    outlet(0, "save_as");
+    //outlet(0, "save_as"); // not needed because save button is available
   }
   else {
     outlet(0, "dictionary", outputDict.name);
@@ -98,21 +98,30 @@ function readInstr() {
   instrDict.pull_from_coll('old_instr');
 
   for (var i = 1; i <= instrDict.getsize(i.toString()); i++) {
-    outputDict.replace(currentInstr+"::"+i+"::sample", instrDict.get(i.toString())[0]);
-    outputDict.replace(currentInstr+"::"+i+"::root_key", instrDict.get(i.toString())[1]);
-    outputDict.replace(currentInstr+"::"+i+"::key_zone_floor", instrDict.get(i.toString())[2]);
-    outputDict.replace(currentInstr+"::"+i+"::vel_zone_floor", instrDict.get(i.toString())[3]);
-    outputDict.replace(currentInstr+"::"+i+"::envelope", parseEnvelope(instrDict.get(i.toString())[4]));
-    outputDict.replace(currentInstr+"::"+i+"::loop", parseLoop(instrDict.get(i.toString())[5]));
-    outputDict.replace(currentInstr+"::"+i+"::start", instrDict.get(i.toString())[6]);
-    outputDict.replace(currentInstr+"::"+i+"::direction", instrDict.get(i.toString())[7]);
+    var sampleArray = instrDict.get(i.toString());
+    if (sampleArray.length == 4) {
+      var envelopePreset = sampleArray[3];
+      sampleArray[3] = 0;
+      sampleArray[4] = envelopePreset; // where is the dict?
+    }
+    else if (sampleArray.length == 7) {
+      sampleArray.splice(3, 0, 0);
+    }
+    outputDict.replace(currentInstr+"::"+i+"::sample", sampleArray[0]);
+    outputDict.replace(currentInstr+"::"+i+"::root_key", sampleArray[1]);
+    outputDict.replace(currentInstr+"::"+i+"::key_zone_floor", sampleArray[2]);
+    outputDict.replace(currentInstr+"::"+i+"::vel_zone_floor", sampleArray[3]||0);
+    outputDict.replace(currentInstr+"::"+i+"::envelope", parseEnvelope(sampleArray[4]));
+    outputDict.replace(currentInstr+"::"+i+"::loop", parseLoop(sampleArray[5]));
+    outputDict.replace(currentInstr+"::"+i+"::start", sampleArray[6]||0);
+    outputDict.replace(currentInstr+"::"+i+"::direction", sampleArray[7]||'fw');
     outputDict.replace(currentInstr+"::"+i+"::timestretch", 0);
   }
 }
 
 function endBankDump() {
   outlet(0, "dictionary", outputDict.name);
-  outlet(0, "save_as");
+  //outlet(0, "save_as"); // not needed because save button is available
 }
 
 

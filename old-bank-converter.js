@@ -6,11 +6,16 @@ var outputDict = new Dict;
 // changes envelope string into array in new format
 function parseEnvelope(envelope) {
   var envelopeArray;
-  if (typeof(envelope) == 'string') {
+  if (Array.isArray(envelope)) {
+    if (envelope[envelope.length-1] == 'linear') return envelope;
+    else {
+      envelopeArray = envelope;
+    }
+  }
+  else if (typeof(envelope) == 'string') {
     envelopeArray = envelope.split(' ');
     envelopeArray.shift(); // remove "envelope" as 1st element
-  }
-  else if (Array.isArray(envelope)) envelopeArray = envelope;
+  } 
   for (var i = 0; i < envelopeArray.length; i++) {
     // format: [index_of_sustain_point, start_level, pairs of level & ramp time]
     envelopeArray[i] = parseFloat(envelopeArray[i]);
@@ -56,7 +61,7 @@ function readJsonInstr(filePath) {
   // check if envelope and loop are in new format
   var instrNames = outputDict.getkeys();
   var envelopeArray = outputDict.get(instrNames[0]+"::1::envelope");
-  if (envelopeArray[envelopeArray.length] != 'linear') {
+  if (envelopeArray[envelopeArray.length-1] != 'linear') {
     post('old format json detected\n');
     for (var i = 0; i < instrNames.length; i++) {
       var numKeys = outputDict.get(instrNames[i]).getkeys();
@@ -100,9 +105,11 @@ function readInstr() {
   for (var i = 1; i <= instrDict.getsize(i.toString()); i++) {
     var sampleArray = instrDict.get(i.toString());
     if (sampleArray.length == 4) {
-      var envelopePreset = sampleArray[3];
+      var envelopePresets = new Dict('envelope-presets');
+      var preset = sampleArray[3];
       sampleArray[3] = 0;
-      sampleArray[4] = envelopePreset; // where is the dict?
+      sampleArray[4] = envelopePresets.get(preset); // where is the dict?
+      //post(sampleArray[4]+"\n");
     }
     else if (sampleArray.length == 7) {
       sampleArray.splice(3, 0, 0);

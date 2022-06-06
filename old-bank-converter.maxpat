@@ -534,7 +534,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 8.0, 854.0, 121.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"filename" : "old-bank-converter.js",
+						"filename" : "old-bank-converter",
 						"parameter_enable" : 0
 					}
 ,
@@ -723,6 +723,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-58", 0 ],
+					"disabled" : 1,
 					"source" : [ "obj-53", 3 ]
 				}
 

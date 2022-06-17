@@ -32,10 +32,11 @@ function append(fileName) {
         root_key : 0,
         key_zone_floor : 0,
         vel_zone_floor : 0,
-        envelope : [2, 0, 1, 20, 1, 5000, 0, 50],
-        noloop : [0, 0, 0],
+        envelope : [100000, 0, 1, 0, 0, 0, 1, 20, 0, 1, 5000, 2, 0, 5050, 0, "linear"],
         direction : 'fw',
-        timestretch : 0
+        timestretch : 0,
+        loop : [0, 0, 0],
+        start: 0
     };
     var fileNameArray = fileName.split('.')[0].split('-').slice(-2);
     //post(JSON.stringify(fileNameArray)+'\n');

@@ -1,0 +1,90 @@
+{
+  "1": {
+    "sample": "1-gwong.wav",
+    "root_key": null,
+    "key_zone_floor": null,
+    "vel_zone_floor": 0,
+    "envelope": [100000,0,1,0,0,0,1,20,0,1,5000,2,0,5050,0,"linear"],
+    "direction": "fw",
+    "timestretch": 0,
+    "loop": [0,0,0],
+    "start": 0
+  },
+  "2": {
+    "sample": "2-fuk.wav",
+    "root_key": null,
+    "key_zone_floor": null,
+    "vel_zone_floor": 0,
+    "envelope": [100000,0,1,0,0,0,1,20,0,1,5000,2,0,5050,0,"linear"],
+    "direction": "fw",
+    "timestretch": 0,
+    "loop": [0,0,0],
+    "start": 0
+  },
+  "3": {
+    "sample": "3-hoeng.wav",
+    "root_key": null,
+    "key_zone_floor": null,
+    "vel_zone_floor": 0,
+    "envelope": [100000,0,1,0,0,0,1,20,0,1,5000,2,0,5050,0,"linear"],
+    "direction": "fw",
+    "timestretch": 0,
+    "loop": [0,0,0],
+    "start": 0
+  },
+  "4": {
+    "sample": "4-gong.wav",
+    "root_key": null,
+    "key_zone_floor": null,
+    "vel_zone_floor": 0,
+    "envelope": [100000,0,1,0,0,0,1,20,0,1,5000,2,0,5050,0,"linear"],
+    "direction": "fw",
+    "timestretch": 0,
+    "loop": [0,0,0],
+    "start": 0
+  },
+  "5": {
+    "sample": "5-si.wav",
+    "root_key": null,
+    "key_zone_floor": null,
+    "vel_zone_floor": 0,
+    "envelope": [100000,0,1,0,0,0,1,20,0,1,5000,2,0,5050,0,"linear"],
+    "direction": "fw",
+    "timestretch": 0,
+    "loop": [0,0,0],
+    "start": 0
+  },
+  "6": {
+    "sample": "6-doi.wav",
+    "root_key": null,
+    "key_zone_floor": null,
+    "vel_zone_floor": 0,
+    "envelope": [100000,0,1,0,0,0,1,20,0,1,5000,2,0,5050,0,"linear"],
+    "direction": "fw",
+    "timestretch": 0,
+    "loop": [0,0,0],
+    "start": 0
+  },
+  "7": {
+    "sample": "7-gaak.wav",
+    "root_key": null,
+    "key_zone_floor": null,
+    "vel_zone_floor": 0,
+    "envelope": [100000,0,1,0,0,0,1,20,0,1,5000,2,0,5050,0,"linear"],
+    "direction": "fw",
+    "timestretch": 0,
+    "loop": [0,0,0],
+    "start": 0
+  },
+  "8": {
+    "sample": "8-ming.wav",
+    "root_key": null,
+    "key_zone_floor": null,
+    "vel_zone_floor": 0,
+    "envelope": [100000,0,1,0,0,0,1,20,0,1,5000,2,0,5050,0,"linear"],
+    "direction": "fw",
+    "timestretch": 0,
+    "loop": [0,0,0],
+    "start": 0
+  }
+}

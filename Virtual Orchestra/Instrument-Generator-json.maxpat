@@ -3,7 +3,7 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 2,
+			"minor" : 3,
 			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
@@ -331,7 +331,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-25",
-					"items" : "<empty>",
+					"items" : [ "1-gwong.wav", ",", "2-fuk.wav", ",", "3-hoeng.wav", ",", "4-gong.wav", ",", "5-si.wav", ",", "6-doi.wav", ",", "7-gaak.wav", ",", "8-ming.wav" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -712,14 +712,14 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "strippathToSounds.js",
+				"name" : "Instrument-Generator-json.js",
 				"bootpath" : "~/Documents/0 Work/HfMT-ZM4/MaxScore/20211220 Sampler instruments/GitHub/Sampler/Virtual Orchestra",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "Instrument-Generator-json.js",
+				"name" : "strippathToSounds.js",
 				"bootpath" : "~/Documents/0 Work/HfMT-ZM4/MaxScore/20211220 Sampler instruments/GitHub/Sampler/Virtual Orchestra",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",

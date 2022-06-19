@@ -58,6 +58,8 @@ function readJsonInstr(filePath) {
   outputDict.clear();
   outputDict.import_json(filePath);
 
+  post(outputDict.stringify());
+
   // check if envelope and loop are in new format
   var instrNames = outputDict.getkeys();
   var envelopeArray = outputDict.get(instrNames[0]+"::1::envelope");

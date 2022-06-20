@@ -12,7 +12,7 @@ function dictionary(d)
 	outlet(0, "bank", "clear");
 	pb.clear();
 	clientbuffersoundindex.clear();
-	var bankkeys = bank.getkeys();
+	var bankkeys = [].concat(bank.getkeys());
 	for (var i = 0; i < bankkeys.length; i++) {
 		outlet(0, "bank", i + 1, bankkeys[i]);
 		for (var j = 0; j < bank.get(bankkeys[i]).getkeys().length; j++) {

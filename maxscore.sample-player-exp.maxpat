@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 3,
-			"revision" : 0,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -130,7 +130,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 3,
-							"revision" : 0,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -273,7 +273,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 479.5, 12.0, 220.0, 62.0 ],
-									"restore" : [ "1788-clientbuffer.1" ],
+									"restore" : [ "1177-clientbuffer.2" ],
 									"saved_object_attributes" : 									{
 										"parameter_enable" : 0,
 										"parameter_mappable" : 0
@@ -556,7 +556,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 3,
-							"revision" : 0,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1099,7 +1099,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 3,
-							"revision" : 0,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2129,7 +2129,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 3,
-							"revision" : 0,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2163,6 +2163,7 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-4",
@@ -2170,7 +2171,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 188.75, 234.0, 71.0, 22.0 ],
+									"patching_rect" : [ 188.75, 235.0, 71.0, 22.0 ],
 									"text" : "fromsymbol"
 								}
 
@@ -2462,7 +2463,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 259.0, 365.236084000000005, 458.0, 35.0 ],
-									"restore" : [ 1194 ],
+									"restore" : [ 1177 ],
 									"saved_object_attributes" : 									{
 										"parameter_enable" : 0,
 										"parameter_mappable" : 0
@@ -2576,7 +2577,15 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-4", 0 ],
+									"disabled" : 1,
 									"midpoints" : [ 254.5, 223.5, 198.25, 223.5 ],
+									"source" : [ "obj-14", 4 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-41", 1 ],
 									"source" : [ "obj-14", 4 ]
 								}
 
@@ -2868,7 +2877,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 3,
-							"revision" : 0,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3270,7 +3279,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 363.0, 9.0, 257.0, 62.0 ],
-									"restore" : [ 1, 0.0, 0.0, 29910.200000000000728, 1, "Triangle_A#3.gr.mp3" ],
+									"restore" : [ 0, 8959.97763428210601, 8959.97763428210601, 8960.000310019851895, 1, "syn40.mp3" ],
 									"saved_object_attributes" : 									{
 										"parameter_enable" : 0,
 										"parameter_mappable" : 0
@@ -3634,13 +3643,13 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 3,
-							"revision" : 0,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 264.0, 156.0, 1104.0, 779.0 ],
+						"rect" : [ 339.0, 155.0, 1104.0, 779.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -3668,6 +3677,7 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-2",
@@ -3676,7 +3686,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 254.5, 298.5, 187.0, 22.0 ],
-									"restore" : [ 29936.330078125, 0.0, 1.0, 0.0, 0.0, 0, 5.0, 1.0, 0, 29931.330000000001746, 1.0, 2, 29936.330000000001746, 0.0, 0, "linear" ],
+									"restore" : [ 8960.0, 0.0, 1.0, 0.0, 0.0, 0, 5.0, 1.0, 0, 29931.330000000001746, 1.0, 2, 29936.330000000001746, 0.0, 0, "linear" ],
 									"saved_object_attributes" : 									{
 										"parameter_enable" : 0,
 										"parameter_mappable" : 0
@@ -3699,7 +3709,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 3,
-											"revision" : 0,
+											"revision" : 1,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -4522,7 +4532,7 @@
 , 							{
 								"box" : 								{
 									"addpoints" : [ 0.0, 0.0, 0, 5.0, 1.0, 0, 29931.330000000001746, 1.0, 2, 29936.330000000001746, 0.0, 0 ],
-									"domain" : 29936.330078125,
+									"domain" : 8960.0,
 									"id" : "obj-52",
 									"maxclass" : "function",
 									"numinlets" : 1,

@@ -9,6 +9,8 @@ clientbuffersoundindex.name = jsarguments[1] + "-clientbuffersoundindex";
 
 // read bank from old or new formats: (code from James)
 
+var envelopeLengthChange = false;
+
 // changes envelope string into array in new format
 function parseEnvelope(envelope) {
   var envelopeArray;
@@ -101,7 +103,7 @@ function readJsonInstr(filePath) {
 var currentInstr = "";
 var instrDict = new Dict();
 
-function instr(ins) {
+function setCurrentInstr(ins) {
   currentInstr = ins/*.replace('.instr', '')*/; // removing ".instr" causes problems?
 }
 
@@ -112,6 +114,7 @@ function readInstr() {
   for (var i = 1; i <= instrDict.getsize(i.toString()); i++) {
     var sampleArray = instrDict.get(i.toString());
     if (sampleArray.length == 4) {
+	  envelopeLengthChange = true;
       var envelopePresets = new Dict('envelope-presets');
       var preset = sampleArray[3];
       sampleArray[3] = 0;

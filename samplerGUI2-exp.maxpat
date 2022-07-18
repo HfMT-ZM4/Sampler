@@ -3559,7 +3559,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 1014.0, 456.0, 237.0, 22.0 ],
-					"restore" : [ 2231 ],
+					"restore" : [ 3227 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -3665,6 +3665,7 @@
 										"style" : "",
 										"subpatcher_template" : "",
 										"assistshowspatchername" : 0,
+										"visible" : 1,
 										"boxes" : [ 											{
 												"box" : 												{
 													"id" : "obj-8",
@@ -3934,8 +3935,8 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 103.5, 625.0, 79.0, 22.0 ],
-													"text" : "prepend instr"
+													"patching_rect" : [ 103.5, 625.0, 135.0, 22.0 ],
+													"text" : "prepend setCurrentInstr"
 												}
 
 											}
@@ -5205,7 +5206,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 325.0, 452.0, 191.0, 22.0 ],
 									"saved_object_attributes" : 									{
-										"filename" : "maxscore.sampler.bank.js",
+										"filename" : "maxscore.sampler.bank",
 										"parameter_enable" : 0
 									}
 ,

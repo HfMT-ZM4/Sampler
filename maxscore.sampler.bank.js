@@ -163,7 +163,19 @@ function loadBank()
 	var dump = pb.dump();
 	for (var i = 0; i < dump.length / 6; i++){
 		clientbuffersoundindex.set(dump[i * 6 + 2], dump[i * 6 + 1]);
+		if (envelopeLengthChange) {
+			var sampleLength = dump[i*6+3];
+			var envelope = bank.get(bankkeys[0] + "::" + (i+1) + "::envelope");
+			var ratio = sampleLength / envelope[0];
+			envelope[0] = sampleLength;
+			envelope[envelope.length-4] = sampleLength;
+			for (var j = 2; j < envelope.length / 3 - 2; j++) {
+				envelope[j*3] *= ratio;
+			}
+			bank.replace(bankkeys[0] + "::" + (i+1) + "::envelope");
+		}
 	}
+
 	for (var i = 0; i < 32; i++) {	
 		this.patcher.parentpatcher.parentpatcher.parentpatcher.getnamed("maxscore.sampler.menus").subpatcher().getnamed(i+"-instrument").subpatcher().getnamed("instrument").message("clear");
 		this.patcher.parentpatcher.parentpatcher.parentpatcher.getnamed("maxscore.sampler.menus").subpatcher().getnamed(i+"-instrument").subpatcher().getnamed("instrument").message("append", "<none>");

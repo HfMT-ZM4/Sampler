@@ -161,6 +161,8 @@ function loadBank()
 		}
 	}
 	var dump = pb.dump();
+
+	// fix envelope length for old bank formats
 	for (var i = 0; i < dump.length / 6; i++){
 		clientbuffersoundindex.set(dump[i * 6 + 2], dump[i * 6 + 1]);
 		if (envelopeLengthChange) {
@@ -172,7 +174,7 @@ function loadBank()
 			for (var j = 2; j < envelope.length / 3 - 2; j++) {
 				envelope[j*3] *= ratio;
 			}
-			bank.replace(bankkeys[0] + "::" + (i+1) + "::envelope");
+			bank.replace(bankkeys[0] + "::" + (i+1) + "::envelope", envelope);
 		}
 	}
 
@@ -201,7 +203,7 @@ function symbol(instr)
 	}
 }
 
-function import(instr)
+function importBank(instr)
 {
 	//post(tempbank.get(instr).stringify(),"\n");
 	bank.replace(instr, tempbank.get(instr));

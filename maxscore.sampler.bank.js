@@ -165,9 +165,11 @@ function loadBank()
 	// fix envelope length for old bank formats
 	for (var i = 0; i < dump.length / 6; i++){
 		clientbuffersoundindex.set(dump[i * 6 + 2], dump[i * 6 + 1]);
+		post(dump);
 		if (envelopeLengthChange) {
 			var sampleLength = dump[i*6+3];
 			var envelope = bank.get(bankkeys[0] + "::" + (i+1) + "::envelope");
+			post(envelope);
 			var ratio = sampleLength / envelope[0];
 			envelope[0] = sampleLength;
 			envelope[envelope.length-4] = sampleLength;
@@ -203,7 +205,7 @@ function symbol(instr)
 	}
 }
 
-function importBank(instr)
+function import(instr)
 {
 	//post(tempbank.get(instr).stringify(),"\n");
 	bank.replace(instr, tempbank.get(instr));

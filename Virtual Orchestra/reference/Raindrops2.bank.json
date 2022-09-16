@@ -1,0 +1,316 @@
+{
+	"Rain2.instr" : 	{
+		"1" : 		{
+			"sample" : "202090__gammascorpii__heavy-rain-01.flac",
+			"root_key" : 48,
+			"key_zone_floor" : 0,
+			"vel_zone_floor" : 0,
+			"envelope" : [ 2, 0.0, 0.9925, 1217.762699999999995, 1.0, 57930.711900000002061, 0.0, 2435.525399999999991 ],
+			"noloop" : [ 0.0, 0.0, 14297.059999999999491 ],
+			"direction" : "fw",
+			"timestretch" : 0
+		}
+,
+		"2" : 		{
+			"sample" : "337791__miradeshazer__city-pouring-rain.wav",
+			"root_key" : 50,
+			"key_zone_floor" : 50,
+			"vel_zone_floor" : 0,
+			"envelope" : [ 2, 0.0, 1.0, 447.375699999999995, 1.0, 16378.923099999999977, 0.0, 770.481199999999944 ],
+			"noloop" : [ 0.0, 0.0, 14297.059999999999491 ],
+			"direction" : "fw",
+			"timestretch" : 0
+		}
+,
+		"3" : 		{
+			"sample" : "398204__tnk__rainy-night-july-23rd-2017.wav",
+			"root_key" : 52,
+			"key_zone_floor" : 52,
+			"vel_zone_floor" : 0,
+			"envelope" : [ 2, 0.0, 0.9925, 2223.921100000000024, 1.0, 63430.098200000000361, 0.0, 2804.07589999999982 ],
+			"noloop" : [ 0.0, 0.0, 0.0 ],
+			"direction" : "fw",
+			"timestretch" : 0
+		}
+,
+		"4" : 		{
+			"sample" : "401275__inspectorj__rain-moderate-c.wav",
+			"root_key" : 54,
+			"key_zone_floor" : 54,
+			"vel_zone_floor" : 0,
+			"envelope" : [ 2, 0.0, 0.9925, 1783.115399999999909, 0.9925, 56210.589200000002165, 0.0, 2122.757999999999811 ],
+			"noloop" : [ 0.0, 0.0, 0.0 ],
+			"direction" : "fw",
+			"timestretch" : 0
+		}
+,
+		"5" : 		{
+			"sample" : "401276__inspectorj__rain-moderate-b.wav",
+			"root_key" : 56,
+			"key_zone_floor" : 56,
+			"vel_zone_floor" : 0,
+			"envelope" : [ 2, 0.0, 1.0, 1020.694100000000049, 1.0, 37822.386500000000524, 0.0, 1304.221000000000004 ],
+			"noloop" : [ 0.0, 0.0, 0.0 ],
+			"direction" : "fw",
+			"timestretch" : 0
+		}
+,
+		"6" : 		{
+			"sample" : "401277__inspectorj__rain-moderate-a.wav",
+			"root_key" : 58,
+			"key_zone_floor" : 58,
+			"vel_zone_floor" : 0,
+			"envelope" : [ 2, 0.0, 1.0, 1188.453899999999976, 1.0, 57130.677700000000186, 0.0, 1782.682399999999916 ],
+			"noloop" : [ 0.0, 0.0, 0.0 ],
+			"direction" : "fw",
+			"timestretch" : 0
+		}
+,
+		"7" : 		{
+			"sample" : "443061__schoggimousse__water-cave.wav",
+			"root_key" : 60,
+			"key_zone_floor" : 60,
+			"vel_zone_floor" : 0,
+			"envelope" : [ 2, 0.0, 1.0, 236.686399999999992, 1.0, 59171.597600000000966, 0.0, 591.716000000000008 ],
+			"noloop" : [ 0.0, 0.0, 0.0 ],
+			"direction" : "fw",
+			"timestretch" : 0
+		}
+,
+		"8" : 		{
+			"sample" : "rain-drops.aif",
+			"root_key" : 62,
+			"key_zone_floor" : 62,
+			"vel_zone_floor" : 0,
+			"envelope" : [ 2, 0.0, 1.0, 40.852600000000002, 1.0, 10213.138499999999112, 0.0, 102.131399999999999 ],
+			"noloop" : [ 0.0, 0.0, 0.0 ],
+			"direction" : "fw",
+			"timestretch" : 0
+		}
+,
+		"9" : 		{
+			"sample" : "194364__dave-welsh__thunder-clap-owb-ky-441x16.wav",
+			"root_key" : 64,
+			"key_zone_floor" : 64,
+			"vel_zone_floor" : 0,
+			"envelope" : [ 2, 0.0, 1.0, 300.087600000000009, 0.9776, 66531.70669999999518, 0.0, 9240.405300000000352 ],
+			"noloop" : [ 0.0, 0.0, 0.0 ],
+			"direction" : "fw",
+			"timestretch" : 0
+		}
+,
+		"10" : 		{
+			"sample" : "446753__bluedelta__heavy-thunder-strike-no-rain-quadro.wav",
+			"root_key" : 66,
+			"key_zone_floor" : 66,
+			"vel_zone_floor" : 0,
+			"envelope" : [ 2, 0.0, 1.0, 20.0, 1.0, 5000.0, 0.0, 50.0 ],
+			"noloop" : [ 0.0, 0.0, 0.0 ],
+			"direction" : "fw",
+			"timestretch" : 0
+		}
+,
+		"11" : 		{
+			"sample" : "128524__bmccoy2__rainfallsonumbrellamccoy.wav",
+			"root_key" : 67,
+			"key_zone_floor" : 67,
+			"vel_zone_floor" : 0,
+			"envelope" : [ 2, 0.0, 1.0, 236.686399999999992, 1.0, 59171.597600000000966, 0.0, 591.716000000000008 ],
+			"noloop" : [ 0.0, 0.0, 0.0 ],
+			"direction" : "fw",
+			"timestretch" : 0
+		}
+,
+		"12" : 		{
+			"sample" : "200270__jmbphilmes__rain-heavy-1-rural.wav",
+			"root_key" : 76,
+			"key_zone_floor" : 76,
+			"vel_zone_floor" : 0,
+			"envelope" : [ 2, 0.0, 1.0, 4223.163800000000265, 1.0, 121370.056500000006054, 0.0, 4406.779599999999846 ],
+			"loop" : [ 0.0, 28.7075, 8220.703199999999924 ],
+			"direction" : "fw",
+			"timestretch" : "fw"
+		}
+
+	}
+,
+	"Thunder2.instr" : 	{
+		"1" : 		{
+			"sample" : "27246__csengeri__thunder200506-1.wav",
+			"root_key" : 48,
+			"key_zone_floor" : 48,
+			"vel_zone_floor" : 0,
+			"envelope" : [ 2, 0.0, 1.0, 69.616200000000006, 1.0, 17404.052999999999884, 0.0, 174.040500000000009 ],
+			"noloop" : [ 0.0, 0.0, 0.0 ],
+			"direction" : "fw",
+			"timestretch" : 0
+		}
+,
+		"2" : 		{
+			"sample" : "29756__deleted-user-229898__thunder1.aif",
+			"root_key" : 50,
+			"key_zone_floor" : 50,
+			"vel_zone_floor" : 0,
+			"envelope" : [ 2, 0.0, 1.0, 69.616200000000006, 1.0, 17404.052999999999884, 0.0, 174.040500000000009 ],
+			"noloop" : [ 0.0, 0.0, 0.0 ],
+			"direction" : "fw",
+			"timestretch" : 0
+		}
+,
+		"3" : 		{
+			"sample" : "64458__nicstage__thunderclap1.wav",
+			"root_key" : 52,
+			"key_zone_floor" : 52,
+			"vel_zone_floor" : 0,
+			"envelope" : [ 2, 0.0, 1.0, 69.616200000000006, 1.0, 17404.052999999999884, 0.0, 174.040500000000009 ],
+			"noloop" : [ 0.0, 0.0, 17647.709999999999127 ],
+			"direction" : "fw",
+			"timestretch" : 0
+		}
+,
+		"4" : 		{
+			"sample" : "198782__dmartinp__binauralthunder.wav",
+			"root_key" : 54,
+			"key_zone_floor" : 54,
+			"vel_zone_floor" : 0,
+			"envelope" : [ 2, 0.0, 1.0, 69.616200000000006, 1.0, 17404.052999999999884, 0.0, 174.040500000000009 ],
+			"noloop" : [ 1615.368199999999888, 1615.368199999999888, 34191.959999999999127 ],
+			"direction" : "fw",
+			"timestretch" : 0
+		}
+,
+		"5" : 		{
+			"sample" : "214052__taira-komori__lightning.mp3",
+			"root_key" : 56,
+			"key_zone_floor" : 56,
+			"vel_zone_floor" : 0,
+			"envelope" : [ 2, 0.0, 1.0, 80.212599999999995, 1.0, 18616.636500000000524, 0.0, 1637.051999999999907 ],
+			"noloop" : [ 1615.368199999999888, 1615.368199999999888, 9472.0 ],
+			"direction" : "fw",
+			"timestretch" : 0
+		}
+,
+		"6" : 		{
+			"sample" : "238295__regosss__thunderstorm.wav",
+			"root_key" : 58,
+			"key_zone_floor" : 58,
+			"vel_zone_floor" : 0,
+			"envelope" : [ 2, 0.0, 1.0, 69.616200000000006, 1.0, 17404.052999999999884, 0.0, 174.040500000000009 ],
+			"noloop" : [ 1884.596199999999953, 1884.596199999999953, 34191.959999999999127 ],
+			"direction" : "fw",
+			"timestretch" : 0
+		}
+,
+		"7" : 		{
+			"sample" : "238302__noisenoir__lightningcrash.wav",
+			"root_key" : 60,
+			"key_zone_floor" : 60,
+			"vel_zone_floor" : 0,
+			"envelope" : [ 2, 0.0, 1.0, 69.616200000000006, 1.0, 17404.052999999999884, 0.0, 174.040500000000009 ],
+			"noloop" : [ 0.0, 0.0, 20333.900000000001455 ],
+			"direction" : "fw",
+			"timestretch" : 0
+		}
+,
+		"8" : 		{
+			"sample" : "243614__foad__thunderstorm-lightning-strike.wav",
+			"root_key" : 62,
+			"key_zone_floor" : 62,
+			"vel_zone_floor" : 0,
+			"envelope" : [ 2, 0.0, 1.0, 69.616200000000006, 1.0, 17404.052999999999884, 0.0, 174.040500000000009 ],
+			"noloop" : [ 0.0, 0.0, 6743.0 ],
+			"direction" : "fw",
+			"timestretch" : 0
+		}
+,
+		"9" : 		{
+			"sample" : "321654__inspectorj__thunder-very-close-no-rain-c.wav",
+			"root_key" : 64,
+			"key_zone_floor" : 64,
+			"vel_zone_floor" : 0,
+			"envelope" : [ 2, 0.0, 1.0, 69.616200000000006, 1.0, 17404.052999999999884, 0.0, 174.040500000000009 ],
+			"noloop" : [ 0.0, 0.0, 38000.0 ],
+			"direction" : "fw",
+			"timestretch" : 0
+		}
+,
+		"10" : 		{
+			"sample" : "338088__jzielke011__thunder-clap-4.mp3",
+			"root_key" : 66,
+			"key_zone_floor" : 66,
+			"vel_zone_floor" : 0,
+			"envelope" : [ 2, 0.0, 1.0, 69.616200000000006, 1.0, 17404.052999999999884, 0.0, 174.040500000000009 ],
+			"noloop" : [ 0.0, 0.0, 48390.389999999999418 ],
+			"direction" : "fw",
+			"timestretch" : 0
+		}
+,
+		"11" : 		{
+			"sample" : "338089__jzielke011__thunder-clap-3.mp3",
+			"root_key" : 68,
+			"key_zone_floor" : 68,
+			"vel_zone_floor" : 0,
+			"envelope" : [ 2, 0.0, 1.0, 69.616200000000006, 1.0, 17404.052999999999884, 0.0, 174.040500000000009 ],
+			"noloop" : [ 0.0, 0.0, 7715.8100000000004 ],
+			"direction" : "fw",
+			"timestretch" : 0
+		}
+,
+		"12" : 		{
+			"sample" : "338091__jzielke011__thunder-clap-1.mp3",
+			"root_key" : 70,
+			"key_zone_floor" : 70,
+			"vel_zone_floor" : 0,
+			"envelope" : [ 2, 0.0, 1.0, 69.616200000000006, 1.0, 17404.052999999999884, 0.0, 174.040500000000009 ],
+			"noloop" : [ 0.0, 0.0, 14341.219999999999345 ],
+			"direction" : "fw",
+			"timestretch" : 0
+		}
+,
+		"13" : 		{
+			"sample" : "338093__jzielke011__thunder-clap-5.mp3",
+			"root_key" : 72,
+			"key_zone_floor" : 72,
+			"vel_zone_floor" : 0,
+			"envelope" : [ 2, 0.0, 1.0, 69.616200000000006, 1.0, 17404.052999999999884, 0.0, 174.040500000000009 ],
+			"noloop" : [ 0.0, 0.0, 15151.020000000000437 ],
+			"direction" : "fw",
+			"timestretch" : 0
+		}
+,
+		"14" : 		{
+			"sample" : "351227__kl0z__trueno0.wav",
+			"root_key" : 74,
+			"key_zone_floor" : 74,
+			"vel_zone_floor" : 0,
+			"envelope" : [ 2, 0.0, 1.0, 69.616200000000006, 1.0, 17404.052999999999884, 0.0, 174.040500000000009 ],
+			"noloop" : [ 0.0, 0.0, 10710.200000000000728 ],
+			"direction" : "fw",
+			"timestretch" : 0
+		}
+,
+		"15" : 		{
+			"sample" : "446753__bluedelta__heavy-thunder-strike-no-rain-quadro.wav",
+			"root_key" : 76,
+			"key_zone_floor" : 76,
+			"vel_zone_floor" : 0,
+			"envelope" : [ 2, 0.0, 1.0, 69.616200000000006, 1.0, 17404.052999999999884, 0.0, 174.040500000000009 ],
+			"noloop" : [ 0.0, 0.0, 16039.180000000000291 ],
+			"direction" : "fw",
+			"timestretch" : 0
+		}
+,
+		"16" : 		{
+			"sample" : "Thunder_Clap_Sound_Effect_HD.wav",
+			"root_key" : 78,
+			"key_zone_floor" : 78,
+			"vel_zone_floor" : 0,
+			"envelope" : [ 2, 0.0, 1.0, 56.398699999999998, 1.0, 14099.667199999999866, 0.0, 140.996700000000004 ],
+			"noloop" : [ 0.0, 0.0, 42760.25 ],
+			"direction" : "fw",
+			"timestretch" : 0
+		}
+
+	}
+
+}

@@ -110,7 +110,7 @@ function readInstr() {
       var envelopePresets = new Dict('envelope-presets');
       var preset = sampleArray[3];
       sampleArray[3] = 0;
-      sampleArray[4] = envelopePresets.get(preset); // where is the dict?
+      sampleArray[4] = envelopePresets.get(preset);
       //post(sampleArray[4]+"\n");
     }
     else if (sampleArray.length == 7) {

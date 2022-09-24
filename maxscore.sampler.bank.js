@@ -169,13 +169,13 @@ function loadBank()
 		if (envelopeLengthChange) {
 			var sampleLength = dump[i*6+3];
 			var envelope = bank.get(bankkeys[0] + "::" + (i+1) + "::envelope");
-			post(envelope);
 			var ratio = sampleLength / envelope[0];
 			envelope[0] = sampleLength;
 			envelope[envelope.length-4] = sampleLength;
 			for (var j = 2; j < envelope.length / 3 - 2; j++) {
 				envelope[j*3] *= ratio;
 			}
+			//post('envelope[0] type: '+typeof(envelope[0])+'\n');
 			bank.replace(bankkeys[0] + "::" + (i+1) + "::envelope", envelope);
 		}
 	}

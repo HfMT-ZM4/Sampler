@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 127.0, 368.0, 1187.0, 582.0 ],
+		"rect" : [ 162.0, 264.0, 914.0, 416.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,18 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 126.0, 32.0, 37.0, 22.0 ],
+					"text" : "panic"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -67,7 +79,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 280.0, 46.0, 82.0, 22.0 ],
+					"patching_rect" : [ 279.0, 32.0, 82.0, 22.0 ],
 					"text" : "note 6000 0 1"
 				}
 
@@ -79,7 +91,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 172.0, 46.0, 95.0, 22.0 ],
+					"patching_rect" : [ 172.0, 32.0, 95.0, 22.0 ],
 					"text" : "note 6000 100 1"
 				}
 
@@ -136,6 +148,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
 					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"source" : [ "obj-6", 0 ]
 				}
 
 			}
@@ -270,15 +289,15 @@
 				}
 ,
 				"obj-3::obj-43::obj-2::obj-17::obj-3::obj-24" : 				{
-					"parameter_range" : [ 0.0, 29910.200000000000728 ]
+					"parameter_range" : [ 0.0, 40097.959999999999127 ]
 				}
 ,
 				"obj-3::obj-43::obj-2::obj-17::obj-3::obj-27" : 				{
-					"parameter_range" : [ 0.0, 29910.200000000000728 ]
+					"parameter_range" : [ 0.0, 40097.959999999999127 ]
 				}
 ,
 				"obj-3::obj-43::obj-2::obj-17::obj-3::obj-6" : 				{
-					"parameter_range" : [ 0.0, 29910.200000000000728 ]
+					"parameter_range" : [ 0.0, 40097.959999999999127 ]
 				}
 
 			}
@@ -287,34 +306,6 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "3angle.instr",
-				"bootpath" : "/Users/Shared/Max 8/Packages/Quintet.net/patchers/Projects/Five/Instruments",
-				"patcherrelativepath" : "../../Packages/Quintet.net/patchers/Projects/Five/Instruments",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Clarinetto.instr",
-				"bootpath" : "/Users/Shared/Max 8/Packages/Quintet.net/patchers/Projects/Five/Instruments",
-				"patcherrelativepath" : "../../Packages/Quintet.net/patchers/Projects/Five/Instruments",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Five.bank.txt",
-				"bootpath" : "/Users/Shared/Max 8/Packages/Quintet.net/patchers/Projects/Five",
-				"patcherrelativepath" : "../../Packages/Quintet.net/patchers/Projects/Five",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Flauto.instr",
-				"bootpath" : "/Users/Shared/Max 8/Packages/Quintet.net/patchers/Projects/Five/Instruments",
-				"patcherrelativepath" : "../../Packages/Quintet.net/patchers/Projects/Five/Instruments",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "LtoC.maxpat",
 				"bootpath" : "/Users/Shared/Max 8/Packages/MaxScore/patchers/modules/MaxScore-Sampler",
 				"patcherrelativepath" : "../../Packages/MaxScore/patchers/modules/MaxScore-Sampler",
@@ -350,20 +341,6 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "Synth2.instr",
-				"bootpath" : "/Users/Shared/Max 8/Packages/Quintet.net/patchers/Projects/Five/Instruments",
-				"patcherrelativepath" : "../../Packages/Quintet.net/patchers/Projects/Five/Instruments",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ThaiGong.instr",
-				"bootpath" : "/Users/Shared/Max 8/Packages/Quintet.net/patchers/Projects/Five/Instruments",
-				"patcherrelativepath" : "../../Packages/Quintet.net/patchers/Projects/Five/Instruments",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "bank-wavefor.maxpat",
 				"bootpath" : "/Users/Shared/Max 8/Packages/MaxScore/patchers/modules/MaxScore-Sampler",
 				"patcherrelativepath" : "../../Packages/MaxScore/patchers/modules/MaxScore-Sampler",
@@ -382,6 +359,20 @@
 				"bootpath" : "/Users/Shared/Max 8/Packages/MaxScore/patchers/modules/MaxScore-Sampler",
 				"patcherrelativepath" : "../../Packages/MaxScore/patchers/modules/MaxScore-Sampler",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "low-e.bank.txt",
+				"bootpath" : "/Users/Shared/Max 8/Library/Sample-Bank-Dev/Virtual Orchestra/reference",
+				"patcherrelativepath" : "./Virtual Orchestra/reference",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "low-e.instr",
+				"bootpath" : "/Users/Shared/Max 8/Library/Sample-Bank-Dev/Virtual Orchestra/reference",
+				"patcherrelativepath" : "./Virtual Orchestra/reference",
+				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
@@ -456,8 +447,22 @@
 			}
 , 			{
 				"name" : "my-LtoColl.maxpat",
-				"bootpath" : "/Users/Shared/Max 8/Packages/MaxScore/patchers/extensions",
-				"patcherrelativepath" : "../../Packages/MaxScore/patchers/extensions",
+				"bootpath" : "/Users/Shared/Max 8/Packages/Quintet.net/patchers/Library/Abstractions/utilities",
+				"patcherrelativepath" : "../../Packages/Quintet.net/patchers/Library/Abstractions/utilities",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "old-bank-converter.js",
+				"bootpath" : "/Users/Shared/Max 8/Library/Sample-Bank-Dev",
+				"patcherrelativepath" : ".",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "old-bank-converter.maxpat",
+				"bootpath" : "/Users/Shared/Max 8/Library/Sample-Bank-Dev",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}

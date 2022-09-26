@@ -28,7 +28,7 @@ function parseEnvelope(envelope) {
     // format: [index_of_sustain_point, start_level, pairs of level & ramp time]
     envelopeArray[i] = parseFloat(envelopeArray[i]);
   }
-  var functionArray = [0, 0, 1, 0, envelopeArray[1]]; 
+  var functionArray = [0, 0, 1, 0, envelopeArray[1], 0]; 
   var currentTime = 0;
   for (var i = 1; i*2 <  envelopeArray.length; i++) {
     currentTime += envelopeArray[i*2+1]
@@ -38,6 +38,7 @@ function parseEnvelope(envelope) {
   }
   functionArray.push('linear');
   functionArray[0] = currentTime;
+  post("functionArray", envelopeArray, "\n", functionArray, "\n");
   // format: [domain, range_min, range_max, triples of (x, y, point_type), "linear"]: point_type is 0 if normal and 2 if sustain_point
   return functionArray;
 }
@@ -66,7 +67,6 @@ function readJsonInstr(filePath) {
   bank.clear();
   bank.import_json(filePath);
 
-  //post(bank.stringify());
 
   // check if envelope and loop are in new format
   var instrNames = [].concat(bank.getkeys());

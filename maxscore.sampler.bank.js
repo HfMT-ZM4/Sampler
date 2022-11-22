@@ -15,10 +15,14 @@ var envelopeLengthChange = false;
 function parseEnvelope(envelope) {
   var envelopeArray;
   if (Array.isArray(envelope)) {
-    if (envelope[envelope.length-1] == 'linear') return envelope;
+    if (envelope[envelope.length-1] == 'linear') return envelope; // format is correct
     else {
       envelopeArray = envelope;
     }
+  }
+  else if (typeof(envelope) == 'number') {
+	var envelopePresets = new Dict('envelope-presets');
+	return envelopePresets.get(envelope);
   }
   else if (typeof(envelope) == 'string') {
     envelopeArray = envelope.split(' ');
@@ -71,31 +75,31 @@ function readJsonInstr(filePath) {
   // check if envelope and loop are in new format
   var instrNames = [].concat(bank.getkeys());
   var envelopeArray = bank.get(instrNames[0]+"::1::envelope");
-  if (envelopeArray[envelopeArray.length-1] != 'linear') {
-    post('old json bank format detected\n');
+  if (typeof(envelopeArray) == 'number' || envelopeArray[envelopeArray.length-1] != 'linear') { // single number means preset
+    post('Old json bank format detected. Please save again\n');
     for (var i = 0; i < instrNames.length; i++) {
       var numKeys = bank.get(instrNames[i]).getkeys();
       for (var j = 0; j < numKeys.length; j++) {
         // change envelope into new format
         var location = instrNames[i]+"::"+numKeys[j];
-        bank.replace(location+"::envelope", parseEnvelope(bank.get(location+"::envelope")));
-        // change loop into new format
-        var loopOrNoloop;
-        if (bank.contains(location+"::loop")) loopOrNoloop = 1;
-        else if (bank.contains(location+"::noloop")) loopOrNoloop = 0;
-        var loopArray = bank.get(location+(loopOrNoloop?"::loop":"::noloop"));
-        bank.replace(location+"::loop", loopOrNoloop);
-        bank.append(location+"::loop", loopArray[0]);
-        bank.append(location+"::loop", loopArray[1]);
-        bank.replace(location+"::start", loopArray[2]);
-        if (!loopOrNoloop) bank.remove(location+"::noloop"); 
+        bank.replace(location+"::envelope", parseEnvelope(bank.get(location+"::envelope"))); // envelope input: either number or old array format
+		// check if loop format is already correct - contains "start" key if in new format
+		if (!bank.contains(location+"::start")) {
+			// change loop into new format
+			var loopOrNoloop;
+			if (bank.contains(location+"::loop")) loopOrNoloop = 1;
+			else if (bank.contains(location+"::noloop")) loopOrNoloop = 0;
+			var loopArray = bank.get(location+(loopOrNoloop?"::loop":"::noloop"));
+			bank.replace(location+"::loop", loopOrNoloop);
+			bank.append(location+"::loop", loopArray[0]);
+			bank.append(location+"::loop", loopArray[1]);
+			bank.replace(location+"::start", loopArray[2]);
+			if (!loopOrNoloop) bank.remove(location+"::noloop"); 
+		}
       }
     }
-	loadBank();
   }
-  else {
-	loadBank();
-  }
+  loadBank();
 }
 
 // When txt is imported:
@@ -114,7 +118,7 @@ function readInstr() {
   for (var i = 1; i <= instrDict.getsize(i.toString()); i++) {
     var sampleArray = instrDict.get(i.toString());
     if (sampleArray.length == 4) {
-	  envelopeLengthChange = true;
+	  envelopeLengthChange = true; // envelope needs to adjust to sample length
       var envelopePresets = new Dict('envelope-presets');
       var preset = sampleArray[3];
       sampleArray[3] = 0;
@@ -162,13 +166,14 @@ function loadBank()
 	}
 	var dump = pb.dump();
 
-	// fix envelope length for old bank formats
+	// fix envelope according to sample length for old bank formats (James's addition)
 	for (var i = 0; i < dump.length / 6; i++){
 		clientbuffersoundindex.set(dump[i * 6 + 2], dump[i * 6 + 1]);
 		post(dump);
 		if (envelopeLengthChange) {
 			var sampleLength = dump[i*6+3];
 			var envelope = bank.get(bankkeys[0] + "::" + (i+1) + "::envelope");
+			post("envelope: "+envelope+"\n");
 			var ratio = sampleLength / envelope[0];
 			envelope[0] = sampleLength;
 			envelope[envelope.length-4] = sampleLength;

@@ -32,7 +32,7 @@ function append(fileName) {
         root_key : 0,
         key_zone_floor : 0,
         vel_zone_floor : 0,
-        envelope : [100000, 0, 1, 0, 0, 0, 1, 20, 0, 1, 5000, 2, 0, 5050, 0, "linear"],
+        envelope : 1,
         direction : 'fw',
         timestretch : 0,
         loop : [0, 0, 0],
@@ -50,6 +50,7 @@ function append(fileName) {
     var pitchClass = fileNameArray[fileNameArray.length-1].replace(/\d+/, '');
     var octave = parseInt(fileNameArray[fileNameArray.length-1].match(/\d+/));
     var midi = pitchToMidi[pitchClass] + 12 * (octave + 1);
+    if (midi === null) midi = 0;
     sampleObj.root_key = midi;
     sampleObj.key_zone_floor = midi;
 

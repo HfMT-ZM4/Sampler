@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 3,
-			"revision" : 1,
+			"minor" : 5,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 100.0, 87.0, 1371.0, 893.0 ],
+		"rect" : [ 162.0, 292.0, 1022.0, 749.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -42,30 +42,7 @@
 				"box" : 				{
 					"allowdrag" : 0,
 					"bgcolor" : [ 0.498039, 0.498039, 0.498039, 0.26 ],
-					"buffername" : "1209-clientbuffer.14",
-					"gridcolor" : [ 0.862745098039216, 0.870588235294118, 0.87843137254902, 0.3 ],
-					"hidden" : 1,
-					"id" : "obj-8",
-					"maxclass" : "waveform~",
-					"numinlets" : 5,
-					"numoutlets" : 6,
-					"outlettype" : [ "float", "float", "float", "float", "list", "" ],
-					"patching_rect" : [ 486.0, 834.0, 131.0, 55.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 85.0, 722.0, 85.0 ],
-					"selectioncolor" : [ 0.675, 0.804, 0.945, 0.5 ],
-					"setmode" : 2,
-					"varname" : "Loop2",
-					"vticks" : 0,
-					"waveformcolor" : [ 0.082353, 0.098039, 0.098039, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"allowdrag" : 0,
-					"bgcolor" : [ 0.498039, 0.498039, 0.498039, 0.26 ],
-					"buffername" : "4166-clientbuffer.2",
+					"buffername" : "1181-clientbuffer.1",
 					"gridcolor" : [ 0.862745098039216, 0.870588235294118, 0.87843137254902, 0.3 ],
 					"id" : "obj-157",
 					"maxclass" : "waveform~",
@@ -74,8 +51,8 @@
 					"outlettype" : [ "float", "float", "float", "float", "list", "" ],
 					"patching_rect" : [ 531.00006099999996, 743.5, 141.0, 50.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 1.0, 722.0, 170.0 ],
-					"selectioncolor" : [ 0.675, 0.804, 0.945, 0.5 ],
+					"presentation_rect" : [ 0.0, 1.0, 722.0, 85.0 ],
+					"selectioncolor" : [ 0.192, 0.51, 0.867, 0.5 ],
 					"setmode" : 2,
 					"ticks" : 1,
 					"varname" : "Loop",
@@ -179,7 +156,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 302.5, -110.5, 411.0, 22.0 ],
-					"restore" : [ 2, "syn51.mp3" ],
+					"restore" : [ 1, "1-gwong.wav" ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -266,7 +243,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 101.0, 472.5, 187.0, 22.0 ],
-					"restore" : [ 8960.0, 0.0, 1.0, 0.0, 0.0, 0, 1800.182648401826555, 0.483870967741935, 0, 4622.166254570385718, 0.24, 0, 8824.13607095680527, 1.0, 2, 8960.0, 0.032258064516129, 0, "linear" ],
+					"restore" : [ 409.3424072265625, 0.0, 1.0, 0.0, 0.0, 0, 1.614762933444252, 1.0, 0, 405.305496294507236, 1.0, 2, 409.342403628117893, 0.0, 0, "linear" ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -405,8 +382,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 1,
+							"minor" : 5,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -902,7 +879,7 @@
 			}
 , 			{
 				"box" : 				{
-					"activebgoncolor" : [ 0.675, 0.804, 0.945, 1.0 ],
+					"activebgoncolor" : [ 0.192, 0.51, 0.867, 1.0 ],
 					"fontname" : "Avenir Next Regular",
 					"fontsize" : 10.0,
 					"id" : "obj-17",
@@ -1055,6 +1032,7 @@
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
+					"hidden" : 1,
 					"id" : "obj-3",
 					"lockeddragscroll" : 0,
 					"lockedsize" : 0,
@@ -1067,7 +1045,7 @@
 					"patching_rect" : [ 761.5, 477.0, 212.0, 49.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 222.0, 173.0, 220.0, 51.0 ],
-					"varname" : "panel_Sustain",
+					"varname" : "panel_Loop",
 					"viewvisibility" : 1
 				}
 
@@ -1156,8 +1134,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 1,
+							"minor" : 5,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1321,14 +1299,14 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 1,
+							"minor" : 5,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 81.0, 79.0, 1317.0, 776.0 ],
+						"rect" : [ 162.0, 292.0, 1479.0, 749.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2160,7 +2138,7 @@
 , 			{
 				"box" : 				{
 					"activebgcolor" : [ 0.498039, 0.498039, 0.498039, 1.0 ],
-					"activebgoncolor" : [ 0.675, 0.804, 0.945, 1.0 ],
+					"activebgoncolor" : [ 0.192, 0.51, 0.867, 1.0 ],
 					"bgcolor" : [ 0.498039, 0.6, 0.6, 1.0 ],
 					"id" : "obj-78",
 					"maxclass" : "live.tab",
@@ -2195,7 +2173,7 @@
 						}
 ,
 						"valueof" : 						{
-							"parameter_enum" : [ "Sustain Mode", "Envelope", "Edit" ],
+							"parameter_enum" : [ "Loop & Start", "Envelope", "Edit" ],
 							"parameter_longname" : "live.tab[9]",
 							"parameter_mmax" : 2,
 							"parameter_shortname" : "live.tab[1]",
@@ -2214,7 +2192,7 @@
 , 			{
 				"box" : 				{
 					"activebgcolor" : [ 0.498039, 0.498039, 0.498039, 1.0 ],
-					"activebgoncolor" : [ 0.675, 0.804, 0.945, 1.0 ],
+					"activebgoncolor" : [ 0.192, 0.51, 0.867, 1.0 ],
 					"activetextcolor" : [ 0.082353, 0.098039, 0.098039, 1.0 ],
 					"fontname" : "Avenir Next Regular",
 					"fontsize" : 12.0,
@@ -2372,8 +2350,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 3,
-							"revision" : 1,
+							"minor" : 5,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2922,7 +2900,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 858.0, 625.75, 146.0, 22.0 ],
-					"restore" : [ 0, 15882.676286508858539, 15882.676286508858539, 15884.671751430510994, 1, "syn51.mp3" ],
+					"restore" : [ 1, 0.0, 83.375804659050104, 118.290362908448188, 1, "5-si.wav" ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -3104,9 +3082,32 @@
 			}
 , 			{
 				"box" : 				{
-					"addpoints" : [ 0.0, 0.0, 0, 1800.182648401826555, 0.483870967741935, 0, 4622.166254570385718, 0.24, 0, 8824.13607095680527, 1.0, 2, 8960.0, 0.032258064516129, 0 ],
+					"allowdrag" : 0,
+					"bgcolor" : [ 0.498039, 0.498039, 0.498039, 0.26 ],
+					"buffername" : "1181-clientbuffer.1",
+					"chanoffset" : 2,
+					"gridcolor" : [ 0.862745098039216, 0.870588235294118, 0.87843137254902, 0.3 ],
+					"id" : "obj-8",
+					"maxclass" : "waveform~",
+					"numinlets" : 5,
+					"numoutlets" : 6,
+					"outlettype" : [ "float", "float", "float", "float", "list", "" ],
+					"patching_rect" : [ 486.0, 834.0, 131.0, 55.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 0.0, 85.0, 722.0, 85.0 ],
+					"selectioncolor" : [ 0.192, 0.51, 0.867, 0.5 ],
+					"setmode" : 2,
+					"varname" : "Loop2",
+					"vticks" : 0,
+					"waveformcolor" : [ 0.082353, 0.098039, 0.098039, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"addpoints" : [ 0.0, 0.0, 0, 1.614762933444252, 1.0, 0, 405.305496294507236, 1.0, 2, 409.342403628117893, 0.0, 0 ],
 					"bgcolor" : [ 0.8, 0.8, 0.8, 0.0 ],
-					"domain" : 8960.0,
+					"domain" : 409.3424072265625,
 					"gridcolor" : [ 0.501961, 0.501961, 0.501961, 0.5 ],
 					"id" : "obj-4",
 					"linecolor" : [ 1.0, 1.0, 1.0, 1.0 ],
@@ -3196,7 +3197,7 @@
 					"patching_rect" : [ 838.0, 801.5, 252.0, 82.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 4.0, 13.0, 720.0, 158.0 ],
-					"setminmax" : [ 0.0, 40097.9609375 ],
+					"setminmax" : [ 0.0, 267.845794677734375 ],
 					"slidercolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"thickness" : 1,
 					"varname" : "Position"

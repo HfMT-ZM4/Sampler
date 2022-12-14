@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 134.0, 159.0, 783.0, 702.0 ],
+		"rect" : [ 162.0, 292.0, 1585.0, 754.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -342,7 +342,7 @@
 					"bgcolor" : [ 0.498039, 0.498039, 0.498039, 1.0 ],
 					"bordercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"cellmap" : [ [ 1, 0, "Name" ], [ 2, 0, "Root", "Key" ], [ 3, 0, "Key", "Floor" ], [ 4, 0, "Vel", "Floor" ], [ 8, 0, "Direction" ], [ 7, 0, "Start" ], [ 6, 0, "Loop" ], [ 5, 0, "Envelope" ], [ 0, 0, "#" ], [ 9, 0, "Timestretch" ] ],
-					"coldef" : [ [ 0, 20, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, 1, -1, -1 ], [ 1, 200, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, 1, -1, -1 ], [ 2, 48, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, 1, -1, -1 ], [ 3, 50, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, 1, -1, -1 ], [ 4, 46, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, 1, -1, -1 ], [ 5, 92, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, 1, -1, -1 ], [ 6, 79, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, 1, -1, -1 ], [ 7, 47, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, 1, -1, -1 ], [ 8, 48, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, 1, -1, -1 ], [ 9, 60, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, 1, -1, -1 ] ],
+					"coldef" : [ [ 0, 18, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, 1, -1, -1 ], [ 1, 190, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, 1, -1, -1 ], [ 2, 50, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, 1, -1, -1 ], [ 3, 50, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, 1, -1, -1 ], [ 4, 50, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, 1, -1, -1 ], [ 5, 100, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, 1, -1, -1 ], [ 6, 100, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, 1, -1, -1 ], [ 7, 30, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, 1, -1, -1 ], [ 8, 48, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, 1, -1, -1 ], [ 9, 56, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, 1, -1, -1 ] ],
 					"colwidth" : 104,
 					"fontface" : 0,
 					"fontname" : "Avenir Next Regular",
@@ -428,7 +428,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 117.0, 315.0, 1228.0, 518.0 ],
+						"rect" : [ 162.0, 292.0, 1585.0, 754.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -485,13 +485,13 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-13",
-									"linecount" : 23,
+									"linecount" : 25,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 960.200000000000045, 148.0, 226.0, 330.0 ],
-									"text" : ";\r#0-dim_command col 0 width 47;\r#0-dim_command col 1 width 130;\r#0-dim_command col 2 width 54;\r#0-dim_command col 3 width 77;\r#0-dim_command col 4 width 77;\r#0-dim_command col 5 width 100;\r#0-dim_command col 6 width 100;\r#0-dim_command col 7 width 50;\r#0-dim_command col 8 width 58;\r#0-dim_command col 0 just 1;\r#0-dim_command col 1 just 1;\r#0-dim_command col 2 just 1;\r#0-dim_command col 3 just 1;\r#0-dim_command col 4 just 1;\r#0-dim_command col 5 just 1;\r#0-dim_command col 6 just 1;\r#0-dim_command col 7 just 1;\r#0-dim_command col 8 just 1;\r#0-dim_command_2 col 0 width 47;\r#0-dim_command_2 col 1 width 646;\r#0-dim_command_2 col 0 just 0;\r#0-dim_command_2 col 1 just 0;\r"
+									"patching_rect" : [ 960.200000000000045, 148.0, 218.0, 357.0 ],
+									"text" : ";\r#0-dim_command col 0 width 18;\r#0-dim_command col 1 width 190;\r#0-dim_command col 2 width 50;\r#0-dim_command col 3 width 50;\r#0-dim_command col 4 width 50;\r#0-dim_command col 5 width 100;\r#0-dim_command col 6 width 100;\r#0-dim_command col 7 width 30;\r#0-dim_command col 8 width 48;\r#0-dim_command col 9 width 56;\r#0-dim_command col 0 just 1;\r#0-dim_command col 1 just 1;\r#0-dim_command col 2 just 1;\r#0-dim_command col 3 just 1;\r#0-dim_command col 4 just 1;\r#0-dim_command col 5 just 1;\r#0-dim_command col 6 just 1;\r#0-dim_command col 7 just 1;\r#0-dim_command col 8 just 1;\r#0-dim_command col 9 just 1;\r#0-dim_command_2 col 0 width 47;\r#0-dim_command_2 col 1 width 646;\r#0-dim_command_2 col 0 just 0;\r#0-dim_command_2 col 1 just 0;\r"
 								}
 
 							}
@@ -1139,7 +1139,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 411.333333333333314, 366.0, 270.0, 22.0 ],
-									"restore" : [ 2, "2-fuk.wav" ],
+									"restore" : [ 0 ],
 									"saved_object_attributes" : 									{
 										"parameter_enable" : 0,
 										"parameter_mappable" : 0
@@ -2474,7 +2474,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-6",
@@ -3381,7 +3380,7 @@
 				"box" : 				{
 					"bgcolor" : [ 0.498039, 0.498039, 0.498039, 0.501961 ],
 					"bordercolor" : [ 0.082377, 0.098825, 0.098852, 1.0 ],
-					"coldef" : [ [ 0, 20, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, 1, -1, -1 ] ],
+					"coldef" : [ [ 0, 18, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, 1, -1, -1 ] ],
 					"cols" : 1,
 					"colwidth" : 104,
 					"fontface" : 0,
@@ -3526,7 +3525,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 1014.0, 456.0, 237.0, 22.0 ],
-					"restore" : [ 1181 ],
+					"restore" : [ 5537 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -3585,7 +3584,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-17",
@@ -6098,7 +6096,7 @@
 													"numoutlets" : 3,
 													"outlettype" : [ "", "", "" ],
 													"patching_rect" : [ 757.93182373046875, 61.0, 497.0, 22.0 ],
-													"restore" : [ 2, "2-fuk.wav" ],
+													"restore" : [ 0 ],
 													"saved_object_attributes" : 													{
 														"parameter_enable" : 0,
 														"parameter_mappable" : 0

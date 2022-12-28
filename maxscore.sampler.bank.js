@@ -272,10 +272,10 @@ function updateinstrument(u)
 		bank.replace(currentInstrumentName + "::" + currentInstrumentkeys[i] + "::key_zone_floor", currentInstrument.get(currentInstrumentkeys[i])[2]);
 		bank.replace(currentInstrumentName + "::" + currentInstrumentkeys[i] + "::vel_zone_floor", currentInstrument.get(currentInstrumentkeys[i])[3]);
 		bank.replace(currentInstrumentName + "::" + currentInstrumentkeys[i] + "::envelope", currentInstrument.get(currentInstrumentkeys[i])[4].split(" "));
-		bank.replace(currentInstrumentName + "::" + currentInstrumentkeys[i] + "::loop", [Number(currentInstrument.get(currentInstrumentkeys[i])[5].split(" ")[0]), Number(currentInstrument.get(currentInstrumentkeys[i])[5].split(" ")[2]), Number(currentInstrument.get(currentInstrumentkeys[i])[5].split(" ")[3])]);
-		bank.replace(currentInstrumentName + "::" + currentInstrumentkeys[i] + "::start", Number(currentInstrument.get(currentInstrumentkeys[i])[5].split(" ")[1]));
-		bank.replace(currentInstrumentName + "::" + currentInstrumentkeys[i] + "::direction", currentInstrument.get(currentInstrumentkeys[i])[6]);
-		bank.replace(currentInstrumentName + "::" + currentInstrumentkeys[i] + "::timestretch", currentInstrument.get(currentInstrumentkeys[i])[7]);
+		bank.replace(currentInstrumentName + "::" + currentInstrumentkeys[i] + "::loop", [Number(currentInstrument.get(currentInstrumentkeys[i])[5].split(" ")[0]), Number(currentInstrument.get(currentInstrumentkeys[i])[5].split(" ")[1]), Number(currentInstrument.get(currentInstrumentkeys[i])[5].split(" ")[2])]);
+		bank.replace(currentInstrumentName + "::" + currentInstrumentkeys[i] + "::start", Number(currentInstrument.get(currentInstrumentkeys[i])[6]));
+		bank.replace(currentInstrumentName + "::" + currentInstrumentkeys[i] + "::direction", currentInstrument.get(currentInstrumentkeys[i])[7]);
+		bank.replace(currentInstrumentName + "::" + currentInstrumentkeys[i] + "::timestretch", currentInstrument.get(currentInstrumentkeys[i])[8]);
 		}
 	}
 	else {
@@ -285,10 +285,10 @@ function updateinstrument(u)
 		bank.replace(currentInstrumentName + "::" + u + "::key_zone_floor", currentInstrument.get(u)[2]);
 		bank.replace(currentInstrumentName + "::" + u + "::vel_zone_floor", currentInstrument.get(u)[3]);
 		bank.replace(currentInstrumentName + "::" + u + "::envelope", currentInstrument.get(u)[4].split(" "));
-		bank.replace(currentInstrumentName + "::" + u + "::loop", [Number(currentInstrument.get(u)[5].split(" ")[0]), Number(currentInstrument.get(u)[5].split(" ")[2]), Number(currentInstrument.get(u)[5].split(" ")[3])]);
-		bank.replace(currentInstrumentName + "::" + u + "::start", Number(currentInstrument.get(u)[5].split(" ")[1]));
-		bank.replace(currentInstrumentName + "::" + u + "::direction", currentInstrument.get(u)[6]);
-		bank.replace(currentInstrumentName + "::" + u + "::timestretch", currentInstrument.get(u)[7]);		
+		bank.replace(currentInstrumentName + "::" + u + "::loop", [Number(currentInstrument.get(u)[5].split(" ")[0]), Number(currentInstrument.get(u)[5].split(" ")[1]), Number(currentInstrument.get(u)[5].split(" ")[2])]);
+		bank.replace(currentInstrumentName + "::" + u + "::start", Number(currentInstrument.get(u)[6]));
+		bank.replace(currentInstrumentName + "::" + u + "::direction", currentInstrument.get(u)[7]);
+		bank.replace(currentInstrumentName + "::" + u + "::timestretch", currentInstrument.get(u)[8]);		
 	}
 }
 

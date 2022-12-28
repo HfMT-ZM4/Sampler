@@ -136,7 +136,7 @@ function readInstr() {
     bank.replace(currentInstr+"::"+i+"::loop", parseLoop(sampleArray[5]));
     bank.replace(currentInstr+"::"+i+"::start", sampleArray[6]||0);
     bank.replace(currentInstr+"::"+i+"::direction", sampleArray[7]||'fw');
-    bank.replace(currentInstr+"::"+i+"::timestretch", 0);
+    bank.replace(currentInstr+"::"+i+"::timestretch", 1);
   }
 }
 

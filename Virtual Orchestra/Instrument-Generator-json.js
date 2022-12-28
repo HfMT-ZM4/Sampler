@@ -34,7 +34,7 @@ function append(fileName) {
         vel_zone_floor : 0,
         envelope : 1,
         direction : 'fw',
-        timestretch : 0,
+        timestretch : 1,
         loop : [0, 0, 0],
         start: 0
     };

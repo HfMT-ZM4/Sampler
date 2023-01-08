@@ -258,11 +258,12 @@ function append(source, target)
 
 function updateinstrument(u)
 {
-	post("updateinstrument", u, "\n");
 	var currentInstrumentName = this.patcher.parentpatcher.getnamed("instrument").subpatcher().getnamed("current-instrument").getvalueof();
 	var currentInstrument = new Dict;
 	currentInstrument.pull_from_coll(jsarguments[1] + "-current-instrument");
 	var currentInstrumentkeys = currentInstrument.getkeys();
+	
+	//post("updateinstrument, currentInstrument.get(u)[5] ==", currentInstrument.get(u)[5], "\n");
 	//sample : root_key : key_zone_floor : vel_zone_floor : envelope : loop : start : direction : timestretch :
 	if (u == "all") {
 		for (var i = 0; i < currentInstrumentkeys.length;  i++)
@@ -279,7 +280,7 @@ function updateinstrument(u)
 		}
 	}
 	else {
-		post(currentInstrumentName, u, currentInstrument.get(u)[0],"\n");
+		//post(currentInstrumentName, u, currentInstrument.get(u)[0],"\n");
 		bank.replace(currentInstrumentName + "::" + u + "::sample", currentInstrument.get(u)[0]);
 		bank.replace(currentInstrumentName + "::" + u + "::root_key", currentInstrument.get(u)[1]);
 		bank.replace(currentInstrumentName + "::" + u + "::key_zone_floor", currentInstrument.get(u)[2]);

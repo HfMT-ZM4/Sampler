@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 162.0, 292.0, 1374.0, 388.0 ],
+		"rect" : [ 162.0, 292.0, 1124.0, 525.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -456,7 +456,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-8",
@@ -3526,7 +3525,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 1014.0, 456.0, 237.0, 22.0 ],
-					"restore" : [ 1833 ],
+					"restore" : [ 5621 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -3557,7 +3556,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 64.0, 328.0, 1622.0, 660.0 ],
+						"rect" : [ 162.0, 292.0, 1124.0, 525.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -5234,7 +5233,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 162.0, 292.0, 1479.0, 749.0 ],
+										"rect" : [ 162.0, 292.0, 1124.0, 525.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -6278,8 +6277,8 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 800.33331298828125, 277.0, 58.0, 22.0 ],
-													"text" : "delete $1"
+													"patching_rect" : [ 800.33331298828125, 277.0, 181.0, 22.0 ],
+													"text" : "delete $1, sort -1 -1, renumber 1"
 												}
 
 											}

@@ -310,7 +310,8 @@ function remove(instr)
 
 function removesamples(instr, sample)
 {
-	var bankinstrkeys = bank.get(instr).getkeys();
+	if (!bank.contains(instr)) return;
+	var bankinstrkeys = [].concat(bank.get(instr).getkeys());
 	if (sample == "all") for (var i = 0; i < bankinstrkeys.length; i++) bank.remove(instr + "::" + bankinstrkeys[i]);
 	else {
 		bank.remove(instr + "::" + sample);

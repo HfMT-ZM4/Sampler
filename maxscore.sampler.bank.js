@@ -156,12 +156,12 @@ function loadBank()
 	outlet(0, "bank", "clear");
 	pb.clear();
 	clientbuffersoundindex.clear();
-	var bankkeys = [].concat(bank.getkeys());
-	for (var i = 0; i < bankkeys.length; i++) {
-		outlet(0, "bank", i + 1, bankkeys[i]);
-		for (var j = 0; j < bank.get(bankkeys[i]).getkeys().length; j++) {
+	var bankinstrkeys = [].concat(bank.getkeys());
+	for (var i = 0; i < bankinstrkeys.length; i++) {
+		outlet(0, "bank", i + 1, bankinstrkeys[i]);
+		for (var j = 0; j < bank.get(bankinstrkeys[i]).getkeys().length; j++) {
 				//post(bank.getkeys()[i], "\n");
-			pb.append(bank.get(bankkeys[i] + "::" + bank.get(bankkeys[i]).getkeys()[j] + "::sample"));
+			pb.append(bank.get(bankinstrkeys[i] + "::" + bank.get(bankinstrkeys[i]).getkeys()[j] + "::sample"));
 		}
 	}
 	var dump = pb.dump();
@@ -172,7 +172,7 @@ function loadBank()
 		post(dump);
 		if (envelopeLengthChange) {
 			var sampleLength = dump[i*6+3];
-			var envelope = bank.get(bankkeys[0] + "::" + (i+1) + "::envelope");
+			var envelope = bank.get(bankinstrkeys[0] + "::" + (i+1) + "::envelope");
 			post("envelope: "+envelope+"\n");
 			var ratio = sampleLength / envelope[0];
 			envelope[0] = sampleLength;
@@ -181,15 +181,15 @@ function loadBank()
 				envelope[j*3] *= ratio;
 			}
 			//post('envelope[0] type: '+typeof(envelope[0])+'\n');
-			bank.replace(bankkeys[0] + "::" + (i+1) + "::envelope", envelope);
+			bank.replace(bankinstrkeys[0] + "::" + (i+1) + "::envelope", envelope);
 		}
 	}
 
 	for (var i = 0; i < 32; i++) {	
 		this.patcher.parentpatcher.parentpatcher.parentpatcher.getnamed("maxscore.sampler.menus").subpatcher().getnamed(i+"-instrument").subpatcher().getnamed("instrument").message("clear");
 		this.patcher.parentpatcher.parentpatcher.parentpatcher.getnamed("maxscore.sampler.menus").subpatcher().getnamed(i+"-instrument").subpatcher().getnamed("instrument").message("append", "<none>");
-		for (var j = 0; j < bankkeys.length; j++) {
-		this.patcher.parentpatcher.parentpatcher.parentpatcher.getnamed("maxscore.sampler.menus").subpatcher().getnamed(i+"-instrument").subpatcher().getnamed("instrument").message("append", bankkeys[j]);			
+		for (var j = 0; j < bankinstrkeys.length; j++) {
+		this.patcher.parentpatcher.parentpatcher.parentpatcher.getnamed("maxscore.sampler.menus").subpatcher().getnamed(i+"-instrument").subpatcher().getnamed("instrument").message("append", bankinstrkeys[j]);			
 		}
 		this.patcher.parentpatcher.parentpatcher.parentpatcher.getnamed("maxscore.sampler.menus").subpatcher().getnamed(i+"-instrument").subpatcher().getnamed("instrument").message(0);			
 	}
@@ -201,10 +201,10 @@ function loadBank()
 function symbol(instr)
 {
 	bank.replace(instr, "*");
-	var bankkeys = [].concat(bank.getkeys());
-	outlet(0, "bank", bankkeys.length, instr);
+	var bankinstrkeys = [].concat(bank.getkeys());
+	outlet(0, "bank", bankinstrkeys.length, instr);
 	outlet(0, "instrument", "clear");	
-	outlet(0, "notify_cellblock", 0, bankkeys.length - 1);
+	outlet(0, "notify_cellblock", 0, bankinstrkeys.length - 1);
 	for (var i = 0; i < 32; i++) {	
 		this.patcher.parentpatcher.parentpatcher.parentpatcher.getnamed("maxscore.sampler.menus").subpatcher().getnamed(i+"-instrument").subpatcher().getnamed("instrument").message("append", instr);			
 	}
@@ -240,8 +240,8 @@ function rename(oldname, newname)
 	bank.replace(newname, temp);
 	bank.remove(oldname);
 	outlet(0, "bank", "clear");
-	var bankkeys = [].concat(bank.getkeys());
-	for (var i = 0; i < bankkeys.length; i++) outlet(0, "bank", i + 1, bankkeys[i]);
+	var bankinstrkeys = [].concat(bank.getkeys());
+	for (var i = 0; i < bankinstrkeys.length; i++) outlet(0, "bank", i + 1, bankinstrkeys[i]);
 	outlet(0, "notify_cellblock", "bang");
 }
 
@@ -309,8 +309,26 @@ function remove(instr)
 
 function removesamples(instr, sample)
 {
-	if (sample == "all") for (var i = 0; i < bank.get(instr).getkeys().length; i++) bank.remove(instr + "::" + bank.get(instr).getkeys()[i]);
-	else bank.remove(instr + "::" + sample);
+	var bankinstrkeys = bank.get(instr).getkeys();
+	if (sample == "all") for (var i = 0; i < bankinstrkeys.length; i++) bank.remove(instr + "::" + bankinstrkeys[i]);
+	else {
+		bank.remove(instr + "::" + sample);
+		// shift indices of samples after the removed one by -1
+		
+		var temp = new Dict;
+		for (var i = 0; i < bankinstrkeys.length; i++) {
+			if (Number(bankinstrkeys[i]) > sample) {
+				temp.replace(Number(bankinstrkeys[i])-1, bank.get(instr+"::"+bankinstrkeys[i]));
+				bank.remove(instr + "::" + bankinstrkeys[i]);
+			}
+		}
+		post(temp.stringify());
+		
+		var tempkeys = temp.getkeys();
+		for (var i = 0; i < tempkeys.length; i++) {
+			bank.set(instr+"::"+tempkeys[i], temp.get(tempkeys[i]));
+		}
+	}
 }
 
 function clearall(instr)

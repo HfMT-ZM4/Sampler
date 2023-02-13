@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 162.0, 292.0, 1698.0, 754.0 ],
+		"rect" : [ 162.0, 292.0, 1498.0, 664.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -378,7 +378,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 2132.0, 135.0, 640.0, 480.0 ],
+						"rect" : [ 162.0, 292.0, 1549.0, 509.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1146,7 +1146,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 332.0, 330.0, 876.0, 622.0 ],
+						"rect" : [ 162.0, 292.0, 1374.0, 388.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1990,7 +1990,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 40.0, 87.0, 1495.0, 788.0 ],
+						"rect" : [ 162.0, 292.0, 1041.0, 664.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2018,7 +2018,21 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
+						"visible" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+									"id" : "obj-4",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 285.5, 106.0, 276.0, 20.0 ],
+									"text" : "< What is this for??? Creates a problem during init",
+									"textcolor" : [ 1.0, 0.0, 0.0, 1.0 ]
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-67",
 									"linecount" : 3,
@@ -3667,6 +3681,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-43", 5 ],
+									"disabled" : 1,
 									"source" : [ "obj-61", 0 ]
 								}
 
@@ -5497,6 +5512,7 @@
 					"fontname" : "Avenir Next Regular",
 					"fontsize" : 12.0,
 					"id" : "obj-5",
+					"ignoreclick" : 1,
 					"maxclass" : "live.text",
 					"numinlets" : 1,
 					"numoutlets" : 2,

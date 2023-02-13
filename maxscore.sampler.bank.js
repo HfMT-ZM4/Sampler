@@ -322,7 +322,7 @@ function removesamples(instr, sample)
 				bank.remove(instr + "::" + bankinstrkeys[i]);
 			}
 		}
-		post(temp.stringify());
+		//post(temp.stringify());
 		
 		var tempkeys = temp.getkeys();
 		for (var i = 0; i < tempkeys.length; i++) {

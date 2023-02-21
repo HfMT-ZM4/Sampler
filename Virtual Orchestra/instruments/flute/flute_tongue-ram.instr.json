@@ -1,0 +1,112 @@
+{
+  "1": {
+    "sample": "fl-tgr-brth.out-C3-ff.AIF",
+    "root_key": null,
+    "key_zone_floor": null,
+    "vel_zone_floor": 0,
+    "envelope": 1,
+    "direction": "fw",
+    "timestretch": 1,
+    "loop": [0,0,0],
+    "start": 0
+  },
+  "2": {
+    "sample": "fl-tgr-brth.out-F#3-ff.AIF",
+    "root_key": null,
+    "key_zone_floor": null,
+    "vel_zone_floor": 0,
+    "envelope": 1,
+    "direction": "fw",
+    "timestretch": 1,
+    "loop": [0,0,0],
+    "start": 0
+  },
+  "3": {
+    "sample": "fl_tgr_brth.out-A3-ff.AIF",
+    "root_key": null,
+    "key_zone_floor": null,
+    "vel_zone_floor": 0,
+    "envelope": 1,
+    "direction": "fw",
+    "timestretch": 1,
+    "loop": [0,0,0],
+    "start": 0
+  },
+  "4": {
+    "sample": "fl_tgr_brth.out-C#4-ff.AIF",
+    "root_key": null,
+    "key_zone_floor": null,
+    "vel_zone_floor": 0,
+    "envelope": 1,
+    "direction": "fw",
+    "timestretch": 1,
+    "loop": [0,0,0],
+    "start": 0
+  },
+  "5": {
+    "sample": "fl_tgr_brth.out-D#3-ff.AIF",
+    "root_key": null,
+    "key_zone_floor": null,
+    "vel_zone_floor": 0,
+    "envelope": 1,
+    "direction": "fw",
+    "timestretch": 1,
+    "loop": [0,0,0],
+    "start": 0
+  },
+  "6": {
+    "sample": "fl_tgr_inh-C3-pp.AIF",
+    "root_key": 48,
+    "key_zone_floor": 48,
+    "vel_zone_floor": 0,
+    "envelope": 1,
+    "direction": "fw",
+    "timestretch": 1,
+    "loop": [0,0,0],
+    "start": 0
+  },
+  "7": {
+    "sample": "fl_tgr_inh-D#3-pp.AIF",
+    "root_key": 51,
+    "key_zone_floor": 51,
+    "vel_zone_floor": 0,
+    "envelope": 1,
+    "direction": "fw",
+    "timestretch": 1,
+    "loop": [0,0,0],
+    "start": 0
+  },
+  "8": {
+    "sample": "fl_tgr_inh-F#3-pp.AIF",
+    "root_key": 54,
+    "key_zone_floor": 54,
+    "vel_zone_floor": 0,
+    "envelope": 1,
+    "direction": "fw",
+    "timestretch": 1,
+    "loop": [0,0,0],
+    "start": 0
+  },
+  "9": {
+    "sample": "fl_tgr_inh-A3-pp.AIF",
+    "root_key": 57,
+    "key_zone_floor": 57,
+    "vel_zone_floor": 0,
+    "envelope": 1,
+    "direction": "fw",
+    "timestretch": 1,
+    "loop": [0,0,0],
+    "start": 0
+  },
+  "10": {
+    "sample": "fl_tgr_inh-C#4-pp.AIF",
+    "root_key": 61,
+    "key_zone_floor": 61,
+    "vel_zone_floor": 0,
+    "envelope": 1,
+    "direction": "fw",
+    "timestretch": 1,
+    "loop": [0,0,0],
+    "start": 0
+  }
+}

@@ -169,7 +169,7 @@ function loadBank()
 	// fix envelope according to sample length for old bank formats (James's addition)
 	for (var i = 0; i < dump.length / 6; i++){
 		clientbuffersoundindex.set(dump[i * 6 + 2], dump[i * 6 + 1]);
-		post(dump);
+		//post(dump);
 		if (envelopeLengthChange) {
 			var sampleLength = dump[i*6+3];
 			var envelope = bank.get(bankinstrkeys[0] + "::" + (i+1) + "::envelope");

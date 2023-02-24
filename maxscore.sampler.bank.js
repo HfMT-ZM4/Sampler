@@ -42,7 +42,7 @@ function parseEnvelope(envelope) {
   }
   functionArray.push('linear');
   functionArray[0] = currentTime;
-  post("functionArray", envelopeArray, "\n", functionArray, "\n");
+  //post("functionArray", envelopeArray, "\n", functionArray, "\n");
   // format: [domain, range_min, range_max, triples of (x, y, point_type), "linear"]: point_type is 0 if normal and 2 if sustain_point
   return functionArray;
 }
@@ -114,16 +114,17 @@ function setCurrentInstr(ins) {
 function readInstr() {
   instrDict.clear();
   instrDict.pull_from_coll('old_instr');
+  post("instrDict", instrDict.stringify(), "\n");
 
-  for (var i = 1; i <= instrDict.getsize(i.toString()); i++) {
+  for (var i = 1; i <= instrDict.getkeys().length; i++) {
     var sampleArray = instrDict.get(i.toString());
-    if (sampleArray.length == 4) {
+   post("instrDict", instrDict.get(i.toString()), instrDict.getsize(i.toString()), "\n");
+   if (sampleArray.length == 4) {
 	  envelopeLengthChange = true; // envelope needs to adjust to sample length
       var envelopePresets = new Dict('envelope-presets');
       var preset = sampleArray[3];
       sampleArray[3] = 0;
       sampleArray[4] = envelopePresets.get(preset);
-      //post(sampleArray[4]+"\n");
     }
     else if (sampleArray.length == 7) {
       sampleArray.splice(3, 0, 0);
@@ -258,7 +259,7 @@ function append(source, target)
 
 function updateinstrument(u)
 {
-	post("updateInstrument called\n")
+	post("updateInstrument called", u, "\n");
 	var currentInstrumentName = this.patcher.parentpatcher.getnamed("instrument").subpatcher().getnamed("current-instrument").getvalueof();
 	var currentInstrument = new Dict;
 	currentInstrument.pull_from_coll(jsarguments[1] + "-current-instrument");
@@ -273,7 +274,8 @@ function updateinstrument(u)
 		bank.replace(currentInstrumentName + "::" + currentInstrumentkeys[i] + "::root_key", currentInstrument.get(currentInstrumentkeys[i])[1]);
 		bank.replace(currentInstrumentName + "::" + currentInstrumentkeys[i] + "::key_zone_floor", currentInstrument.get(currentInstrumentkeys[i])[2]);
 		bank.replace(currentInstrumentName + "::" + currentInstrumentkeys[i] + "::vel_zone_floor", currentInstrument.get(currentInstrumentkeys[i])[3]);
-		bank.replace(currentInstrumentName + "::" + currentInstrumentkeys[i] + "::envelope", currentInstrument.get(currentInstrumentkeys[i])[4].split(" "));
+		var tempArray = currentInstrument.get(currentInstrumentkeys[i])[4].split(" ");
+		bank.replace(currentInstrumentName + "::" + currentInstrumentkeys[i] + "::envelope", tempArray.slice(0, tempArray.length - 1).map(Number).concat(tempArray[tempArray.length - 1]));
 		bank.replace(currentInstrumentName + "::" + currentInstrumentkeys[i] + "::loop", [Number(currentInstrument.get(currentInstrumentkeys[i])[5].split(" ")[0]), Number(currentInstrument.get(currentInstrumentkeys[i])[5].split(" ")[1]), Number(currentInstrument.get(currentInstrumentkeys[i])[5].split(" ")[2])]);
 		bank.replace(currentInstrumentName + "::" + currentInstrumentkeys[i] + "::start", Number(currentInstrument.get(currentInstrumentkeys[i])[6]));
 		bank.replace(currentInstrumentName + "::" + currentInstrumentkeys[i] + "::direction", currentInstrument.get(currentInstrumentkeys[i])[7]);
@@ -281,12 +283,12 @@ function updateinstrument(u)
 		}
 	}
 	else {
-		post(currentInstrumentName, u, currentInstrument.get(u)[0],"\n");
 		bank.replace(currentInstrumentName + "::" + u + "::sample", currentInstrument.get(u)[0]);
 		bank.replace(currentInstrumentName + "::" + u + "::root_key", currentInstrument.get(u)[1]);
 		bank.replace(currentInstrumentName + "::" + u + "::key_zone_floor", currentInstrument.get(u)[2]);
 		bank.replace(currentInstrumentName + "::" + u + "::vel_zone_floor", currentInstrument.get(u)[3]);
-		bank.replace(currentInstrumentName + "::" + u + "::envelope", currentInstrument.get(u)[4].split(" "));
+		var tempArray = currentInstrument.get(u)[4].split(" ");
+		bank.replace(currentInstrumentName + "::" + u + "::envelope", tempArray.slice(0, tempArray.length - 1).map(Number).concat(tempArray[tempArray.length - 1]));
 		bank.replace(currentInstrumentName + "::" + u + "::loop", [Number(currentInstrument.get(u)[5].split(" ")[0]), Number(currentInstrument.get(u)[5].split(" ")[1]), Number(currentInstrument.get(u)[5].split(" ")[2])]);
 		bank.replace(currentInstrumentName + "::" + u + "::start", Number(currentInstrument.get(u)[6]));
 		bank.replace(currentInstrumentName + "::" + u + "::direction", currentInstrument.get(u)[7]);

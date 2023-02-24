@@ -1,0 +1,57 @@
+{
+  "1": {
+    "sample": "fl_jet-B3.AIF",
+    "root_key": 59,
+    "key_zone_floor": 59,
+    "vel_zone_floor": 0,
+    "envelope": 1,
+    "direction": "fw",
+    "timestretch": 1,
+    "loop": [0,0,0],
+    "start": 0
+  },
+  "2": {
+    "sample": "fl_jet-D4.AIF",
+    "root_key": 62,
+    "key_zone_floor": 62,
+    "vel_zone_floor": 0,
+    "envelope": 1,
+    "direction": "fw",
+    "timestretch": 1,
+    "loop": [0,0,0],
+    "start": 0
+  },
+  "3": {
+    "sample": "fl_jet-F4.AIF",
+    "root_key": 65,
+    "key_zone_floor": 65,
+    "vel_zone_floor": 0,
+    "envelope": 1,
+    "direction": "fw",
+    "timestretch": 1,
+    "loop": [0,0,0],
+    "start": 0
+  },
+  "4": {
+    "sample": "fl_jet-G#4.AIF",
+    "root_key": 68,
+    "key_zone_floor": 68,
+    "vel_zone_floor": 0,
+    "envelope": 1,
+    "direction": "fw",
+    "timestretch": 1,
+    "loop": [0,0,0],
+    "start": 0
+  },
+  "5": {
+    "sample": "fl_jet-B4.AIF",
+    "root_key": 71,
+    "key_zone_floor": 71,
+    "vel_zone_floor": 0,
+    "envelope": 1,
+    "direction": "fw",
+    "timestretch": 1,
+    "loop": [0,0,0],
+    "start": 0
+  }
+}

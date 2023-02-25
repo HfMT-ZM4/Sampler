@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 3,
-			"revision" : 0,
+			"minor" : 5,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 162.0, 264.0, 914.0, 416.0 ],
+		"rect" : [ 582.0, 454.0, 1006.0, 531.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,12 +40,87 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-14",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 244.0, 70.0, 82.0, 22.0 ],
+					"text" : "note 6000 0 2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-13",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 138.5, 70.0, 95.0, 22.0 ],
+					"text" : "note 6000 100 2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-12",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 538.0, 453.0, 50.0, 22.0 ],
+					"text" : "bang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-11",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 461.0, 453.0, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-9",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 431.0, 376.0, 97.0, 22.0 ],
+					"text" : "killall coreaudiod"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-7",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"patching_rect" : [ 431.0, 416.0, 33.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"shell" : "(default)"
+					}
+,
+					"text" : "shell"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-6",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 126.0, 32.0, 37.0, 22.0 ],
+					"patching_rect" : [ 52.0, 25.0, 37.0, 22.0 ],
 					"text" : "panic"
 				}
 
@@ -66,7 +141,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "multichannelsignal" ],
-					"patching_rect" : [ 528.0, 94.0, 318.0, 228.0 ],
+					"patching_rect" : [ 454.0, 87.0, 318.0, 228.0 ],
 					"varname" : "maxscore.sampler[1]",
 					"viewvisibility" : 1
 				}
@@ -79,7 +154,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 279.0, 32.0, 82.0, 22.0 ],
+					"patching_rect" : [ 205.0, 25.0, 82.0, 22.0 ],
 					"text" : "note 6000 0 1"
 				}
 
@@ -91,7 +166,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 172.0, 32.0, 95.0, 22.0 ],
+					"patching_rect" : [ 98.0, 25.0, 95.0, 22.0 ],
 					"text" : "note 6000 100 1"
 				}
 
@@ -102,7 +177,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 172.0, 340.0, 54.0, 22.0 ],
+					"patching_rect" : [ 98.0, 380.0, 54.0, 22.0 ],
 					"text" : "mc.dac~"
 				}
 
@@ -123,7 +198,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "multichannelsignal" ],
-					"patching_rect" : [ 172.0, 94.0, 318.0, 228.0 ],
+					"patching_rect" : [ 98.0, 134.0, 318.0, 228.0 ],
 					"varname" : "maxscore.sampler",
 					"viewvisibility" : 1
 				}
@@ -131,6 +206,20 @@
 			}
  ],
 		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"source" : [ "obj-13", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"source" : [ "obj-14", 0 ]
+				}
+
+			}
+, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-3", 0 ]
@@ -155,6 +244,27 @@
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
 					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-11", 1 ],
+					"source" : [ "obj-7", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-12", 1 ],
+					"source" : [ "obj-7", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
+					"source" : [ "obj-9", 0 ]
 				}
 
 			}
@@ -289,15 +399,15 @@
 				}
 ,
 				"obj-3::obj-43::obj-2::obj-17::obj-3::obj-24" : 				{
-					"parameter_range" : [ 0.0, 40097.959999999999127 ]
+					"parameter_range" : [ 0.0, 360.0 ]
 				}
 ,
 				"obj-3::obj-43::obj-2::obj-17::obj-3::obj-27" : 				{
-					"parameter_range" : [ 0.0, 40097.959999999999127 ]
+					"parameter_range" : [ 0.0, 360.0 ]
 				}
 ,
 				"obj-3::obj-43::obj-2::obj-17::obj-3::obj-6" : 				{
-					"parameter_range" : [ 0.0, 40097.959999999999127 ]
+					"parameter_range" : [ 0.0, 360.0 ]
 				}
 
 			}
@@ -306,6 +416,13 @@
 		}
 ,
 		"dependency_cache" : [ 			{
+				"name" : "Bandoneon.instr",
+				"bootpath" : "/Users/Shared/Max 8/Packages/Quintet.net/patchers/Projects/Tutorial/Instruments",
+				"patcherrelativepath" : "../../Packages/Quintet.net/patchers/Projects/Tutorial/Instruments",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "LtoC.maxpat",
 				"bootpath" : "/Users/Shared/Max 8/Packages/MaxScore/patchers/modules/MaxScore-Sampler",
 				"patcherrelativepath" : "../../Packages/MaxScore/patchers/modules/MaxScore-Sampler",
@@ -335,9 +452,16 @@
 			}
 , 			{
 				"name" : "Sampler.json",
-				"bootpath" : "/Users/Shared/Max 8/Library/Raindrops Keep Falling",
-				"patcherrelativepath" : "../Raindrops Keep Falling",
+				"bootpath" : "/Users/Shared/Max 8/Library/Summer 2021",
+				"patcherrelativepath" : "../Summer 2021",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Tutorial.bank.txt",
+				"bootpath" : "~/Library/Mobile Documents/com~apple~CloudDocs/Documents/Max 8/Packages/Quintet.net/patchers/Projects/Tutorial",
+				"patcherrelativepath" : "../../../../hajdu/Library/Mobile Documents/com~apple~CloudDocs/Documents/Max 8/Packages/Quintet.net/patchers/Projects/Tutorial",
+				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
@@ -359,20 +483,6 @@
 				"bootpath" : "/Users/Shared/Max 8/Packages/MaxScore/patchers/modules/MaxScore-Sampler",
 				"patcherrelativepath" : "../../Packages/MaxScore/patchers/modules/MaxScore-Sampler",
 				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "low-e.bank.txt",
-				"bootpath" : "/Users/Shared/Max 8/Library/Sample-Bank-Dev/Virtual Orchestra/reference",
-				"patcherrelativepath" : "./Virtual Orchestra/reference",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "low-e.instr",
-				"bootpath" : "/Users/Shared/Max 8/Library/Sample-Bank-Dev/Virtual Orchestra/reference",
-				"patcherrelativepath" : "./Virtual Orchestra/reference",
-				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
@@ -447,22 +557,8 @@
 			}
 , 			{
 				"name" : "my-LtoColl.maxpat",
-				"bootpath" : "/Users/Shared/Max 8/Packages/Quintet.net/patchers/Library/Abstractions/utilities",
-				"patcherrelativepath" : "../../Packages/Quintet.net/patchers/Library/Abstractions/utilities",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "old-bank-converter.js",
-				"bootpath" : "/Users/Shared/Max 8/Library/Sample-Bank-Dev",
-				"patcherrelativepath" : ".",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "old-bank-converter.maxpat",
-				"bootpath" : "/Users/Shared/Max 8/Library/Sample-Bank-Dev",
-				"patcherrelativepath" : ".",
+				"bootpath" : "/Users/Shared/Max 8/Packages/MaxScore/patchers/extensions",
+				"patcherrelativepath" : "../../Packages/MaxScore/patchers/extensions",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -521,6 +617,10 @@
 				"patcherrelativepath" : "../../Packages/MaxScore/patchers/modules/MaxScore-Sampler",
 				"type" : "JSON",
 				"implicit" : 1
+			}
+, 			{
+				"name" : "shell.mxo",
+				"type" : "iLaX"
 			}
 , 			{
 				"name" : "swissarmyknife.js",

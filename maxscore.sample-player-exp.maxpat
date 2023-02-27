@@ -244,8 +244,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 415.0, 309.0, 256.0, 49.0 ],
-									"text" : "pattrforward parent::parent::parent::parent::parent::Preferences::Sampler::bank-waveform-editor::cursor"
+									"patching_rect" : [ 415.0, 309.0, 439.0, 49.0 ],
+									"text" : "pattrforward parent::parent::parent::parent::Preferences::Sampler::bank-waveform-editor::cursor"
 								}
 
 							}
@@ -272,14 +272,14 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 479.5, 44.0, 350.0, 49.0 ],
+									"patching_rect" : [ 479.5, 44.0, 380.0, 49.0 ],
 									"restore" : [ "1181-clientbuffer.117" ],
 									"saved_object_attributes" : 									{
 										"parameter_enable" : 0,
 										"parameter_mappable" : 0
 									}
 ,
-									"text" : "pattr @bindto parent::parent::parent::parent::parent::Preferences::Sampler::samples::clientbuffer-name @invisible 1 @autorestore 0",
+									"text" : "pattr @bindto parent::parent::parent::parent::Preferences::Sampler::samples::clientbuffer-name @invisible 1 @autorestore 0",
 									"varname" : "u180007228"
 								}
 
@@ -2530,14 +2530,14 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 259.0, 365.236084000000005, 458.0, 35.0 ],
+									"patching_rect" : [ 259.0, 365.236084000000005, 486.0, 35.0 ],
 									"restore" : [ 27378 ],
 									"saved_object_attributes" : 									{
 										"parameter_enable" : 0,
 										"parameter_mappable" : 0
 									}
 ,
-									"text" : "pattr @bindto parent::parent::parent::parent::parent::Preferences::Sampler::instance @invisible 1 @autorestore 0",
+									"text" : "pattr @bindto parent::parent::parent::parent::Preferences::Sampler::instance @invisible 1 @autorestore 0",
 									"varname" : "u339007263"
 								}
 
@@ -3390,19 +3390,19 @@
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
 									"id" : "obj-1",
-									"linecount" : 4,
+									"linecount" : 3,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 363.0, 9.0, 257.0, 62.0 ],
+									"patching_rect" : [ 363.0, 9.0, 517.0, 49.0 ],
 									"restore" : [ 1, 0.0, 0.0, 0.0, 1 ],
 									"saved_object_attributes" : 									{
 										"parameter_enable" : 0,
 										"parameter_mappable" : 0
 									}
 ,
-									"text" : "pattr @bindto parent::parent::parent::parent::parent::Preferences::Sampler::bank-waveform-editor::setloop @invisible 1 @autorestore 0",
+									"text" : "pattr @bindto parent::parent::parent::parent::Preferences::Sampler::bank-waveform-editor::setloop @invisible 1 @autorestore 0",
 									"varname" : "u842007277"
 								}
 

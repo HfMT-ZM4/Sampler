@@ -1,0 +1,2204 @@
+{
+	"vibraphone_double-bass-bow.instr" : 	{
+		"1" : 		{
+			"sample" : "vib_bow-F3-pp.AIF",
+			"root_key" : 53,
+			"key_zone_floor" : 53,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"2" : 		{
+			"sample" : "vib_bow-F3-mf.AIF",
+			"root_key" : 53,
+			"key_zone_floor" : 53,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"3" : 		{
+			"sample" : "vib_bow-G#3-pp.AIF",
+			"root_key" : 56,
+			"key_zone_floor" : 56,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"4" : 		{
+			"sample" : "vib_bow-G#3-mf.AIF",
+			"root_key" : 56,
+			"key_zone_floor" : 56,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"5" : 		{
+			"sample" : "vib_bow-B3-pp.AIF",
+			"root_key" : 59,
+			"key_zone_floor" : 59,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"6" : 		{
+			"sample" : "vib_bow-B3-mf.AIF",
+			"root_key" : 59,
+			"key_zone_floor" : 59,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"7" : 		{
+			"sample" : "vib_bow-D4-pp.AIF",
+			"root_key" : 62,
+			"key_zone_floor" : 62,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"8" : 		{
+			"sample" : "vib_bow-D4-mf.AIF",
+			"root_key" : 62,
+			"key_zone_floor" : 62,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"9" : 		{
+			"sample" : "vib_bow-F4-pp.AIF",
+			"root_key" : 65,
+			"key_zone_floor" : 65,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"10" : 		{
+			"sample" : "vib_bow-F4-mf.AIF",
+			"root_key" : 65,
+			"key_zone_floor" : 65,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"11" : 		{
+			"sample" : "vib_bow-G#4-pp.AIF",
+			"root_key" : 68,
+			"key_zone_floor" : 68,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"12" : 		{
+			"sample" : "vib_bow-G#4-mf.AIF",
+			"root_key" : 68,
+			"key_zone_floor" : 68,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"13" : 		{
+			"sample" : "vib_bow-B4-pp.AIF",
+			"root_key" : 71,
+			"key_zone_floor" : 71,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"14" : 		{
+			"sample" : "vib_bow-B4-mf.AIF",
+			"root_key" : 71,
+			"key_zone_floor" : 71,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"15" : 		{
+			"sample" : "vib_bow-D5-pp.AIF",
+			"root_key" : 74,
+			"key_zone_floor" : 74,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"16" : 		{
+			"sample" : "vib_bow-D5-mf.AIF",
+			"root_key" : 74,
+			"key_zone_floor" : 74,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"17" : 		{
+			"sample" : "vib_bow-F5-pp.AIF",
+			"root_key" : 77,
+			"key_zone_floor" : 77,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"18" : 		{
+			"sample" : "vib_bow-F5-mf.AIF",
+			"root_key" : 77,
+			"key_zone_floor" : 77,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"19" : 		{
+			"sample" : "vib_bow-G#5-pp.AIF",
+			"root_key" : 80,
+			"key_zone_floor" : 80,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"20" : 		{
+			"sample" : "vib_bow-G#5-mf.AIF",
+			"root_key" : 80,
+			"key_zone_floor" : 80,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"21" : 		{
+			"sample" : "vib_bow-B5-pp.AIF",
+			"root_key" : 83,
+			"key_zone_floor" : 83,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"22" : 		{
+			"sample" : "vib_bow-B5-mf.AIF",
+			"root_key" : 83,
+			"key_zone_floor" : 83,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"23" : 		{
+			"sample" : "vib_bow-D6-pp.AIF",
+			"root_key" : 86,
+			"key_zone_floor" : 86,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"24" : 		{
+			"sample" : "vib_bow-D6-mf.AIF",
+			"root_key" : 86,
+			"key_zone_floor" : 86,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"25" : 		{
+			"sample" : "vib_bow-F6-pp.AIF",
+			"root_key" : 89,
+			"key_zone_floor" : 89,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"26" : 		{
+			"sample" : "vib_bow-F6-mf.AIF",
+			"root_key" : 89,
+			"key_zone_floor" : 89,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+
+	}
+,
+	"vibraphone_notched-stick.instr" : 	{
+		"1" : 		{
+			"sample" : "vib_ntchst-F3-pp.AIF",
+			"root_key" : 53,
+			"key_zone_floor" : 53,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"2" : 		{
+			"sample" : "vib_ntchst-F3-mf.AIF",
+			"root_key" : 53,
+			"key_zone_floor" : 53,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"3" : 		{
+			"sample" : "vib_ntchst-G#3-pp.AIF",
+			"root_key" : 56,
+			"key_zone_floor" : 56,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"4" : 		{
+			"sample" : "vib_ntchst-G#3-mf.AIF",
+			"root_key" : 56,
+			"key_zone_floor" : 56,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"5" : 		{
+			"sample" : "vib_ntchst-B3-pp.AIF",
+			"root_key" : 59,
+			"key_zone_floor" : 59,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"6" : 		{
+			"sample" : "vib_ntchst-B3-mf.AIF",
+			"root_key" : 59,
+			"key_zone_floor" : 59,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"7" : 		{
+			"sample" : "vib_ntchst-D4-pp.AIF",
+			"root_key" : 62,
+			"key_zone_floor" : 62,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"8" : 		{
+			"sample" : "vib_ntchst-D4-mf.AIF",
+			"root_key" : 62,
+			"key_zone_floor" : 62,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"9" : 		{
+			"sample" : "vib_ntchst-F4-pp.AIF",
+			"root_key" : 65,
+			"key_zone_floor" : 65,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"10" : 		{
+			"sample" : "vib_ntchst-F4-mf.AIF",
+			"root_key" : 65,
+			"key_zone_floor" : 65,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"11" : 		{
+			"sample" : "vib_ntchst-G#4-pp.AIF",
+			"root_key" : 68,
+			"key_zone_floor" : 68,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"12" : 		{
+			"sample" : "vib_ntchst-G#4-mf.AIF",
+			"root_key" : 68,
+			"key_zone_floor" : 68,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"13" : 		{
+			"sample" : "vib_ntchst-B4-pp.AIF",
+			"root_key" : 71,
+			"key_zone_floor" : 71,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"14" : 		{
+			"sample" : "vib_ntchst-B4-mf.AIF",
+			"root_key" : 71,
+			"key_zone_floor" : 71,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"15" : 		{
+			"sample" : "vib_ntchst-D5-pp.AIF",
+			"root_key" : 74,
+			"key_zone_floor" : 74,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"16" : 		{
+			"sample" : "vib_ntchst-D5-mf.AIF",
+			"root_key" : 74,
+			"key_zone_floor" : 74,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"17" : 		{
+			"sample" : "vib_ntchst-F5-pp.AIF",
+			"root_key" : 77,
+			"key_zone_floor" : 77,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"18" : 		{
+			"sample" : "vib_ntchst-F5-mf.AIF",
+			"root_key" : 77,
+			"key_zone_floor" : 77,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"19" : 		{
+			"sample" : "vib_ntchst-G#5-pp.AIF",
+			"root_key" : 80,
+			"key_zone_floor" : 80,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"20" : 		{
+			"sample" : "vib_ntchst-G#5-mf.AIF",
+			"root_key" : 80,
+			"key_zone_floor" : 80,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"21" : 		{
+			"sample" : "vib_ntchst-B5-pp.AIF",
+			"root_key" : 83,
+			"key_zone_floor" : 83,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"22" : 		{
+			"sample" : "vib_ntchst-B5-mf.AIF",
+			"root_key" : 83,
+			"key_zone_floor" : 83,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"23" : 		{
+			"sample" : "vib_ntchst-D6-pp.AIF",
+			"root_key" : 86,
+			"key_zone_floor" : 86,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"24" : 		{
+			"sample" : "vib_ntchst-D6-mf.AIF",
+			"root_key" : 86,
+			"key_zone_floor" : 86,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"25" : 		{
+			"sample" : "vib_ntchst-F6-pp.AIF",
+			"root_key" : 89,
+			"key_zone_floor" : 89,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"26" : 		{
+			"sample" : "vib_ntchst-F6-mf.AIF",
+			"root_key" : 89,
+			"key_zone_floor" : 89,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+
+	}
+,
+	"vibraphone_ordinario-soft-mallets.instr" : 	{
+		"1" : 		{
+			"sample" : "vib_softmar-F3-pp.AIF",
+			"root_key" : 53,
+			"key_zone_floor" : 53,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"2" : 		{
+			"sample" : "vib_softmar-F3-mf.AIF",
+			"root_key" : 53,
+			"key_zone_floor" : 53,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"3" : 		{
+			"sample" : "vib_softmar-F3-ff.AIF",
+			"root_key" : 53,
+			"key_zone_floor" : 53,
+			"vel_zone_floor" : 84,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"4" : 		{
+			"sample" : "vib_softmar-G#3-pp.AIF",
+			"root_key" : 56,
+			"key_zone_floor" : 56,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"5" : 		{
+			"sample" : "vib_softmar-G#3-mf.AIF",
+			"root_key" : 56,
+			"key_zone_floor" : 56,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"6" : 		{
+			"sample" : "vib_softmar-G#3-ff.AIF",
+			"root_key" : 56,
+			"key_zone_floor" : 56,
+			"vel_zone_floor" : 84,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"7" : 		{
+			"sample" : "vib_softmar-B3-pp.AIF",
+			"root_key" : 59,
+			"key_zone_floor" : 59,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"8" : 		{
+			"sample" : "vib_softmar-B3-mf.AIF",
+			"root_key" : 59,
+			"key_zone_floor" : 59,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"9" : 		{
+			"sample" : "vib_softmar-B3-ff.AIF",
+			"root_key" : 59,
+			"key_zone_floor" : 59,
+			"vel_zone_floor" : 84,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"10" : 		{
+			"sample" : "vib_softmar-D4-pp.AIF",
+			"root_key" : 62,
+			"key_zone_floor" : 62,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"11" : 		{
+			"sample" : "vib_softmar-D4-mf.AIF",
+			"root_key" : 62,
+			"key_zone_floor" : 62,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"12" : 		{
+			"sample" : "vib_softmar-D4-ff.AIF",
+			"root_key" : 62,
+			"key_zone_floor" : 62,
+			"vel_zone_floor" : 84,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"13" : 		{
+			"sample" : "vib_softmar-F4-pp.AIF",
+			"root_key" : 65,
+			"key_zone_floor" : 65,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"14" : 		{
+			"sample" : "vib_softmar-F4-mf.AIF",
+			"root_key" : 65,
+			"key_zone_floor" : 65,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"15" : 		{
+			"sample" : "vib_softmar-F4-ff.AIF",
+			"root_key" : 65,
+			"key_zone_floor" : 65,
+			"vel_zone_floor" : 84,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"16" : 		{
+			"sample" : "vib_softmar-G#4-pp.AIF",
+			"root_key" : 68,
+			"key_zone_floor" : 68,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"17" : 		{
+			"sample" : "vib_softmar-G#4-mf.AIF",
+			"root_key" : 68,
+			"key_zone_floor" : 68,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"18" : 		{
+			"sample" : "vib_softmar-G#4-ff.AIF",
+			"root_key" : 68,
+			"key_zone_floor" : 68,
+			"vel_zone_floor" : 84,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"19" : 		{
+			"sample" : "vib_softmar-B4-pp.AIF",
+			"root_key" : 71,
+			"key_zone_floor" : 71,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"20" : 		{
+			"sample" : "vib_softmar-B4-mf.AIF",
+			"root_key" : 71,
+			"key_zone_floor" : 71,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"21" : 		{
+			"sample" : "vib_softmar-B4-ff.AIF",
+			"root_key" : 71,
+			"key_zone_floor" : 71,
+			"vel_zone_floor" : 84,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"22" : 		{
+			"sample" : "vib_softmar-D5-pp.AIF",
+			"root_key" : 74,
+			"key_zone_floor" : 74,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"23" : 		{
+			"sample" : "vib_softmar-D5-mf.AIF",
+			"root_key" : 74,
+			"key_zone_floor" : 74,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"24" : 		{
+			"sample" : "vib_softmar-D5-ff.AIF",
+			"root_key" : 74,
+			"key_zone_floor" : 74,
+			"vel_zone_floor" : 84,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"25" : 		{
+			"sample" : "vib_softmar-F5-pp.AIF",
+			"root_key" : 77,
+			"key_zone_floor" : 77,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"26" : 		{
+			"sample" : "vib_softmar-F5-mf.AIF",
+			"root_key" : 77,
+			"key_zone_floor" : 77,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"27" : 		{
+			"sample" : "vib_softmar-F5-ff.AIF",
+			"root_key" : 77,
+			"key_zone_floor" : 77,
+			"vel_zone_floor" : 84,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"28" : 		{
+			"sample" : "vib_softmar-G#5-pp.AIF",
+			"root_key" : 80,
+			"key_zone_floor" : 80,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"29" : 		{
+			"sample" : "vib_softmar-G#5-mf.AIF",
+			"root_key" : 80,
+			"key_zone_floor" : 80,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"30" : 		{
+			"sample" : "vib_softmar-G#5-ff.AIF",
+			"root_key" : 80,
+			"key_zone_floor" : 80,
+			"vel_zone_floor" : 84,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"31" : 		{
+			"sample" : "vib_softmar-B5-pp.AIF",
+			"root_key" : 83,
+			"key_zone_floor" : 83,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"32" : 		{
+			"sample" : "vib_softmar-B5-mf.AIF",
+			"root_key" : 83,
+			"key_zone_floor" : 83,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"33" : 		{
+			"sample" : "vib_softmar-B5-ff.AIF",
+			"root_key" : 83,
+			"key_zone_floor" : 83,
+			"vel_zone_floor" : 84,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"34" : 		{
+			"sample" : "vib_softmar-D6-pp.AIF",
+			"root_key" : 86,
+			"key_zone_floor" : 86,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"35" : 		{
+			"sample" : "vib_softmar-D6-mf.AIF",
+			"root_key" : 86,
+			"key_zone_floor" : 86,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"36" : 		{
+			"sample" : "vib_softmar-D6-ff.AIF",
+			"root_key" : 86,
+			"key_zone_floor" : 86,
+			"vel_zone_floor" : 84,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"37" : 		{
+			"sample" : "vib_softmar-F6-pp.AIF",
+			"root_key" : 89,
+			"key_zone_floor" : 89,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"38" : 		{
+			"sample" : "vib_softmar-F6-mf.AIF",
+			"root_key" : 89,
+			"key_zone_floor" : 89,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"39" : 		{
+			"sample" : "vib_softmar-F6-ff.AIF",
+			"root_key" : 89,
+			"key_zone_floor" : 89,
+			"vel_zone_floor" : 84,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+
+	}
+,
+	"vibraphone_ordinario-soft-rubber.instr" : 	{
+		"1" : 		{
+			"sample" : "vib_softrbvib-F3-pp.AIF",
+			"root_key" : 53,
+			"key_zone_floor" : 53,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"2" : 		{
+			"sample" : "vib_softrbvib-F3-mf.AIF",
+			"root_key" : 53,
+			"key_zone_floor" : 53,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"3" : 		{
+			"sample" : "vib_softrbvib-F3-ff.AIF",
+			"root_key" : 53,
+			"key_zone_floor" : 53,
+			"vel_zone_floor" : 84,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"4" : 		{
+			"sample" : "vib_softrbvib-G#3-pp.AIF",
+			"root_key" : 56,
+			"key_zone_floor" : 56,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"5" : 		{
+			"sample" : "vib_softrbvib-G#3-mf.AIF",
+			"root_key" : 56,
+			"key_zone_floor" : 56,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"6" : 		{
+			"sample" : "vib_softrbvib-G#3-ff.AIF",
+			"root_key" : 56,
+			"key_zone_floor" : 56,
+			"vel_zone_floor" : 84,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"7" : 		{
+			"sample" : "vib_softrbvib-B3-pp.AIF",
+			"root_key" : 59,
+			"key_zone_floor" : 59,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"8" : 		{
+			"sample" : "vib_softrbvib-B3-mf.AIF",
+			"root_key" : 59,
+			"key_zone_floor" : 59,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"9" : 		{
+			"sample" : "vib_softrbvib-B3-ff.AIF",
+			"root_key" : 59,
+			"key_zone_floor" : 59,
+			"vel_zone_floor" : 84,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"10" : 		{
+			"sample" : "vib_softrbvib-D4-pp.AIF",
+			"root_key" : 62,
+			"key_zone_floor" : 62,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"11" : 		{
+			"sample" : "vib_softrbvib-D4-mf.AIF",
+			"root_key" : 62,
+			"key_zone_floor" : 62,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"12" : 		{
+			"sample" : "vib_softrbvib-D4-ff.AIF",
+			"root_key" : 62,
+			"key_zone_floor" : 62,
+			"vel_zone_floor" : 84,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"13" : 		{
+			"sample" : "vib_softrbvib-F4-pp.AIF",
+			"root_key" : 65,
+			"key_zone_floor" : 65,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"14" : 		{
+			"sample" : "vib_softrbvib-F4-mf.AIF",
+			"root_key" : 65,
+			"key_zone_floor" : 65,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"15" : 		{
+			"sample" : "vib_softrbvib-F4-ff.AIF",
+			"root_key" : 65,
+			"key_zone_floor" : 65,
+			"vel_zone_floor" : 84,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"16" : 		{
+			"sample" : "vib_softrbvib-G#4-pp.AIF",
+			"root_key" : 68,
+			"key_zone_floor" : 68,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"17" : 		{
+			"sample" : "vib_softrbvib-G#4-mf.AIF",
+			"root_key" : 68,
+			"key_zone_floor" : 68,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"18" : 		{
+			"sample" : "vib_softrbvib-G#4-ff.AIF",
+			"root_key" : 68,
+			"key_zone_floor" : 68,
+			"vel_zone_floor" : 84,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"19" : 		{
+			"sample" : "vib_softrbvib-B4-pp.AIF",
+			"root_key" : 71,
+			"key_zone_floor" : 71,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"20" : 		{
+			"sample" : "vib_softrbvib-B4-mf.AIF",
+			"root_key" : 71,
+			"key_zone_floor" : 71,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"21" : 		{
+			"sample" : "vib_softrbvib-B4-ff.AIF",
+			"root_key" : 71,
+			"key_zone_floor" : 71,
+			"vel_zone_floor" : 84,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"22" : 		{
+			"sample" : "vib_softrbvib-D5-pp.AIF",
+			"root_key" : 74,
+			"key_zone_floor" : 74,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"23" : 		{
+			"sample" : "vib_softrbvib-D5-mf.AIF",
+			"root_key" : 74,
+			"key_zone_floor" : 74,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"24" : 		{
+			"sample" : "vib_softrbvib-D5-ff.AIF",
+			"root_key" : 74,
+			"key_zone_floor" : 74,
+			"vel_zone_floor" : 84,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"25" : 		{
+			"sample" : "vib_softrbvib-F5-pp.AIF",
+			"root_key" : 77,
+			"key_zone_floor" : 77,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"26" : 		{
+			"sample" : "vib_softrbvib-F5-mf.AIF",
+			"root_key" : 77,
+			"key_zone_floor" : 77,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"27" : 		{
+			"sample" : "vib_softrbvib-F5-ff.AIF",
+			"root_key" : 77,
+			"key_zone_floor" : 77,
+			"vel_zone_floor" : 84,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"28" : 		{
+			"sample" : "vib_softrbvib-G#5-pp.AIF",
+			"root_key" : 80,
+			"key_zone_floor" : 80,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"29" : 		{
+			"sample" : "vib_softrbvib-G#5-mf.AIF",
+			"root_key" : 80,
+			"key_zone_floor" : 80,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"30" : 		{
+			"sample" : "vib_softrbvib-G#5-ff.AIF",
+			"root_key" : 80,
+			"key_zone_floor" : 80,
+			"vel_zone_floor" : 84,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"31" : 		{
+			"sample" : "vib_softrbvib-B5-pp.AIF",
+			"root_key" : 83,
+			"key_zone_floor" : 83,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"32" : 		{
+			"sample" : "vib_softrbvib-B5-mf.AIF",
+			"root_key" : 83,
+			"key_zone_floor" : 83,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"33" : 		{
+			"sample" : "vib_softrbvib-B5-ff.AIF",
+			"root_key" : 83,
+			"key_zone_floor" : 83,
+			"vel_zone_floor" : 84,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"34" : 		{
+			"sample" : "vib_softrbvib-D6-pp.AIF",
+			"root_key" : 86,
+			"key_zone_floor" : 86,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"35" : 		{
+			"sample" : "vib_softrbvib-D6-mf.AIF",
+			"root_key" : 86,
+			"key_zone_floor" : 86,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"36" : 		{
+			"sample" : "vib_softrbvib-D6-ff.AIF",
+			"root_key" : 86,
+			"key_zone_floor" : 86,
+			"vel_zone_floor" : 84,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"37" : 		{
+			"sample" : "vib_softrbvib-F6-pp.AIF",
+			"root_key" : 89,
+			"key_zone_floor" : 89,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"38" : 		{
+			"sample" : "vib_softrbvib-F6-mf.AIF",
+			"root_key" : 89,
+			"key_zone_floor" : 89,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"39" : 		{
+			"sample" : "vib_softrbvib-F6-ff.AIF",
+			"root_key" : 89,
+			"key_zone_floor" : 89,
+			"vel_zone_floor" : 84,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+
+	}
+,
+	"vibraphone_tremolo-soft-mallets.instr" : 	{
+		"1" : 		{
+			"sample" : "vib_softmar_trm-F3-pp.AIF",
+			"root_key" : 53,
+			"key_zone_floor" : 53,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"2" : 		{
+			"sample" : "vib_softmar_trm-F3-mf.AIF",
+			"root_key" : 53,
+			"key_zone_floor" : 53,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"3" : 		{
+			"sample" : "vib_softmar_trm-G#3-pp.AIF",
+			"root_key" : 56,
+			"key_zone_floor" : 56,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"4" : 		{
+			"sample" : "vib_softmar_trm-G#3-mf.AIF",
+			"root_key" : 56,
+			"key_zone_floor" : 56,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"5" : 		{
+			"sample" : "vib_softmar_trm-B3-pp.AIF",
+			"root_key" : 59,
+			"key_zone_floor" : 59,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"6" : 		{
+			"sample" : "vib_softmar_trm-B3-mf.AIF",
+			"root_key" : 59,
+			"key_zone_floor" : 59,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"7" : 		{
+			"sample" : "vib_softmar_trm-D4-pp.AIF",
+			"root_key" : 62,
+			"key_zone_floor" : 62,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"8" : 		{
+			"sample" : "vib_softmar_trm-D4-mf.AIF",
+			"root_key" : 62,
+			"key_zone_floor" : 62,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"9" : 		{
+			"sample" : "vib_softmar_trm-F4-pp.AIF",
+			"root_key" : 65,
+			"key_zone_floor" : 65,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"10" : 		{
+			"sample" : "vib_softmar_trm-F4-mf.AIF",
+			"root_key" : 65,
+			"key_zone_floor" : 65,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"11" : 		{
+			"sample" : "vib_softmar_trm-G#4-pp.AIF",
+			"root_key" : 68,
+			"key_zone_floor" : 68,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"12" : 		{
+			"sample" : "vib_softmar_trm-G#4-mf.AIF",
+			"root_key" : 68,
+			"key_zone_floor" : 68,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"13" : 		{
+			"sample" : "vib_softmar_trm-B4-pp.AIF",
+			"root_key" : 71,
+			"key_zone_floor" : 71,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"14" : 		{
+			"sample" : "vib_softmar_trm-B4-mf.AIF",
+			"root_key" : 71,
+			"key_zone_floor" : 71,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"15" : 		{
+			"sample" : "vib_softmar_trm-D5-pp.AIF",
+			"root_key" : 74,
+			"key_zone_floor" : 74,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"16" : 		{
+			"sample" : "vib_softmar_trm-D5-mf.AIF",
+			"root_key" : 74,
+			"key_zone_floor" : 74,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"17" : 		{
+			"sample" : "vib_softmar_trm-F5-pp.AIF",
+			"root_key" : 77,
+			"key_zone_floor" : 77,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"18" : 		{
+			"sample" : "vib_softmar_trm-F5-mf.AIF",
+			"root_key" : 77,
+			"key_zone_floor" : 77,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"19" : 		{
+			"sample" : "vib_softmar_trm-G#5-pp.AIF",
+			"root_key" : 80,
+			"key_zone_floor" : 80,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"20" : 		{
+			"sample" : "vib_softmar_trm-G#5-mf.AIF",
+			"root_key" : 80,
+			"key_zone_floor" : 80,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"21" : 		{
+			"sample" : "vib_softmar_trm-B5-pp.AIF",
+			"root_key" : 83,
+			"key_zone_floor" : 83,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"22" : 		{
+			"sample" : "vib_softmar_trm-B5-mf.AIF",
+			"root_key" : 83,
+			"key_zone_floor" : 83,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"23" : 		{
+			"sample" : "vib_softmar_trm-D6-pp.AIF",
+			"root_key" : 86,
+			"key_zone_floor" : 86,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"24" : 		{
+			"sample" : "vib_softmar_trm-D6-mf.AIF",
+			"root_key" : 86,
+			"key_zone_floor" : 86,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"25" : 		{
+			"sample" : "vib_softmar_trm-F6-pp.AIF",
+			"root_key" : 89,
+			"key_zone_floor" : 89,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"26" : 		{
+			"sample" : "vib_softmar_trm-F6-mf.AIF",
+			"root_key" : 89,
+			"key_zone_floor" : 89,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+
+	}
+,
+	"vibraphone_tremolo-soft-rubber.instr" : 	{
+		"1" : 		{
+			"sample" : "vib_softrbvib_trm-F3-pp.AIF",
+			"root_key" : 53,
+			"key_zone_floor" : 53,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"2" : 		{
+			"sample" : "vib_softrbvib_trm-F3-mf.AIF",
+			"root_key" : 53,
+			"key_zone_floor" : 53,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"3" : 		{
+			"sample" : "vib_softrbvib_trm-G#3-pp.AIF",
+			"root_key" : 56,
+			"key_zone_floor" : 56,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"4" : 		{
+			"sample" : "vib_softrbvib_trm-G#3-mf.AIF",
+			"root_key" : 56,
+			"key_zone_floor" : 56,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"5" : 		{
+			"sample" : "vib_softrbvib_trm-B3-pp.AIF",
+			"root_key" : 59,
+			"key_zone_floor" : 59,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"6" : 		{
+			"sample" : "vib_softrbvib_trm-B3-mf.AIF",
+			"root_key" : 59,
+			"key_zone_floor" : 59,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"7" : 		{
+			"sample" : "vib_softrbvib_trm-D4-pp.AIF",
+			"root_key" : 62,
+			"key_zone_floor" : 62,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"8" : 		{
+			"sample" : "vib_softrbvib_trm-D4-mf.AIF",
+			"root_key" : 62,
+			"key_zone_floor" : 62,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"9" : 		{
+			"sample" : "vib_softrbvib_trm-F4-pp.AIF",
+			"root_key" : 65,
+			"key_zone_floor" : 65,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"10" : 		{
+			"sample" : "vib_softrbvib_trm-F4-mf.AIF",
+			"root_key" : 65,
+			"key_zone_floor" : 65,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"11" : 		{
+			"sample" : "vib_softrbvib_trm-G#4-pp.AIF",
+			"root_key" : 68,
+			"key_zone_floor" : 68,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"12" : 		{
+			"sample" : "vib_softrbvib_trm-G#4-mf.AIF",
+			"root_key" : 68,
+			"key_zone_floor" : 68,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"13" : 		{
+			"sample" : "vib_softrbvib_trm-B4-pp.AIF",
+			"root_key" : 71,
+			"key_zone_floor" : 71,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"14" : 		{
+			"sample" : "vib_softrbvib_trm-B4-mf.AIF",
+			"root_key" : 71,
+			"key_zone_floor" : 71,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"15" : 		{
+			"sample" : "vib_softrbvib_trm-D5-pp.AIF",
+			"root_key" : 74,
+			"key_zone_floor" : 74,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"16" : 		{
+			"sample" : "vib_softrbvib_trm-D5-mf.AIF",
+			"root_key" : 74,
+			"key_zone_floor" : 74,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"17" : 		{
+			"sample" : "vib_softrbvib_trm-F5-pp.AIF",
+			"root_key" : 77,
+			"key_zone_floor" : 77,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"18" : 		{
+			"sample" : "vib_softrbvib_trm-F5-mf.AIF",
+			"root_key" : 77,
+			"key_zone_floor" : 77,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"19" : 		{
+			"sample" : "vib_softrbvib_trm-G#5-pp.AIF",
+			"root_key" : 80,
+			"key_zone_floor" : 80,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"20" : 		{
+			"sample" : "vib_softrbvib_trm-G#5-mf.AIF",
+			"root_key" : 80,
+			"key_zone_floor" : 80,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"21" : 		{
+			"sample" : "vib_softrbvib_trm-B5-pp.AIF",
+			"root_key" : 83,
+			"key_zone_floor" : 83,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"22" : 		{
+			"sample" : "vib_softrbvib_trm-B5-mf.AIF",
+			"root_key" : 83,
+			"key_zone_floor" : 83,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"23" : 		{
+			"sample" : "vib_softrbvib_trm-D6-pp.AIF",
+			"root_key" : 86,
+			"key_zone_floor" : 86,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"24" : 		{
+			"sample" : "vib_softrbvib_trm-D6-mf.AIF",
+			"root_key" : 86,
+			"key_zone_floor" : 86,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"25" : 		{
+			"sample" : "vib_softrbvib_trm-F6-pp.AIF",
+			"root_key" : 89,
+			"key_zone_floor" : 89,
+			"vel_zone_floor" : 0,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+,
+		"26" : 		{
+			"sample" : "vib_softrbvib_trm-F6-mf.AIF",
+			"root_key" : 89,
+			"key_zone_floor" : 89,
+			"vel_zone_floor" : 42,
+			"envelope" : 1,
+			"direction" : "fw",
+			"timestretch" : 1,
+			"loop" : [ 0, 0, 0 ],
+			"start" : 0
+		}
+
+	}
+
+}

@@ -1,0 +1,68 @@
+{
+  "1": {
+    "sample": "picc_whis-D5.AIF",
+    "root_key": 74,
+    "key_zone_floor": 74,
+    "vel_zone_floor": 0,
+    "envelope": 1,
+    "direction": "fw",
+    "timestretch": 1,
+    "loop": [0,0,0],
+    "start": 0
+  },
+  "2": {
+    "sample": "picc_whis-A5.AIF",
+    "root_key": 81,
+    "key_zone_floor": 81,
+    "vel_zone_floor": 0,
+    "envelope": 1,
+    "direction": "fw",
+    "timestretch": 1,
+    "loop": [0,0,0],
+    "start": 0
+  },
+  "3": {
+    "sample": "picc_whis-C6.AIF",
+    "root_key": 84,
+    "key_zone_floor": 84,
+    "vel_zone_floor": 0,
+    "envelope": 1,
+    "direction": "fw",
+    "timestretch": 1,
+    "loop": [0,0,0],
+    "start": 0
+  },
+  "4": {
+    "sample": "picc_whis-D6.AIF",
+    "root_key": 86,
+    "key_zone_floor": 86,
+    "vel_zone_floor": 0,
+    "envelope": 1,
+    "direction": "fw",
+    "timestretch": 1,
+    "loop": [0,0,0],
+    "start": 0
+  },
+  "5": {
+    "sample": "picc_whis-E6.AIF",
+    "root_key": 88,
+    "key_zone_floor": 88,
+    "vel_zone_floor": 0,
+    "envelope": 1,
+    "direction": "fw",
+    "timestretch": 1,
+    "loop": [0,0,0],
+    "start": 0
+  },
+  "6": {
+    "sample": "picc_whis-F#6.AIF",
+    "root_key": 90,
+    "key_zone_floor": 90,
+    "vel_zone_floor": 0,
+    "envelope": 1,
+    "direction": "fw",
+    "timestretch": 1,
+    "loop": [0,0,0],
+    "start": 0
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "1": {
+    "sample": "trmp-C4-mf.aif",
+    "root_key": 60,
+    "key_zone_floor": 60,
+    "vel_zone_floor": 42,
+    "envelope": 1,
+    "direction": "fw",
+    "timestretch": 1,
+    "loop": [0,0,0],
+    "start": 0
+  },
+  "2": {
+    "sample": "trmp-C5-pp.aif",
+    "root_key": 72,
+    "key_zone_floor": 72,
+    "vel_zone_floor": 0,
+    "envelope": 1,
+    "direction": "fw",
+    "timestretch": 1,
+    "loop": [0,0,0],
+    "start": 0
+  }
+}

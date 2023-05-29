@@ -1,0 +1,68 @@
+{
+  "1": {
+    "sample": "ob_mult-B3-pp.aif",
+    "root_key": 59,
+    "key_zone_floor": 59,
+    "vel_zone_floor": 0,
+    "envelope": 1,
+    "direction": "fw",
+    "timestretch": 1,
+    "loop": [0,0,0],
+    "start": 0
+  },
+  "2": {
+    "sample": "ob_mult-B3-mf.aif",
+    "root_key": 59,
+    "key_zone_floor": 59,
+    "vel_zone_floor": 42,
+    "envelope": 1,
+    "direction": "fw",
+    "timestretch": 1,
+    "loop": [0,0,0],
+    "start": 0
+  },
+  "3": {
+    "sample": "ob_mult-C4-pp.aif",
+    "root_key": 60,
+    "key_zone_floor": 60,
+    "vel_zone_floor": 0,
+    "envelope": 1,
+    "direction": "fw",
+    "timestretch": 1,
+    "loop": [0,0,0],
+    "start": 0
+  },
+  "4": {
+    "sample": "ob_mult-B4-pp.aif",
+    "root_key": 71,
+    "key_zone_floor": 71,
+    "vel_zone_floor": 0,
+    "envelope": 1,
+    "direction": "fw",
+    "timestretch": 1,
+    "loop": [0,0,0],
+    "start": 0
+  },
+  "5": {
+    "sample": "ob_mult-C5-pp.aif",
+    "root_key": 72,
+    "key_zone_floor": 72,
+    "vel_zone_floor": 0,
+    "envelope": 1,
+    "direction": "fw",
+    "timestretch": 1,
+    "loop": [0,0,0],
+    "start": 0
+  },
+  "6": {
+    "sample": "ob_mult-B5-pp.aif",
+    "root_key": 83,
+    "key_zone_floor": 83,
+    "vel_zone_floor": 0,
+    "envelope": 1,
+    "direction": "fw",
+    "timestretch": 1,
+    "loop": [0,0,0],
+    "start": 0
+  }
+}

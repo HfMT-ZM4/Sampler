@@ -1,0 +1,90 @@
+{
+  "1": {
+    "sample": "picc_slap-D5.AIF",
+    "root_key": 74,
+    "key_zone_floor": 74,
+    "vel_zone_floor": 0,
+    "envelope": 1,
+    "direction": "fw",
+    "timestretch": 1,
+    "loop": [0,0,0],
+    "start": 0
+  },
+  "2": {
+    "sample": "picc_slap-F5.AIF",
+    "root_key": 77,
+    "key_zone_floor": 77,
+    "vel_zone_floor": 0,
+    "envelope": 1,
+    "direction": "fw",
+    "timestretch": 1,
+    "loop": [0,0,0],
+    "start": 0
+  },
+  "3": {
+    "sample": "picc_slap-G#5.AIF",
+    "root_key": 80,
+    "key_zone_floor": 80,
+    "vel_zone_floor": 0,
+    "envelope": 1,
+    "direction": "fw",
+    "timestretch": 1,
+    "loop": [0,0,0],
+    "start": 0
+  },
+  "4": {
+    "sample": "picc_slap-B5.AIF",
+    "root_key": 83,
+    "key_zone_floor": 83,
+    "vel_zone_floor": 0,
+    "envelope": 1,
+    "direction": "fw",
+    "timestretch": 1,
+    "loop": [0,0,0],
+    "start": 0
+  },
+  "5": {
+    "sample": "picc_slap-D6.AIF",
+    "root_key": 86,
+    "key_zone_floor": 86,
+    "vel_zone_floor": 0,
+    "envelope": 1,
+    "direction": "fw",
+    "timestretch": 1,
+    "loop": [0,0,0],
+    "start": 0
+  },
+  "6": {
+    "sample": "picc_slap-F6.AIF",
+    "root_key": 89,
+    "key_zone_floor": 89,
+    "vel_zone_floor": 0,
+    "envelope": 1,
+    "direction": "fw",
+    "timestretch": 1,
+    "loop": [0,0,0],
+    "start": 0
+  },
+  "7": {
+    "sample": "picc_slap-G#6.AIF",
+    "root_key": 92,
+    "key_zone_floor": 92,
+    "vel_zone_floor": 0,
+    "envelope": 1,
+    "direction": "fw",
+    "timestretch": 1,
+    "loop": [0,0,0],
+    "start": 0
+  },
+  "8": {
+    "sample": "picc_slap-B6.AIF",
+    "root_key": 95,
+    "key_zone_floor": 95,
+    "vel_zone_floor": 0,
+    "envelope": 1,
+    "direction": "fw",
+    "timestretch": 1,
+    "loop": [0,0,0],
+    "start": 0
+  }
+}

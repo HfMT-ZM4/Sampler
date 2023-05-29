@@ -1,0 +1,13 @@
+{
+  "1": {
+    "sample": "trmp_attc-F5-ff.aif",
+    "root_key": 77,
+    "key_zone_floor": 77,
+    "vel_zone_floor": 84,
+    "envelope": 1,
+    "direction": "fw",
+    "timestretch": 1,
+    "loop": [0,0,0],
+    "start": 0
+  }
+}

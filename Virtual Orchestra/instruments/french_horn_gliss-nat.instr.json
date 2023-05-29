@@ -1,0 +1,24 @@
+{
+  "1": {
+    "sample": "fr_hor_gliss_nat-F3-pp.aif",
+    "root_key": 53,
+    "key_zone_floor": 53,
+    "vel_zone_floor": 0,
+    "envelope": 1,
+    "direction": "fw",
+    "timestretch": 1,
+    "loop": [0,0,0],
+    "start": 0
+  },
+  "2": {
+    "sample": "fr_hor_gliss_nat-F3-mf.aif",
+    "root_key": 53,
+    "key_zone_floor": 53,
+    "vel_zone_floor": 42,
+    "envelope": 1,
+    "direction": "fw",
+    "timestretch": 1,
+    "loop": [0,0,0],
+    "start": 0
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "1": {
+    "sample": "fag_mult-A2-mf.aiff",
+    "root_key": 45,
+    "key_zone_floor": 45,
+    "vel_zone_floor": 42,
+    "envelope": 1,
+    "direction": "fw",
+    "timestretch": 1,
+    "loop": [0,0,0],
+    "start": 0
+  },
+  "2": {
+    "sample": "fag_mult_A#1-mf.aiff",
+    "root_key": null,
+    "key_zone_floor": null,
+    "vel_zone_floor": 42,
+    "envelope": 1,
+    "direction": "fw",
+    "timestretch": 1,
+    "loop": [0,0,0],
+    "start": 0
+  },
+  "3": {
+    "sample": "fag_mult_B1-mf.aiff",
+    "root_key": null,
+    "key_zone_floor": null,
+    "vel_zone_floor": 42,
+    "envelope": 1,
+    "direction": "fw",
+    "timestretch": 1,
+    "loop": [0,0,0],
+    "start": 0
+  },
+  "4": {
+    "sample": "fag_mult_C#2-mf.aiff",
+    "root_key": null,
+    "key_zone_floor": null,
+    "vel_zone_floor": 42,
+    "envelope": 1,
+    "direction": "fw",
+    "timestretch": 1,
+    "loop": [0,0,0],
+    "start": 0
+  },
+  "5": {
+    "sample": "fag_mult_C2-mf.aiff",
+    "root_key": null,
+    "key_zone_floor": null,
+    "vel_zone_floor": 42,
+    "envelope": 1,
+    "direction": "fw",
+    "timestretch": 1,
+    "loop": [0,0,0],
+    "start": 0
+  },
+  "6": {
+    "sample": "fag_mult_D#2-mf.aiff",
+    "root_key": null,
+    "key_zone_floor": null,
+    "vel_zone_floor": 42,
+    "envelope": 1,
+    "direction": "fw",
+    "timestretch": 1,
+    "loop": [0,0,0],
+    "start": 0
+  },
+  "7": {
+    "sample": "fag_mult_D#3-mf.aiff",
+    "root_key": null,
+    "key_zone_floor": null,
+    "vel_zone_floor": 42,
+    "envelope": 1,
+    "direction": "fw",
+    "timestretch": 1,
+    "loop": [0,0,0],
+    "start": 0
+  },
+  "8": {
+    "sample": "fag_mult_F2-mf.aiff",
+    "root_key": null,
+    "key_zone_floor": null,
+    "vel_zone_floor": 42,
+    "envelope": 1,
+    "direction": "fw",
+    "timestretch": 1,
+    "loop": [0,0,0],
+    "start": 0
+  },
+  "9": {
+    "sample": "fag_mult_F3-mf.aiff",
+    "root_key": null,
+    "key_zone_floor": null,
+    "vel_zone_floor": 42,
+    "envelope": 1,
+    "direction": "fw",
+    "timestretch": 1,
+    "loop": [0,0,0],
+    "start": 0
+  },
+  "10": {
+    "sample": "fag_mult_C2-ff.aiff",
+    "root_key": null,
+    "key_zone_floor": null,
+    "vel_zone_floor": 84,
+    "envelope": 1,
+    "direction": "fw",
+    "timestretch": 1,
+    "loop": [0,0,0],
+    "start": 0
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "1": {
+    "sample": "fl_whis-D5-pp.AIF",
+    "root_key": 74,
+    "key_zone_floor": 74,
+    "vel_zone_floor": 0,
+    "envelope": 1,
+    "direction": "fw",
+    "timestretch": 1,
+    "loop": [0,0,0],
+    "start": 0
+  },
+  "2": {
+    "sample": "fl_whis-F5-pp.AIF",
+    "root_key": 77,
+    "key_zone_floor": 77,
+    "vel_zone_floor": 0,
+    "envelope": 1,
+    "direction": "fw",
+    "timestretch": 1,
+    "loop": [0,0,0],
+    "start": 0
+  },
+  "3": {
+    "sample": "fl_whis-G#5-pp.AIF",
+    "root_key": 80,
+    "key_zone_floor": 80,
+    "vel_zone_floor": 0,
+    "envelope": 1,
+    "direction": "fw",
+    "timestretch": 1,
+    "loop": [0,0,0],
+    "start": 0
+  },
+  "4": {
+    "sample": "fl_whis-B5-pp.AIF",
+    "root_key": 83,
+    "key_zone_floor": 83,
+    "vel_zone_floor": 0,
+    "envelope": 1,
+    "direction": "fw",
+    "timestretch": 1,
+    "loop": [0,0,0],
+    "start": 0
+  },
+  "5": {
+    "sample": "fl_whis-D6-pp.AIF",
+    "root_key": 86,
+    "key_zone_floor": 86,
+    "vel_zone_floor": 0,
+    "envelope": 1,
+    "direction": "fw",
+    "timestretch": 1,
+    "loop": [0,0,0],
+    "start": 0
+  },
+  "6": {
+    "sample": "fl_whis-D#6-pp.AIF",
+    "root_key": 87,
+    "key_zone_floor": 87,
+    "vel_zone_floor": 0,
+    "envelope": 1,
+    "direction": "fw",
+    "timestretch": 1,
+    "loop": [0,0,0],
+    "start": 0
+  },
+  "7": {
+    "sample": "fl_whis-F6-pp.AIF",
+    "root_key": 89,
+    "key_zone_floor": 89,
+    "vel_zone_floor": 0,
+    "envelope": 1,
+    "direction": "fw",
+    "timestretch": 1,
+    "loop": [0,0,0],
+    "start": 0
+  },
+  "8": {
+    "sample": "fl_whis-F#6-pp.AIF",
+    "root_key": 90,
+    "key_zone_floor": 90,
+    "vel_zone_floor": 0,
+    "envelope": 1,
+    "direction": "fw",
+    "timestretch": 1,
+    "loop": [0,0,0],
+    "start": 0
+  },
+  "9": {
+    "sample": "fl_whis-A6-pp.AIF",
+    "root_key": 93,
+    "key_zone_floor": 93,
+    "vel_zone_floor": 0,
+    "envelope": 1,
+    "direction": "fw",
+    "timestretch": 1,
+    "loop": [0,0,0],
+    "start": 0
+  },
+  "10": {
+    "sample": "fl_whis-D7-pp.AIF",
+    "root_key": 98,
+    "key_zone_floor": 98,
+    "vel_zone_floor": 0,
+    "envelope": 1,
+    "direction": "fw",
+    "timestretch": 1,
+    "loop": [0,0,0],
+    "start": 0
+  },
+  "11": {
+    "sample": "fl_whis-D#7-pp.AIF",
+    "root_key": 99,
+    "key_zone_floor": 99,
+    "vel_zone_floor": 0,
+    "envelope": 1,
+    "direction": "fw",
+    "timestretch": 1,
+    "loop": [0,0,0],
+    "start": 0
+  },
+  "12": {
+    "sample": "fl_whis-G7-pp.AIF",
+    "root_key": 103,
+    "key_zone_floor": 103,
+    "vel_zone_floor": 0,
+    "envelope": 1,
+    "direction": "fw",
+    "timestretch": 1,
+    "loop": [0,0,0],
+    "start": 0
+  }
+}
